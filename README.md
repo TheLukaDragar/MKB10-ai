@@ -18,11 +18,18 @@ This project implements an automated pipeline for classifying medical diagnoses 
 pip install -r requirements.txt
 ```
 
-2. Ensure you have the following data files in your project directory:
+2. Set up environment variables:
+   - Copy `.env.example` to `.env`
+   - Add your OpenAI API key to the `.env` file:
+   ```
+   OPENAI_API_KEY=your-api-key-here
+   ```
+
+3. Ensure you have the following data files in your project directory:
 - `sklopi_slo_df.csv` - Slovenian MKB-10 category mappings
 - `mkb_slo_df_eng.csv` - Combined Slovenian-English MKB-10 codes
 
-3. Configure your LLM endpoint in `bot.py`:
+4. Configure your LLM endpoint in `bot.py`:
 ```python
 base_url = "http://localhost:8001/"  # Update with your LLM endpoint
 ```

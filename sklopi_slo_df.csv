@@ -1,0 +1,281 @@
+SKLOP,SLOVENSKI NAZIV
+A00–A09,Črevesne infekcijske bolezni
+A15–A19,Tuberkuloza
+A20–A28,"Nekatere zoonoze, ki jih povzročajo bakterije"
+A30–A49,"Druge bolezni, ki jih povzročajo bakterije"
+A50–A64,"Okužbe, prenosljive pretežno s spolnimi odnosi"
+A65–A69,"Druge bolezni, ki jih povzročajo spirohete"
+A70–A74,"Druge bolezni, ki jih povzročajo klamidije"
+A75–A79,Rikecioze
+A80–A89,Virusne okužbe centralnega živčnega sistema
+A92–A99,"Virusne mrzlice, ki jih prenašajo členonožci, in virusne hemoragične mrzlice"
+B00–B09,"Virusne okužbe, za katere so značilne spremembe na koži in sluznicah"
+B15–B19,Virusni hepatitis
+B20–B24,"Bolezen, ki jo povzroča virus človeške imunske pomanjkljivosti [HIV]"
+B25–B34,Druge virusne bolezni
+B35–B49,Mikoze
+B50–B64,Protozojske bolezni
+B65–B83,Helmintioze
+B85–B89,"Pedikuloza, akarioza in druge infestacije"
+B90–B94,Kasne posledice (sekvele) infekcijskih in parazitarnih bolezni
+B95–B97,"Bakterijski, virusni in drugi infekcijski povzročitelji"
+B99–B99,Druge infekcijske bolezni
+C00–C96,Maligne neoplazme
+C00–C75,"Maligne neoplazme, ugotovljeno ali domnevno primarne, opredeljenih lokacij, razen limfatičnega, hemopoetičnega in sorodnega tkiva"
+C00–C14,"Ustnica, ustna votlina in farinks (žrelo)"
+C15–C26,Prebavila
+C30–C39,Respiratorni (dihalni) in intratorakalni (prsni) organi
+C40–C41,Kost in sklepni hrustanec
+C43–C44,Koža
+C45–C49,Mezotelijska in mehka tkiva
+C50–C50,Dojka
+C51–C58,Ženski spolni organi
+C60–C63,Moški spolni organi
+C64–C68,Urinarni trakt (sečila)
+C69–C72,"Oko, možgani in drugi deli centralnega živčevja"
+C73–C75,Ščitnica in druge endokrine žleze (žleze z notranjim izločanjem)
+C76–C80,"Maligne neoplazme slabo opredeljenih, sekundarnih in neopredeljenih mest"
+C81–C96,"Maligne neoplazme limfatičnega, krvotvornega in sorodnega tkiva, ugotovljeno ali domnevno primarne"
+D00–D09,Neoplazme in situ
+D10–D36,Benigne neoplazme
+D37–D48,Neoplazme negotovega ali neznanega značaja
+D50–D53,Prehranske (nutricijske) anemije
+D55–D59,Hemolitične anemije
+D60–D64,Aplastična in druge anemije
+D65–D69,"Motnje strjevanja krvi, purpura in druge krvavitve"
+D70–D77,Druge bolezni krvi in krvotvornih organov
+D80–D89,Nekatere imunsko pogojene bolezni
+E00–E07,Bolezni ščitnice
+E09–E14,Intermediarna hiperglikemija in sladkorna bolezen
+E15–E16,Druge motnje regulacije glukoze in endokrine sekrecije trebušne slinavke (pankreasa)
+E20–E35,Bolezni drugih endokrinih žlez (žlez z notranjim izločanjem)
+E40–E46,Nedohranjenost
+E50–E64,Druga pomanjkanja v prehrani
+E65–E68,Debelost in druge vrste prenahranjenost
+E70–E89,Presnovne (metabolične) motnje
+F00–F09,"Organske, vključno simptomatske, duševne motnje"
+F10–F19,Duševne in vedenjske motnje zaradi uporabe psihoaktivnih snovi
+F20–F29,"Shizofrenija, shizotipske in blodnjave motnje"
+F30–F39,Razpoloženjske [afektivne] motnje
+F40–F48,"Nevrotske, stresne in somatoformne motnje"
+F50–F59,"Vedenjski sindromi, povezani s fiziološkimi motnjami in telesnimi dejavniki"
+F60–F69,Motnje osebnosti in vedenja v odrasli dobi
+F70–F79,Intelektualna manjzmožnost
+F80–F89,Motnje duševnega (psihološkega) razvoja
+F90–F98,"Vedenjske in čustvene motnje, ki se začnejo navadno v otroštvu in adolescenci"
+F99–F99,Neopredeljena duševna motnja
+G00–G09,Vnetne bolezni centralnega živčevja
+G10–G14,"Sistemske atrofije, ki primarno prizadenejo centralno živčevje"
+G20–G26,Ekstrapiramidne bolezni in motnje gibanja
+G30–G32,Druge degenerativne bolezni živčevja
+G35–G37,Demielinizacijske bolezni centralnega živčevja
+G40–G47,Epizodne in paroksizmalne motnje
+G50–G59,"Okvare živcev, živčnih korenin in pletežev"
+G60–G64,Polinevropatije in druge bolezni perifernega živčevja
+G70–G73,Bolezni živčnomišičnega stika in mišic
+G80–G83,Cerebralna paraliza in drugi paralizni sindromi
+G90–G99,Druge motnje živčevja
+H00–H06,"Okvare vek, solzil in očnice"
+H10–H13,Okvare veznice
+H15–H22,"Okvare beločnice, roženice, šarenice in ciliarnika"
+H25–H28,Okvare leče
+H30–H36,Okvare žilnice in mrežnice
+H40–H42,Glavkom
+H43–H45,Okvare steklovine in zrkla
+H46–H48,Okvare vidnega živca in vidnih prog
+H49–H52,"Okvare očesnih mišic, binokularnega gibanja, akomodacije in refrakcije"
+H53–H54,Motnje vida in slepota
+H55–H59,Druge okvare očesa in očesnih adneksov
+H60–H62,Bolezni zunanjega ušesa
+H65–H75,Bolezni srednjega ušesa in mastoida
+H80–H83,Bolezni notranjega ušesa
+H90–H95,Druge okvare ušesa
+I00–I02,Akutna revmatična vročica
+I05–I09,Kronične revmatične bolezni srca
+I10–I15,Hipertenzivne bolezni
+I20–I25,Ishemična bolezen srca
+I26–I28,Pljučno srce in bolezni pljučnega krvnega obtoka
+I30–I52,Druge bolezni srca
+I60–I69,Cerebrovaskularne (možganskožilne) bolezni
+I70–I79,"Bolezni arterij, arteriol in kapilar"
+I80–I89,"Bolezni ven, limfnih žil (mezgovnic) in bezgavk, ki niso uvrščene drugje"
+I95–I99,Druge in neopredeljene motnje obtočil
+J00–J06,Akutne okužbe zgornjih dihal
+J09–J18,Gripa in pljučnica
+J20–J22,Druge akutne okužbe spodnjih dihal
+J30–J39,Druge bolezni zgornjih dihal
+J40–J47,Kronične bolezni spodnjih dihal
+J60–J70,Bolezni pljuč zaradi delovanja zunanjih dejavnikov
+J80–J84,"Druge bolezni dihal, ki prizadenejo predvsem intersticij"
+J85–J86,Bolezni spodnjih dihal z gnojenjem in nekrozo
+J90–J94,Druge bolezni plevre
+J95–J99,Druge bolezni dihal
+K00–K14,"Bolezni ustne votline, žlez slinavk in čeljusti"
+K20–K31,"Bolezni požiralnika, želodca in dvanajstnika"
+K35–K38,Bolezni slepiča (apendiksa)
+K40–K46,Hernija (kila)
+K50–K52,Neinfekcijski enteritis in kolitis
+K55–K64,Druge bolezni črevesja
+K65–K67,Bolezni peritoneja
+K70–K77,Bolezni jeter
+K80–K87,"Okvare žolčnika, biliarnega trakta in trebušne slinavke"
+K90–K93,Druge bolezni prebavil
+L00–L08,Okužbe kože in podkožja
+L10–L14,Bulozne dermatoze
+L20–L30,Dermatitis (vnetje kože) in ekcem
+L40–L45,Papuloskvamozne dermatoze
+L50–L54,Urtikarija (koprivnica) in eritem (rdečina)
+L55–L59,S sevanjem povezane (aktinične) spremembe kože in podkožja
+L60–L75,Spremembe kožnih priveskov (adneksov)
+L80–L99,Druge spremembe kože in podkožja
+M00–M25,Artropatije
+M30–M36,Sistemske bolezni vezivnega tkiva
+M40–M54,Bolezni hrbta (dorzopatije)
+M60–M79,Motnje mehkih tkiv
+M80–M94,Osteopatije in hondropatije
+M95–M99,Druge bolezni mišično-skeletnega sistema in vezivnega tkiva
+M00–M03,Infekcijske artropatije
+M05–M14,Vnetne poliartropatije
+M15–M19,Artroze
+M20–M25,Druge motnje sklepa
+M40–M43,Deformirajoče bolezni hrbta (dorzopatije)
+M45–M49,Spondilopatije
+M50–M54,Druge bolezni hrbta (dorzopatije)
+M60–M63,Mišične motnje
+M65–M68,Sinovijske in kitne motnje
+M70–M79,Druge motnje mehkih tkiv
+M80–M85,Motnje kostne gostote in zgradbe kosti
+M86–M90,Druge bolezni kosti (osteopatije)
+M91–M94,Bolezni hrustanca (hondropatije)
+N00–N08,Bolezni glomerulov
+N10–N16,Ledvične tubulointersticijske bolezni
+N17–N19,Ledvična odpoved
+N20–N23,Urolitiaza (kamni v sečilih)
+N25–N29,Druge motnje ledvic in sečevodov
+N30–N39,Druge bolezni sečil
+N40–N51,Bolezni moških spolnih organov
+N60–N64,Motnje dojke
+N70–N77,Vnetne bolezni ženskih medeničnih (pelvičnih) organov
+N80–N98,Nevnetne motnje ženskega spolnega (genitalnega) trakta
+N99–N99,Druge motnje sečil in spolovil
+O00–O08,"Nosečnost, ki se konča s splavom"
+O09–O09,Trajanje nosečnosti
+O10–O16,"Edemi, proteinurija in hipertenzivne motnje med nosečnostjo, ob porodu in v poporodnem obdobju (puerperiju)"
+O20–O28,"Druge materine bolezni, povezane predvsem z nosečnostjo"
+O30–O48,"Oskrba matere, povezana s plodom in amnijsko votlino in možnimi zapleti pri otrokovem rojstvu"
+O60–O75,Zapleti pri porodu in otrokovem rojstvu
+O80–O84,Porod
+O85–O92,"Zapleti, povezani predvsem s poporodnim obdobjem (puerperijem)"
+O94–O99,"Druga porodniška stanja, ki niso uvrščena drugje"
+P00–P04,"Plod in novorojenček, prizadet zaradi materinih bolezni in zapletov med nosečnostjo, porodom in otrokovim rojstvom"
+P05–P08,"Nepravilnosti, povezane s trajanjem nosečnosti in plodovo rastjo"
+P10–P15,Porodne poškodbe
+P20–P29,"Bolezni dihal in obtočil, značilne za perinatalno (obporodno) obdobje"
+P35–P39,"Okužbe, značilne za perinatalno obdobje"
+P50–P61,Krvavitve in bolezni krvi plodu in novorojenčka
+P70–P74,Prehodne endokrine in presnovne (metabolične) motnje plodu in novorojenčka
+P75–P78,Bolezni prebavil plodu in novorojenčka
+P80–P83,"Stanja, ki prizadenejo kožo in uravnavanje telesne temperature plodu in novorojenčka"
+P90–P96,"Druge bolezni, ki izvirajo v perinatalnem (obporodnem) obdobju"
+Q00–Q07,Prirojene malformacije živčevja
+Q10–Q18,"Prirojene malformacije očesa, ušesa, obraza in vratu"
+Q20–Q28,Prirojene malformacije obtočil
+Q30–Q34,Prirojene malformacije dihal
+Q35–Q36,Razcep ustnice in razcepljeno nebo
+Q38–Q45,Druge prirojene malformacije prebavil
+Q50–Q56,Prirojene malformacije spolnih organov
+Q60–Q64,Prirojene malformacije sečil
+Q65–Q79,Prirojene malformacije in deformacije mišično-skeletnega sistema
+Q80–Q89,Druge prirojene malformacije
+Q90–Q99,"Kromosomske nenormalnosti, ki niso uvrščene drugje"
+R00–R09,"Simptomi in znaki, ki zajemajo obtočila in dihala"
+R10–R19,"Simptomi in znaki, ki zajemajo prebavila in trebuh"
+R20–R23,"Simptomi in znaki, ki zajemajo kožo in podkožje"
+R25–R29,"Simptomi in znaki, ki zajemajo živčevje in mišično-skeletni sistem"
+R30–R39,"Simptomi in znaki, ki zajemajo sečila"
+R40–R46,"Simptomi in znaki, ki zajemajo mišljenje, zaznavanje, čustvovanje in vedenje"
+R47–R49,"Simptomi in znaki, ki zajemajo govor in glas"
+R50–R69,Splošni simptomi in znaki
+R70–R79,"Nenormalni izvidi pri preiskavi krvi, brez diagnoze"
+R80–R82,"Nenormalni izvidi pri preiskavi urina, brez diagnoze"
+R83–R89,"Nenormalni izvidi pri preiskavi drugih telesnih tekočin, izločkov in tkiv, brez diagnoze"
+R90–R94,"Nenormalni izvidi diagnostičnih slikovnih prikazov in funkcijskih preiskav, brez diagnoze"
+R95–R99,Slabo opredeljeni in neznani vzroki smrti
+S00–S09,Poškodbe glave
+S10–S19,Poškodbe vratu
+S20–S29,Poškodbe prsnega koša
+S30–S39,"Poškodbe trebuha, spodnjega dela hrbta, ledvene hrbtenice in medenice"
+S40–S49,Poškodbe rame in nadlakti
+S50–S59,Poškodbe komolca in podlakti
+S60–S69,Poškodbe zapestja in roke
+S70–S79,Poškodbe kolka in stegna
+S80–S89,Poškodbe kolena in goleni
+S90–S99,Poškodbe skočnega sklepa in stopala
+T00–T07,"Poškodbe, ki zajemajo več telesnih področij"
+T08–T14,"Poškodbe na neopredeljenih delih trupa, udih ali telesnih predelih"
+T15–T19,"Učinki tujka, ki je vstopil skozi naravno telesno odprtino"
+T20–T31,Opekline
+T20–T25,"Opekline in korozije (kemične opekline) na površini telesa, opredeljene po mestu"
+T26–T28,"Opekline in korozije (kemične opekline), omejene na oko in notranje organe"
+T29–T31,Opekline in korozije (kemične opekline) na več in neopredeljenih področjih telesa
+T33–T35,Ozebline
+T36–T50,"Zastrupitve z drogami, zdravili in biološkimi snovmi"
+T51–T65,Toksični učinki snovi predvsem nemedicinskega izvora
+T66–T78,Drugi in neopredeljeni učinki zunanjih vzrokov
+T79–T79,Določeni zgodnji zapleti po poškodbi
+T80–T88,"Zapleti po kirurški in medicinski oskrbi, ki niso uvrščeni drugje"
+T89–T89,"Drugi travmatološki zapleti, ki niso uvrščeni drugje"
+T90–T98,"Kasne posledice (sekvele) po poškodbah, zastrupitvah in po drugih posledicah zunanjih vzrokov"
+U50–U73,Aktivnost
+U50–U72,Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+U73–U73,Med ukvarjanjem z ostalimi aktivnosti
+V00–X59,Nezgode
+V00–V99,Transportne nezgode
+V00–V09,"Pešec, poškodovan v transportni nezgodi"
+V10–V19,"Kolesar, poškodovan v transportni nezgodi"
+V20–V29,"Motorist, poškodovan v transportni nezgodi"
+V30–V39,"Oseba v trokolesnem motornem vozilu, poškodovana v transportni nezgodi"
+V40–V49,"Oseba v avtomobilu, poškodovana v transportni nezgodi"
+V50–V59,"Oseba v poltovornjaku ali kombiju, poškodovana v transportni nezgodi"
+V60–V69,"Oseba v težkem transportnem vozilu, poškodovana v transportni nezgodi"
+V70–V79,"Oseba v avtobusu, poškodovana v transportni nezgodi"
+V80–V89,Druge nezgode med transportom po kopnem
+V90–V94,Nezgode med transportom po vodi
+V95–V97,Nezgode med transportom po zraku in v vesolju
+V98–V99,Druge in neopredeljene transportne nezgode
+W00–X59,Drugi zunanji vzroki naključnih poškodb
+W00–W19,Padci
+W20–W49,Izpostavljenost neživim mehaničnim silam
+W50–W64,Izpostavljenost živim mehaničnim silam
+W65–W74,Naključna utopitev in potopitev
+W75–W84,Druga naključna ogrožanja dihanja
+W85–W99,"Izpostavljenost električnemu toku, sevanju in skrajni temperaturi in tlaku v okolju"
+X00–X09,"Izpostavljenost dimu, ognju in plamenom"
+X10–X19,Stik z vročino in vročimi snovmi
+X20–X29,Stik s strupenimi živalmi in rastlinami
+X30–X39,Izpostavljenost naravnim silam
+X40–X49,Naključna izpostavljenost škodljivim snovem in zastrupitev z njimi
+X50–X57,"Čezmerni napor, potovanje in pomanjkanje"
+X58–X59,Naključna izpostavljenost drugim in neopredeljenim dejavnikom
+X60–X84,Namerna samopoškodba
+X85–Y09,Napad
+Y10–Y34,Dogodek nedoločenega namena
+Y35–Y36,Zakonito posredovanje in vojne operacije
+Y37,Alergeni
+Y40–Y84,Zapleti med zdravniško in kirurško oskrbo
+Y40–Y59,"Droge, zdravila in biološke snovi, uporabljene pri zdravljenju, ki povzročajo škodljive učinke"
+Y60–Y69,Nenamerni dogodki med kirurško in zdravniško oskrbo
+Y70–Y82,"Medicinski pripomočki, povezani z nenamerni dogodki med diagnosticiranjem in zdravljenjem"
+Y83–Y84,"Kirurški in drugi medicinski postopki kot vzrok za nenormalno reakcijo ali kasnejši zaplet, brez omembe nenamernih dogodkov med postopkom"
+Y85–Y89,Kasne posledice (sekvele) zunanjih vzrokov obolevnosti in umrljivosti
+Y90–Y98,"Dodatni dejavniki, povezani z vzroki obolevnosti in umrljivosti, uvrščeni drugje"
+Z00–Z13,"Osebe, ki se srečujejo z zdravstveno službo zaradi pregleda ali preiskave"
+Z20–Z29,"Osebe s potencialnim zdravstvenim tveganjem, povezanim z nalezljivimi boleznimi"
+Z30–Z39,"Osebe, ki se srečujejo z zdravstveno službo v okoliščinah, povezanih z reprodukcijo"
+Z40–Z54,"Osebe, ki se srečujejo z zdravstveno službo zaradi specifičnih postopkov in zdravstvene oskrbe"
+Z55–Z65,Osebe s potencialnim zdravstvenim tveganjem zaradi socialno-ekonomskih in psihosocialnih okoliščin
+Z70–Z76,"Osebe, ki se srečujejo z zdravstveno službo zaradi drugih okoliščin"
+Z80–Z99,"Osebe s potencialnim zdravstvenim tveganjem, ki je povezano z družinsko in osebno anamnezo, in nekaterimi stanji, ki vplivajo na zdravstveno stanje"
+U00–U49,Začasna uvrstitev novih bolezni z negotovo etiologijo ali za nujno/takojšnjo uporabo
+U78–U88,Dodatne kode za kronična stanja
+U91–U92,Druge kode za posebne namene

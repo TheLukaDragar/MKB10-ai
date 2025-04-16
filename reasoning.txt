@@ -1,0 +1,22 @@
+**Izbrane kode v pravilnem vrstnem redu (primarni pogoj prvi, sledijo zunanjega vzroka in prispevajoči dejavniki)**
+
+1. **Primarni pogoji (poškodbe)**
+	* **S60.0** - **Ranljiva poškodba zapestja in roke** (Slovenian description) 
+		+ **Razlog izbire:** Omenjena je "rana v predelu desnega zapestja" v diagnozi.
+	* **S40.0** - **Poškodba rame** (Slovenian description) 
+		+ **Razlog izbire:** Omenjena je "odrgnina na levi rami" v diagnozi.
+	* **S80.0** - **Poškodba kolena** (Slovenian description) 
+		+ **Razlog izbire:** Omenjene so "dve večji odrgnini v predelu levega kolena" v diagnozi.
+	* **S60.8** - **Druga poškodba zapestja in roke** (Slovenian description) 
+		+ **Razlog izbire:** Omenjene so številne odrgnine po vseh prstih desne roke in levi dlani.
+2. **Zunanji vzrok**
+	* **V19.4** - **Kolesar, poškodovan v transportni nezgodi** (Slovenian description) 
+		+ **Razlog izbire:** Omenjeno je, da se je pacient "udaril kot kolesar" (panel s kolesa).
+3. **Aktivnost (če je na voljo)**
+	* **U72** - **Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** (Slovenian description) 
+		+ **Razlog izbire:** Kolesarjenje se lahko šteje za športno/prostočasno aktivnost, vendar je treba opozoriti, da ta kode ni specifična; uporaba je odvisna od konteksta, ki v diagnozi ni natančno opredeljen.
+
+**Neopredeljenosti ali potreba po dodatnih informacijah:**
+
+- Za podrobnejšo klasifikacijo poškodbe kolena (npr., S83.0 - **Poškodba kolateralnih ligamentov kolena**) bi bile potrebne dodatne informacije o resni poškodbe MCL (medialni kolateralni ligament).
+- Kode za aktivnost (U72) je uporabljena z zamerno, saj ni jasno, ali je kolesarjenje v kontekstu diagnoze športna/prostočasna aktivnost ali ne; za natančnejšo klasifikacijo bi bile potrebne dodatne informacije.

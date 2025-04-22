@@ -1,47 +1,33 @@
-**Izbrani kodirani diagnozi in okoliščine po MKB-10-AM:**
+**Izbrani kodni razponi za opisano diagnozo:**
 
-1. **Primarni poškodbe:**
-   - **S60.0**: Odrgnina in poteg na zapestju in roki (za opisano poškodbo desnega zapestja in prstov)
-   - **S40.0**: Odrgnina in poteg na ramenu in nadlakti (za opisano poškodbo leve rami)
-   - **S50.0**: Odrgnina in poteg na komolcu in podlakti (za opisano poškodbo leve nadlahti in leve podlahti)
-   - **S60.0**: Odrgnina in poteg na zapestju in roki (za opisano poškodbo leve dlani)
-   - **S80.0**: Odrgnina in poteg na kolenu in goleni (za opisano poškodbo levega kolena)
+1. **Primarni pogoji (poškodbe):**
+	* **S60-S69:** Poškodbe zapestja in roke (za poškodbe desnega zapestja in leve dlani)
+	* **S40-S49:** Poškodbe rame in nadlakti (za poškodbo leve rami)
+	* **S50-S59:** Poškodbe komolca in podlakti (za poškodbe leve nadlahti in leve podlahti)
+	* **S80-S89:** Poškodbe kolena in goleni (za poškodbo levega kolena)
+2. **Zunanji vzroki (mechanizem poškodbe):**
+	* **V10-V19:** Kolesar, poškodovan v transportni nezgodi (kot kolesar, ki se je smrčkal)
+	* **W00-W19:** Padci (specifično **W18.0**: Padec s kolesa, ki ni vključen v promet)
+3. **Aktivnost (dejavnost ob poškodbi):**
+	* **U50-U72:** Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (športna aktivnost, kot je kolesarjenje)
 
-2. **Vključitev MCL (Medialni Kolinearni Ligament) levega kolena:**
-   - **M23.3**: Druge specifične interne lezije kolenskega sklepa, nešpecifikirane (za opisano bolečino MCL pri nategu in palpatorno)
+**Slovenski nazivi in utemeljitev za izbor kod:**
 
-3. **Zunanji vzrok (mechanizem poškodbe):**
-   - **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba (za opisano padce s kolesa)
-
-4. **Aktivnost ob času nezgode:**
-   - **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (za opisano vožnjo s kolesom, ki se lahko šteje za aktivnost v prostem času)
-
-**Slovenski nazivi in utemeljitev izbire:**
-
-1. **S60.0 - Odrgnina in poteg na zapestju in roki**
-   - *Utemeljitev:* Opisan je padec s kolesa, pri katerem je bolnik udaril po desni dlani, kar je privedlo do odrgnin na zapestju in prstih.
-
-2. **S40.0 - Odrgnina in poteg na ramenu in nadlakti**
-   - *Utemeljitev:* Bolnik je ob padcu s kolesa udaril tudi po levi rami, kar je povzročilo odrgnino.
-
-3. **S50.0 - Odrgnina in poteg na komolcu in podlakti**
-   - *Utemeljitev:* Opisana je poškodba leve nadlahti in leve podlahti, ki ustreza odrgninam na komolcu in podlakti.
-
-4. **S60.0 - Odrgnina in poteg na zapestju in roki (za levo dlan)**
-   - *Utemeljitev:* Poleg desnega zapestja je bila poškodovana tudi leva dlan, zato se uporabi isti kode.
-
-5. **S80.0 - Odrgnina in poteg na kolenu in goleni**
-   - *Utemeljitev:* Bolnik je ob padcu udaril tudi po levem kolenu, kar je privedlo do odrgnin in blage oteklosti.
-
-6. **M23.3 - Druge specifične interne lezije kolenskega sklepa, nešpecifikirane**
-   - *Utemeljitev:* Zaradi bolečine MCL (Medialni Kolinearni Ligament) pri nategu in palpatorno, ki ni natančno opredeljena z drugimi kodami, se uporabi ta kode.
-
-7. **V19.4 - Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba**
-   - *Utemeljitev:* Bolnik je bil poškodovan ob padcu s kolesa, kar ustreza transportni nezgodi.
-
-8. **U72 - Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času**
-   - *Utemeljitev:* Vožnja s kolesom lahko velja za aktivnost v prostem času, zato se ta kode uporabi za opis aktivnosti ob času nezgode.
+1. **S60-S69:** **Poškodbe zapestja in roke** - Utemeljitev: Opisana poškodba desnega zapestja in leve dlani.
+	* **Slovenski naziv:** Poškodbe zapestja in roke
+2. **S40-S49:** **Poškodbe rame in nadlakti** - Utemeljitev: Opisana poškodba leve rami.
+	* **Slovenski naziv:** Poškodbe rame in nadlakti
+3. **S50-S59:** **Poškodbe komolca in podlakti** - Utemeljitev: Opisane poškodbe leve nadlahti in leve podlahti.
+	* **Slovenski naziv:** Poškodbe komolca in podlakti
+4. **S80-S89:** **Poškodbe kolena in goleni** - Utemeljitev: Opisana poškodba levega kolena.
+	* **Slovenski naziv:** Poškodbe kolena in goleni
+5. **V10-V19:** **Kolesar, poškodovan v transportni nezgodi** - Utemeljitev: Bolnik se je smrčkal s kolesa.
+	* **Slovenski naziv:** Kolesar, poškodovan v transportni nezgodi
+6. **W00-W19:** **Padci** - Utemeljitev: Bolnik je padel s kolesa.
+	* **Slovenski naziv:** Padci
+7. **U50-U72:** **Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** - Utemeljitev: Kolesarjenje kot športna aktivnost.
+	* **Slovenski naziv:** Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
 
 **Nejasnosti ali potreba po dodatnih informacijah:**
-- Za podrobnejšo oceno stanja MCL levega kolena bi bile priporočljive dodatne diagnostične preiskave (npr., slikovne preiskave kot je MRI).
-- Če bi bil bolnik zdravstveno oskrbovan za druge simptome ali poškodbe, ki niso navedene v opisu, bi bile potrebne dodatne kode za njihovo dokumentacijo.
+- Za podrobnejši kod (npr. za **S60-S69**, **S40-S49**, **S50-S59**, **S80-S89**) bi bila potrebna dodatna specifikacija o naravi poškodbe (npr. zlom, izvlačina, odrgnina itd.), ki ni bila izrecno navedena v opisu.
+- Če bi bile prisotne dodatne zdravstvene težave (npr. infekcije, druge bolezni), ki bi bile direktno povezane z poškodbami, bi bile potrebne dodatne kode za njihov opis.

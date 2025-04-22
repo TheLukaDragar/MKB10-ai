@@ -350,6 +350,7 @@ if __name__ == "__main__":
 
     extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
 
+    print('extracted_categories', extracted_categories)
     df_slo = pd.read_csv(SECTIONS_FILE)
     df_eng = pd.read_csv(ENGLISH_SECTIONS_FILE)
 
@@ -366,25 +367,27 @@ if __name__ == "__main__":
     all_queries = sorted(set(list(grouped_slo.keys()) + list(grouped_hierarchical.keys())))
 
     for query in all_queries:
+        slo = grouped_slo.get(query, [])
+        hier = grouped_hierarchical.get(query, [])
+        print('query', query)
+        print('slo', slo)
+        print('hier', hier)
         json_output[query] = {
-            "original_matches": grouped_slo.get(query, []),
-            "hierarchical_matches": grouped_hierarchical.get(query, [])
+            "original_matches": slo,
+            "hierarchical_matches": hier
         }
 
-    # Save initial matches to JSON
     output_filename = "mkb10_matches.json"
     with open(output_filename, "w", encoding='utf-8') as f:
         json.dump(json_output, f, ensure_ascii=False, indent=2)
 
     print(f"\n{Fore.CYAN}Initial matches saved to {output_filename}{Style.RESET_ALL}")
 
-    # Process all categories in parallel
     all_categories = []
     descriptions_lookup = {}
 
     for query, matches in json_output.items():
         category_codes = []
-        # Build descriptions lookup while processing matches
         for match_type in ['original_matches', 'hierarchical_matches']:
             for match in matches[match_type]:
                 code = match['code']
@@ -405,10 +408,8 @@ if __name__ == "__main__":
     logger.info(f"{Fore.CYAN}Starting parallel processing with {len(all_categories)} categories{Style.RESET_ALL}")
     print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
 
-    # Process all categories in parallel
     results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
 
-    # Combine all valid codes from parallel processing
     all_final_codes = []
     for result in results:
         if 'error' not in result:
@@ -416,22 +417,18 @@ if __name__ == "__main__":
 
     logger.info(f"{Fore.GREEN}Successfully processed {len(all_final_codes)} codes across all categories{Style.RESET_ALL}")
 
-    # Prepare final output
     final_output = {
         "final_codes": all_final_codes
     }
 
-    # Save final codes to file
     final_output_filename = "mkb10_final_codes.json"
     with open(final_output_filename, "w", encoding='utf-8') as f:
         json.dump(final_output, f, ensure_ascii=False, indent=2)
 
-    # Group codes by category for display
     category_grouped_codes = defaultdict(list)
     for code_info in final_output['final_codes']:
         category_grouped_codes[code_info['category_group']].append(code_info)
 
-    # Print organized results
     print(f"\n{Fore.CYAN}Final Low-Level MKB-10 Codes by Category:{Style.RESET_ALL}")
     print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
 

@@ -1,2689 +1,4 @@
 {
-  "M20M25": {
-    "original_matches": [
-      {
-        "code": "M20–M25",
-        "description": "Druge motnje sklepa",
-        "matched_query": "M20M25"
-      }
-    ],
-    "hierarchical_matches": [
-      {
-        "code": "M20",
-        "description": "Pridobljena deformacija prstov rok in stopal",
-        "english_description": "Deformity of finger(s)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.0",
-        "description": "Deformacija prsta(-ov) rok",
-        "english_description": "Deformity of finger(s)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.1",
-        "description": "Izkrivljeni nožni palec (halux valgus) (pridobljen)",
-        "english_description": "Hallux valgus (acquired)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.2",
-        "description": "Neupogljivi (rigidni) nožni palec",
-        "english_description": "Hallux rigidus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.3",
-        "description": "Druge vrste deformacija nožnega palca (pridobljena)",
-        "english_description": "Other deformity of hallux (acquired)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.4",
-        "description": "Druge vrste navzgor upognjenega(-ih) prsta(-ov) stopala (kladivasti prst) (pridobljen)",
-        "english_description": "Other hammer toe(s) (acquired)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.5",
-        "description": "Druge vrste deformacija prsta(-ov) stopala (pridobljena)",
-        "english_description": "Other deformities of toe(s) (acquired)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M20.6",
-        "description": "Pridobljena deformacija prsta(-ov) stopala, neopredeljena",
-        "english_description": "Acquired deformity of toe(s), unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21",
-        "description": "Druge vrste pridobljenih deformacij udov",
-        "english_description": "Valgus deformity, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.0",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje",
-        "english_description": "Valgus deformity, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.00",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, več mest",
-        "english_description": "Valgus deformity, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.01",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, ramenski predel",
-        "english_description": "Valgus deformity, not elsewhere classified, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.02",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, zgornji ud",
-        "english_description": "Valgus deformity, not elsewhere classified, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.03",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, podlaket",
-        "english_description": "Valgus deformity, not elsewhere classified, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.04",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, roka",
-        "english_description": "Valgus deformity, not elsewhere classified, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.05",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, medenični predel in stegno",
-        "english_description": "Valgus deformity, not elsewhere classified, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.06",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, spodnji ud",
-        "english_description": "Valgus deformity, not elsewhere classified, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.07",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, gleženj in stopalo",
-        "english_description": "Valgus deformity, not elsewhere classified, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.08",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, drugo mesto",
-        "english_description": "Valgus deformity, not elsewhere classified, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.09",
-        "description": "Upognjenost navzven (deformacija valgus), ki ni uvrščena drugje, neopredeljeno mesto",
-        "english_description": "Valgus deformity, not elsewhere classified, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.1",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje",
-        "english_description": "Varus deformity, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.10",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, več mest",
-        "english_description": "Varus deformity, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.11",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, ramenski predel",
-        "english_description": "Varus deformity, not elsewhere classified, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.12",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, zgornji ud",
-        "english_description": "Varus deformity, not elsewhere classified, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.13",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, podlaket",
-        "english_description": "Varus deformity, not elsewhere classified, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.14",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, roka",
-        "english_description": "Varus deformity, not elsewhere classified, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.15",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, medenični predel in stegno",
-        "english_description": "Varus deformity, not elsewhere classified, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.16",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, spodnji ud",
-        "english_description": "Varus deformity, not elsewhere classified, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.17",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, gleženj in stopalo",
-        "english_description": "Varus deformity, not elsewhere classified, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.18",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, drugo mesto",
-        "english_description": "Varus deformity, not elsewhere classified, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.19",
-        "description": "Upognjenost navznoter (deformacija varus), ki ni uvrščena drugje, neopredeljeno mesto",
-        "english_description": "Varus deformity, not elsewhere classified, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.2",
-        "description": "Upogibna (fleksijska) deformacija",
-        "english_description": "Flexion deformity, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.20",
-        "description": "Upogibna (fleksijska) deformacija, več mest",
-        "english_description": "Flexion deformity, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.21",
-        "description": "Upogibna (fleksijska) deformacija, ramenski predel",
-        "english_description": "Flexion deformity, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.22",
-        "description": "Upogibna (fleksijska) deformacija, zgornji ud",
-        "english_description": "Flexion deformity, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.23",
-        "description": "Upogibna (fleksijska) deformacija, podlaket",
-        "english_description": "Flexion deformity, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.24",
-        "description": "Upogibna (fleksijska) deformacija, roka",
-        "english_description": "Flexion deformity, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.25",
-        "description": "Upogibna (fleksijska) deformacija, medenični predel in stegno",
-        "english_description": "Flexion deformity, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.26",
-        "description": "Upogibna (fleksijska) deformacija, spodnji ud",
-        "english_description": "Flexion deformity, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.27",
-        "description": "Upogibna (fleksijska) deformacija, gleženj in stopalo",
-        "english_description": "Flexion deformity, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.28",
-        "description": "Upogibna (fleksijska) deformacija, drugo mesto",
-        "english_description": "Flexion deformity, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.29",
-        "description": "Upogibna (fleksijska) deformacija, neopredeljeno mesto",
-        "english_description": "Flexion deformity, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.3",
-        "description": "Padajoče zapestje ali stopalo (pridobljeno)",
-        "english_description": "Wrist or foot drop (acquired) multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.30",
-        "description": "Padajoče zapestje ali stopalo (pridobljeno), več mest",
-        "english_description": "Wrist or foot drop (acquired) multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.33",
-        "description": "Padajoče zapestje ali stopalo (pridobljeno), podlaket",
-        "english_description": "Wrist or foot drop (acquired) forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.37",
-        "description": "Padajoče zapestje ali stopalo (pridobljeno), gleženj in stopalo",
-        "english_description": "Wrist or foot drop (acquired) ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.4",
-        "description": "Plosko stopalo [pes planus] (pridobljeno)",
-        "english_description": "Flat foot [pes planus] (acquired)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.5",
-        "description": "Pridobljena krempljasta, kepasta roka, krempljasta, kepasta noga",
-        "english_description": "Acquired clawhand, clubhand, clawfoot and clubfoot, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.50",
-        "description": "Pridobljena krempljasta, kepasta roka, krempljasta, kepasta noga, več mest",
-        "english_description": "Acquired clawhand, clubhand, clawfoot and clubfoot, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.54",
-        "description": "Pridobljena krempljasta, kepasta roka, krempljasta, kepasta noga, roka",
-        "english_description": "Acquired clawhand, clubhand, clawfoot and clubfoot, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.57",
-        "description": "Pridobljena krempljasta, kepasta roka, krempljasta, kepasta noga, gleženj in stopalo",
-        "english_description": "Acquired clawhand, clubhand, clawfoot and clubfoot, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.6",
-        "description": "Druge pridobljene deformacije gležnja in noge",
-        "english_description": "Other acquired deformities of ankle and foot, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.60",
-        "description": "Druge pridobljene deformacije gležnja in noge, več mest",
-        "english_description": "Other acquired deformities of ankle and foot, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.67",
-        "description": "Druge pridobljene deformacije gležnja in noge, gleženj in stopalo",
-        "english_description": "Other acquired deformities of ankle and foot, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.7",
-        "description": "Neenaka dolžina uda (pridobljena)",
-        "english_description": "Unequal limb length (acquired), multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.70",
-        "description": "Neenaka dolžina uda (pridobljena), več mest",
-        "english_description": "Unequal limb length (acquired), multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.71",
-        "description": "Neenaka dolžina uda (pridobljena), ramenski predel",
-        "english_description": "Unequal limb length (acquired), shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.72",
-        "description": "Neenaka dolžina uda (pridobljena), zgornji ud",
-        "english_description": "Unequal limb length (acquired), upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.73",
-        "description": "Neenaka dolžina uda (pridobljena), podlaket",
-        "english_description": "Unequal limb length (acquired), forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.74",
-        "description": "Neenaka dolžina uda (pridobljena), roka",
-        "english_description": "Unequal limb length (acquired), hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.75",
-        "description": "Neenaka dolžina uda (pridobljena), medenični predel in stegno",
-        "english_description": "Unequal limb length (acquired), pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.76",
-        "description": "Neenaka dolžina uda (pridobljena), spodnji ud",
-        "english_description": "Unequal limb length (acquired), lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.77",
-        "description": "Neenaka dolžina uda (pridobljena), gleženj in stopalo",
-        "english_description": "Unequal limb length (acquired), ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.79",
-        "description": "Neenaka dolžina uda (pridobljena), neopredeljeno mesto",
-        "english_description": "Unequal limb length (acquired), site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.8",
-        "description": "Druge opredeljene pridobljene deformacije udov",
-        "english_description": "Other specified acquired deformities of limbs, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.80",
-        "description": "Druge opredeljene pridobljene deformacije udov, več mest",
-        "english_description": "Other specified acquired deformities of limbs, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.81",
-        "description": "Druge opredeljene pridobljene deformacije udov, ramenski predel",
-        "english_description": "Other specified acquired deformities of limbs, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.82",
-        "description": "Druge opredeljene pridobljene deformacije udov, zgornji ud",
-        "english_description": "Other specified acquired deformities of limbs, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.83",
-        "description": "Druge opredeljene pridobljene deformacije udov, podlaket",
-        "english_description": "Other specified acquired deformities of limbs, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.84",
-        "description": "Druge opredeljene pridobljene deformacije udov, roka",
-        "english_description": "Other specified acquired deformities of limbs, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.85",
-        "description": "Druge opredeljene pridobljene deformacije udov, medenični predel in stegno",
-        "english_description": "Other specified acquired deformities of limbs, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.86",
-        "description": "Druge opredeljene pridobljene deformacije udov, spodnji ud",
-        "english_description": "Other specified acquired deformities of limbs, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.87",
-        "description": "Druge opredeljene pridobljene deformacije udov, gleženj in stopalo",
-        "english_description": "Other specified acquired deformities of limbs, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.89",
-        "description": "Druge opredeljene pridobljene deformacije udov, neopredeljeno mesto",
-        "english_description": "Other specified acquired deformities of limbs, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.9",
-        "description": "Pridobljena deformacija uda, neopredeljena",
-        "english_description": "Acquired deformity of limb, unspecified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.90",
-        "description": "Pridobljena deformacija uda, neopredeljena, več mest",
-        "english_description": "Acquired deformity of limb, unspecified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.91",
-        "description": "Pridobljena deformacija uda, neopredeljena, ramenski predel",
-        "english_description": "Acquired deformity of limb, unspecified, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.92",
-        "description": "Pridobljena deformacija uda, neopredeljena, zgornji ud",
-        "english_description": "Acquired deformity of limb, unspecified, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.93",
-        "description": "Pridobljena deformacija uda, neopredeljena, podlaket",
-        "english_description": "Acquired deformity of limb, unspecified, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.94",
-        "description": "Pridobljena deformacija uda, neopredeljena, roka",
-        "english_description": "Acquired deformity of limb, unspecified, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.95",
-        "description": "Pridobljena deformacija uda, neopredeljena, medenični predel in stegno",
-        "english_description": "Acquired deformity of limb, unspecified, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.96",
-        "description": "Pridobljena deformacija uda, neopredeljena, spodnji ud",
-        "english_description": "Acquired deformity of limb, unspecified, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.97",
-        "description": "Pridobljena deformacija uda, neopredeljena, gleženj in stopalo",
-        "english_description": "Acquired deformity of limb, unspecified, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M21.99",
-        "description": "Pridobljena deformacija uda, neopredeljena, neopredeljeno mesto",
-        "english_description": "Acquired deformity of limb, unspecified, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22",
-        "description": "Okvare pogačice (patele)",
-        "english_description": "Recurrent dislocation of patella",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.0",
-        "description": "Ponavljajoči se izpah (dislokacija) pogačic",
-        "english_description": "Recurrent dislocation of patella",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.1",
-        "description": "Ponavljajoči se nepopolni izpah (subluksacija) pogačice",
-        "english_description": "Recurrent subluxation of patella",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.2",
-        "description": "Patelofemoralne motnje",
-        "english_description": "Patellofemoral disorders",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.3",
-        "description": "Druge motnje pogačice",
-        "english_description": "Other derangements of patella",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.4",
-        "description": "Zmehčanje hrustanca (hondromalacija) pogačice",
-        "english_description": "Chondromalacia patellae",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.8",
-        "description": "Druge okvare pogačice",
-        "english_description": "Other disorders of patella",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M22.9",
-        "description": "Okvara pogačice, neopredeljena",
-        "english_description": "Disorder of patella, unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23",
-        "description": "Notranja motnja kolena",
-        "english_description": "Cystic meniscus, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.0",
-        "description": "Cistični meniskus",
-        "english_description": "Cystic meniscus, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.00",
-        "description": "Cistični meniskus, več mest",
-        "english_description": "Cystic meniscus, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.01",
-        "description": "Cistični sprednji rog medialnega meniskusa",
-        "english_description": "Cystic anterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.02",
-        "description": "Cistični zadnji rog medialnega meniskusa",
-        "english_description": "Cystic posterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.03",
-        "description": "Cistični medialni meniskus, druga ali neopredeljena mesta",
-        "english_description": "Cystic medial meniscus, other and unspecified sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.04",
-        "description": "Cistični sprednji rog lateralnega meniskusa",
-        "english_description": "Cystic anterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.05",
-        "description": "Cistični zadnji rog lateralnega meniskusa",
-        "english_description": "Cystic posterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.06",
-        "description": "Cistični lateralni meniskus, druga ali neopredeljena mesta",
-        "english_description": "Cystic lateral meniscus, other and unspecified sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.09",
-        "description": "Cistični meniskus, neopredeljena mesta",
-        "english_description": "Cystic meniscus, unspecified sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.1",
-        "description": "Diskoidni meniskus (prirojeni)",
-        "english_description": "Discoid meniscus (congenital), multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.10",
-        "description": "Diskoidni meniskus (prirojeni), več mest",
-        "english_description": "Discoid meniscus (congenital), multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.11",
-        "description": "Diskoidni sprednji rog medialnega meniskusa (prirojeni)",
-        "english_description": "Discoid anterior horn of medial meniscus (congenital)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.12",
-        "description": "Diskoidni zadnji rog medialnega meniskusa (prirojeni)",
-        "english_description": "Discoid posterior horn of medial meniscus (congenital)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.13",
-        "description": "Diskoidni medialni meniskus (prirojeni), druga ali neopredeljena mesta",
-        "english_description": "Discoid medial meniscus (congenital), other and unspecified sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.14",
-        "description": "Diskoidni sprednji rog lateralnega meniskusa (prirojeni)",
-        "english_description": "Discoid anterior horn of lateral meniscus (congenital)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.15",
-        "description": "Diskoidni zadnji rog lateralnega meniskusa (prirojeni)",
-        "english_description": "Discoid posterior horn of lateral meniscus (congenital)",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.16",
-        "description": "Diskoidni lateralni meniskus (prirojeni), druga ali neopredeljena mesta",
-        "english_description": "Discoid lateral meniscus (congenital), other and unspecified sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.19",
-        "description": "Diskoidni meniskus (prirojeni), neopredeljeno mesto",
-        "english_description": "Discoid meniscus (congenital), unspecified site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.2",
-        "description": "Motnja meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of meniscus due to old tear or injury, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.20",
-        "description": "Motnja meniskusa zaradi stare raztrganine ali poškodbe, več mest",
-        "english_description": "Derangement of meniscus due to old tear or injury, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.21",
-        "description": "Motnja sprednjega roga medialnega meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of anterior horn of medial meniscus due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.22",
-        "description": "Motnja zadnjega roga medialnega meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of posterior horn of medial meniscus due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.23",
-        "description": "Motnja drugega in neopredeljenega predela medialnega meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of other and unspecified medial meniscus due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.24",
-        "description": "Motnja sprednjega roga lateralnega meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of anterior horn of lateral meniscus due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.25",
-        "description": "Motnja zadnjega roga lateralnega meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of posterior horn of lateral meniscus due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.26",
-        "description": "Motnja drugega in neopredeljenega lateralnega meniskusa zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of other and unspecified lateral meniscus due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.29",
-        "description": "Motnja meniskusa, neopredeljena, zaradi stare raztrganine ali poškodbe",
-        "english_description": "Derangement of meniscus, unspecified, due to old tear or injury",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.3",
-        "description": "Druge motnje meniskusa",
-        "english_description": "Other meniscus derangements, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.30",
-        "description": "Druge motnje meniskusa, več mest",
-        "english_description": "Other meniscus derangements, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.31",
-        "description": "Druge motnje sprednjega roga medialnega meniskusa",
-        "english_description": "Other derangements of anterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.32",
-        "description": "Druge motnje zadnjega roga medialnega meniskusa",
-        "english_description": "Other derangements of posterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.33",
-        "description": "Druge motnje drugega in neopredeljenega medialnega meniskusa",
-        "english_description": "Other derangements of other and unspecified medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.34",
-        "description": "Druge motnje sprednjega roga lateralnega meniskusa",
-        "english_description": "Other derangements of anterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.35",
-        "description": "Druge motnje zadnjega roga lateralnega meniskusa",
-        "english_description": "Other derangements of posterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.36",
-        "description": "Druge motnje drugega in neopredeljenega lateralnega meniskusa",
-        "english_description": "Other derangements of other and unspecified lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.39",
-        "description": "Druge motnje neopredeljenega meniskusa",
-        "english_description": "Other derangements of unspecified meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.4",
-        "description": "Prosto telo v kolenu",
-        "english_description": "Loose body in knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.40",
-        "description": "Prosto telo v kolenu, več mest",
-        "english_description": "Loose body in knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.41",
-        "description": "Prosto telo, sprednja križna vez ali sprednji rog medialnega meniskusa",
-        "english_description": "Loose body, anterior cruciate ligament or anterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.42",
-        "description": "Prosto telo, zadnja križna vez ali zadnji rog medialnega meniskusa",
-        "english_description": "Loose body, posterior cruciate ligament or posterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.43",
-        "description": "Prosto telo, medialna kolateralna vez ali drugi in neopredeljeni medialni meniskus",
-        "english_description": "Loose body, medial collateral ligament or other and unspecified medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.44",
-        "description": "Prosto telo, lateralna kolateralna vez ali sprednji rog lateralnega meniskusa",
-        "english_description": "Loose body, lateral collateral ligament or anterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.45",
-        "description": "Prosto telo, zadnji rog lateralnega meniskusa",
-        "english_description": "Loose body, posterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.46",
-        "description": "Prosto telo, druge vrste in neopredeljeni del lateralnega meniskusa",
-        "english_description": "Loose body, other and unspecified lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.47",
-        "description": "Prosto telo, ovojnična vez (kapsularni ligament)",
-        "english_description": "Loose body, capsular ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.49",
-        "description": "Prosto telo, neopredeljena vez ali neopredeljeni del meniskusa",
-        "english_description": "Loose body, unspecified ligament or unspecified meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.5",
-        "description": "Kronična nestabilnost kolena",
-        "english_description": "Chronic instability of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.50",
-        "description": "Kronična nestabilnost kolena, več mest",
-        "english_description": "Chronic instability of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.51",
-        "description": "Kronična nestabilnost, sprednja križna vez ali sprednji rog medialnega meniskusa",
-        "english_description": "Chronic instability, anterior cruciate ligament or anterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.52",
-        "description": "Kronična nestabilnost, zadnja križna vez ali zadnji rog medialnega meniskusa",
-        "english_description": "Chronic instability, posterior cruciate ligament or posterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.53",
-        "description": "Kronična nestabilnost, medialna kolateralna vez ali drugi in neopredeljeni medialni meniskus",
-        "english_description": "Chronic instability, medial collateral ligament or other and unspecified medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.54",
-        "description": "Kronična nestabilnost, lateralna kolateralna vez ali sprednji rog lateralnega meniskusa",
-        "english_description": "Chronic instability, lateral collateral ligament or anterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.55",
-        "description": "Kronična nestabilnost, zadnji rog lateralnega meniskusa",
-        "english_description": "Chronic instability, posterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.56",
-        "description": "Kronična nestabilnost, druge vrste in neopredeljeni del lateralnega meniskusa",
-        "english_description": "Chronic instability, other and unspecified lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.57",
-        "description": "Kronična nestabilnost, ovojnična vez (kapsularni ligament)",
-        "english_description": "Chronic instability, capsular ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.59",
-        "description": "Kronična nestabilnost, neopredeljena vez ali neopredeljeni del meniskusa",
-        "english_description": "Chronic instability, unspecified ligament or unspecified meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.6",
-        "description": "Druge vrste samodejne pretrganine kolenske(-ih) vezi",
-        "english_description": "Other spontaneous disruption of ligament(s) of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.60",
-        "description": "Druge vrste samodejne pretrganine kolenske(-ih) vezi, več mest",
-        "english_description": "Other spontaneous disruption of ligament(s) of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.61",
-        "description": "Druge vrste samodejne pretrganine sprednje križne vezi",
-        "english_description": "Other spontaneous disruption of anterior cruciate ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.62",
-        "description": "Druge vrste samodejne pretrganine zadnje križne vezi",
-        "english_description": "Other spontaneous disruption of posterior cruciate ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.63",
-        "description": "Druge vrste samodejne pretrganine medialne kolateralne vezi",
-        "english_description": "Other spontaneous disruption of medial collateral ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.64",
-        "description": "Druge vrste samodejne pretrganine lateralne kolateralne vezi",
-        "english_description": "Other spontaneous disruption of lateral collateral ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.67",
-        "description": "Druge vrste samodejne pretrganine ovojnične vezi (kapsularnega ligamenta)",
-        "english_description": "Other spontaneous disruption of capsular ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.69",
-        "description": "Druge vrste samodejne pretrganine kolenske(-ih) vezi, neopredeljene vez ali neopredeljeni del meniskusa",
-        "english_description": "Other spontaneous disruption of ligament(s) of knee, unspecified ligament or unspecified meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.8",
-        "description": "Druge notranje motnje kolena",
-        "english_description": "Other internal derangements of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.80",
-        "description": "Druge notranje motnje kolena, več mest",
-        "english_description": "Other internal derangements of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.81",
-        "description": "Druge notranje motnje sprednje križne vezi ali sprednjega roga medialnega meniskusa",
-        "english_description": "Other internal derangements of anterior cruciate ligament or anterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.82",
-        "description": "Druge notranje motnje zadnje križne vezi ali zadnjega roga medialnega meniskusa",
-        "english_description": "Other internal derangements of posterior cruciate ligament or posterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.83",
-        "description": "Druge notranje motnje medialne kolateralne vezi ali drugega in neopredeljenega medialnega meniskusa",
-        "english_description": "Other internal derangements of medial collateral ligament or other and unspecified medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.84",
-        "description": "Druge notranje motnje lateralne kolateralne vezi ali sprednjega roga lateralnega meniskusa",
-        "english_description": "Other internal derangements of lateral collateral ligament or anterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.85",
-        "description": "Druge notranje motnje zadnjega roga lateralnega meniskusa",
-        "english_description": "Other internal derangements of posterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.86",
-        "description": "Druge notranje motnje druge vrste in neopredeljenega dela lateralnega meniskusa",
-        "english_description": "Other internal derangements of other and unspecified lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.87",
-        "description": "Druge notranje motnje ovojnične vezi (kapsularnega ligamenta)",
-        "english_description": "Other internal derangements of capsular ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.89",
-        "description": "Druge notranje motnje kolena, neopredeljena vez ali neopredeljeni del meniskusa",
-        "english_description": "Other internal derangements of knee, unspecified ligament or unspecified meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.9",
-        "description": "Notranja motnja kolena, neopredeljena",
-        "english_description": "Unspecified internal derangement of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.90",
-        "description": "Neopredeljena notranja motnja kolena, več mest",
-        "english_description": "Unspecified internal derangement of knee, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.91",
-        "description": "Neopredeljena notranja motnja sprednje križne vezi ali sprednjega roga medialnega meniskusa",
-        "english_description": "Unspecified internal derangement of anterior cruciate ligament or anterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.92",
-        "description": "Neopredeljena notranja motnja zadnje križne vezi ali zadnjega roga medialnega meniskusa",
-        "english_description": "Unspecified internal derangement of posterior cruciate ligament or posterior horn of medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.93",
-        "description": "Neopredeljena notranja motnja medialne kolateralne vezi ali drugega in neopredeljenega medialnega meniskusa",
-        "english_description": "Unspecified internal derangement of medial collateral ligament or other and unspecified medial meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.94",
-        "description": "Neopredeljena notranja motnja lateralne kolateralne vezi ali sprednjega roga lateralnega meniskusa",
-        "english_description": "Unspecified internal derangement of lateral collateral ligament or anterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.95",
-        "description": "Neopredeljena notranja motnja zadnjega roga lateralnega meniskusa",
-        "english_description": "Unspecified internal derangement of posterior horn of lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.96",
-        "description": "Neopredeljena notranja motnja druge vrste in neopredeljenega dela lateralnega meniskusa",
-        "english_description": "Unspecified internal derangement of other and unspecified lateral meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.97",
-        "description": "Neopredeljena notranja motnja ovojnične vezi (kapsularnega ligamenta)",
-        "english_description": "Unspecified internal derangement of capsular ligament",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M23.99",
-        "description": "Neopredeljena notranja motnja neopredeljene vezi ali neopredeljenega dela meniskusa",
-        "english_description": "Unspecified internal derangement of unspecified ligament or unspecified meniscus",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24",
-        "description": "Druge specifične motnje sklepa",
-        "english_description": "Loose body in joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.0",
-        "description": "Prosto telo v sklepu",
-        "english_description": "Loose body in joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.00",
-        "description": "Prosto telo v sklepu, več mest",
-        "english_description": "Loose body in joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.01",
-        "description": "Prosto telo v sklepu, ramenski predel",
-        "english_description": "Loose body in joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.02",
-        "description": "Prosto telo v sklepu, zgornji ud",
-        "english_description": "Loose body in joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.03",
-        "description": "Prosto telo v sklepu, podlaket",
-        "english_description": "Loose body in joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.04",
-        "description": "Prosto telo v sklepu, roka",
-        "english_description": "Loose body in joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.05",
-        "description": "Prosto telo v sklepu, medenični predel in stegno",
-        "english_description": "Loose body in joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.07",
-        "description": "Prosto telo v sklepu, gleženj in stopalo",
-        "english_description": "Loose body in joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.08",
-        "description": "Prosto telo v sklepu, drugo mesto",
-        "english_description": "Loose body in joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.09",
-        "description": "Prosto telo v sklepu, neopredeljeno mesto",
-        "english_description": "Loose body in joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.1",
-        "description": "Druge motnje sklepnega hrustanca",
-        "english_description": "Other articular cartilage disorders, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.10",
-        "description": "Druge motnje sklepnega hrustanca, več mest",
-        "english_description": "Other articular cartilage disorders, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.11",
-        "description": "Druge motnje sklepnega hrustanca, ramenski predel",
-        "english_description": "Other articular cartilage disorders, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.12",
-        "description": "Druge motnje sklepnega hrustanca, zgornji ud",
-        "english_description": "Other articular cartilage disorders, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.13",
-        "description": "Druge motnje sklepnega hrustanca, podlaket",
-        "english_description": "Other articular cartilage disorders, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.14",
-        "description": "Druge motnje sklepnega hrustanca, roka",
-        "english_description": "Other articular cartilage disorders, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.15",
-        "description": "Druge motnje sklepnega hrustanca, medenični predel in stegno",
-        "english_description": "Other articular cartilage disorders, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.17",
-        "description": "Druge motnje sklepnega hrustanca, gleženj in stopalo",
-        "english_description": "Other articular cartilage disorders, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.18",
-        "description": "Druge motnje sklepnega hrustanca, drugo mesto",
-        "english_description": "Other articular cartilage disorders, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.19",
-        "description": "Druge motnje sklepnega hrustanca, neopredeljeno mesto",
-        "english_description": "Other articular cartilage disorders, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.2",
-        "description": "Motnja vezi",
-        "english_description": "Disorder of ligament, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.20",
-        "description": "Motnja vezi, več mest",
-        "english_description": "Disorder of ligament, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.21",
-        "description": "Motnja vezi, ramenski predel",
-        "english_description": "Disorder of ligament, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.22",
-        "description": "Motnja vezi, zgornji ud",
-        "english_description": "Disorder of ligament, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.23",
-        "description": "Motnja vezi, podlaket",
-        "english_description": "Disorder of ligament, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.24",
-        "description": "Motnja vezi, roka",
-        "english_description": "Disorder of ligament, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.25",
-        "description": "Motnja vezi, medenični predel in stegno",
-        "english_description": "Disorder of ligament, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.27",
-        "description": "Motnja vezi, gleženj in stopalo",
-        "english_description": "Disorder of ligament, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.28",
-        "description": "Motnja vezi, drugo mesto",
-        "english_description": "Disorder of ligament, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.29",
-        "description": "Motnja vezi, neopredeljeno mesto",
-        "english_description": "Disorder of ligament, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.3",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.30",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, več mest",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.31",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, ramenski predel",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.32",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, zgornji ud",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.33",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, podlaket",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.34",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, roka",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.35",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, medenični predel in stegno",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.36",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, spodnji ud",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.37",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, gleženj in stopalo",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.38",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, drugo mesto",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.39",
-        "description": "Patološki izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ki ni uvrščen drugje, neopredeljeno mesto",
-        "english_description": "Pathological dislocation and subluxation of joint, not elsewhere classified, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.4",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa",
-        "english_description": "Recurrent dislocation and subluxation of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.40",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, več mest",
-        "english_description": "Recurrent dislocation and subluxation of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.41",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, ramenski predel",
-        "english_description": "Recurrent dislocation and subluxation of joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.42",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, zgornji ud",
-        "english_description": "Recurrent dislocation and subluxation of joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.43",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, podlaket",
-        "english_description": "Recurrent dislocation and subluxation of joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.44",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, roka",
-        "english_description": "Recurrent dislocation and subluxation of joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.45",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, medenični predel in stegno",
-        "english_description": "Recurrent dislocation and subluxation of joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.46",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, spodnji ud",
-        "english_description": "Recurrent dislocation and subluxation of joint, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.47",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, gleženj in stopalo",
-        "english_description": "Recurrent dislocation and subluxation of joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.48",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, drugo mesto",
-        "english_description": "Recurrent dislocation and subluxation of joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.49",
-        "description": "Ponavljajoči se izpah (dislokacija) in nepopolni izpah (subluksacija) sklepa, neopredeljeno mesto",
-        "english_description": "Recurrent dislocation and subluxation of joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.5",
-        "description": "Kontraktura sklepa",
-        "english_description": "Contracture of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.50",
-        "description": "Kontraktura sklepa, več mest",
-        "english_description": "Contracture of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.51",
-        "description": "Kontraktura sklepa, ramenski predel",
-        "english_description": "Contracture of joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.52",
-        "description": "Kontraktura sklepa, zgornji ud",
-        "english_description": "Contracture of joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.53",
-        "description": "Kontraktura sklepa, podlaket",
-        "english_description": "Contracture of joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.54",
-        "description": "Kontraktura sklepa, roka",
-        "english_description": "Contracture of joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.55",
-        "description": "Kontraktura sklepa, medenični predel in stegno",
-        "english_description": "Contracture of joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.56",
-        "description": "Kontraktura sklepa, spodnji ud",
-        "english_description": "Contracture of joint, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.57",
-        "description": "Kontraktura sklepa, gleženj in stopalo",
-        "english_description": "Contracture of joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.58",
-        "description": "Kontraktura sklepa, drugo mesto",
-        "english_description": "Contracture of joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.59",
-        "description": "Kontraktura sklepa, neopredeljeno mesto",
-        "english_description": "Contracture of joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.6",
-        "description": "Ankiloza sklepa",
-        "english_description": "Ankylosis of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.60",
-        "description": "Ankiloza sklepa, več mest",
-        "english_description": "Ankylosis of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.61",
-        "description": "Ankiloza sklepa, ramenski predel",
-        "english_description": "Ankylosis of joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.62",
-        "description": "Ankiloza sklepa, zgornji ud",
-        "english_description": "Ankylosis of joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.63",
-        "description": "Ankiloza sklepa, podlaket",
-        "english_description": "Ankylosis of joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.64",
-        "description": "Ankiloza sklepa, roka",
-        "english_description": "Ankylosis of joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.65",
-        "description": "Ankiloza sklepa, medenični predel in stegno",
-        "english_description": "Ankylosis of joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.66",
-        "description": "Ankiloza sklepa, spodnji ud",
-        "english_description": "Ankylosis of joint, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.67",
-        "description": "Ankiloza sklepa, gleženj in stopalo",
-        "english_description": "Ankylosis of joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.68",
-        "description": "Ankiloza sklepa, drugo mesto",
-        "english_description": "Ankylosis of joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.69",
-        "description": "Ankiloza sklepa, neopredeljeno mesto",
-        "english_description": "Ankylosis of joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.7",
-        "description": "Protruzija kolčne ponvice (acetabula)",
-        "english_description": "Protrusio acetabuli",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.8",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje",
-        "english_description": "Other specific joint derangements, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.80",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, več mest",
-        "english_description": "Other specific joint derangements, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.81",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, ramenski predel",
-        "english_description": "Other specific joint derangements, not elsewhere classified, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.82",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, zgornji ud",
-        "english_description": "Other specific joint derangements, not elsewhere classified, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.83",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, podlaket",
-        "english_description": "Other specific joint derangements, not elsewhere classified, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.84",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, roka",
-        "english_description": "Other specific joint derangements, not elsewhere classified, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.85",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, medenični predel in stegno",
-        "english_description": "Other specific joint derangements, not elsewhere classified, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.87",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, gleženj in stopalo",
-        "english_description": "Other specific joint derangements, not elsewhere classified, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.88",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, drugo mesto",
-        "english_description": "Other specific joint derangements, not elsewhere classified, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.89",
-        "description": "Druge opredeljene sklepne motnje, ki niso uvrščene drugje, neopredeljeno mesto",
-        "english_description": "Other specific joint derangements, not elsewhere classified, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.9",
-        "description": "Sklepna motnja, neopredeljena",
-        "english_description": "Unspecified joint derangement, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.90",
-        "description": "Sklepna motnja, neopredeljena, več mest",
-        "english_description": "Unspecified joint derangement, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.91",
-        "description": "Sklepna motnja, neopredeljena, ramenski predel",
-        "english_description": "Unspecified joint derangement, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.92",
-        "description": "Sklepna motnja, neopredeljena, zgornji ud",
-        "english_description": "Unspecified joint derangement, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.93",
-        "description": "Sklepna motnja, neopredeljena, podlaket",
-        "english_description": "Unspecified joint derangement, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.94",
-        "description": "Sklepna motnja, neopredeljena, roka",
-        "english_description": "Unspecified joint derangement, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.95",
-        "description": "Sklepna motnja, neopredeljena, medenični predel in stegno",
-        "english_description": "Unspecified joint derangement, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.97",
-        "description": "Sklepna motnja, neopredeljena, gleženj in stopalo",
-        "english_description": "Unspecified joint derangement, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.98",
-        "description": "Sklepna motnja, neopredeljena, drugo mesto",
-        "english_description": "Unspecified joint derangement, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M24.99",
-        "description": "Sklepna motnja, neopredeljena, neopredeljeno mesto",
-        "english_description": "Unspecified joint derangement, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25",
-        "description": "Druge motnje sklepa,  ki niso uvrščene drugje",
-        "english_description": "Haemarthrosis, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.0",
-        "description": "Izliv krvi v sklep (hemartros)",
-        "english_description": "Haemarthrosis, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.00",
-        "description": "Izliv krvi v sklep (hemartros), več mest",
-        "english_description": "Haemarthrosis, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.01",
-        "description": "Izliv krvi v sklep (hemartros), ramenski predel",
-        "english_description": "Haemarthrosis, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.02",
-        "description": "Izliv krvi v sklep (hemartros), zgornji ud",
-        "english_description": "Haemarthrosis, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.03",
-        "description": "Izliv krvi v sklep (hemartros), podlaket",
-        "english_description": "Haemarthrosis, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.04",
-        "description": "Izliv krvi v sklep (hemartros), roka",
-        "english_description": "Haemarthrosis, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.05",
-        "description": "Izliv krvi v sklep (hemartros), medenični predel in stegno",
-        "english_description": "Haemarthrosis, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.06",
-        "description": "Izliv krvi v sklep (hemartros), spodnji ud",
-        "english_description": "Haemarthrosis, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.07",
-        "description": "Izliv krvi v sklep (hemartros), gleženj in stopalo",
-        "english_description": "Haemarthrosis, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.08",
-        "description": "Izliv krvi v sklep (hemartros), drugo mesto",
-        "english_description": "Haemarthrosis, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.09",
-        "description": "Izliv krvi v sklep (hemartros), neopredeljeno mesto",
-        "english_description": "Haemarthrosis, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.1",
-        "description": "Sklepna fistula",
-        "english_description": "Fistula of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.10",
-        "description": "Sklepna fistula, več mest",
-        "english_description": "Fistula of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.11",
-        "description": "Sklepna fistula, ramenski predel",
-        "english_description": "Fistula of joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.12",
-        "description": "Sklepna fistula, zgornji ud",
-        "english_description": "Fistula of joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.13",
-        "description": "Sklepna fistula, podlaket",
-        "english_description": "Fistula of joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.14",
-        "description": "Sklepna fistula, roka",
-        "english_description": "Fistula of joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.15",
-        "description": "Sklepna fistula, medenični predel in stegno",
-        "english_description": "Fistula of joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.16",
-        "description": "Sklepna fistula, spodnji ud",
-        "english_description": "Fistula of joint, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.17",
-        "description": "Sklepna fistula, gleženj in stopalo",
-        "english_description": "Fistula of joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.18",
-        "description": "Sklepna fistula, drugo mesto",
-        "english_description": "Fistula of joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.19",
-        "description": "Sklepna fistula, neopredeljeno mesto",
-        "english_description": "Fistula of joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.2",
-        "description": "Mlahav sklep",
-        "english_description": "Flail joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.20",
-        "description": "Mlahav sklep, več mest",
-        "english_description": "Flail joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.21",
-        "description": "Mlahav sklep, ramenski predel",
-        "english_description": "Flail joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.22",
-        "description": "Mlahav sklep, zgornji ud",
-        "english_description": "Flail joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.23",
-        "description": "Mlahav sklep, podlaket",
-        "english_description": "Flail joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.24",
-        "description": "Mlahav sklep, roka",
-        "english_description": "Flail joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.25",
-        "description": "Mlahav sklep, medenični predel in stegno",
-        "english_description": "Flail joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.27",
-        "description": "Mlahav sklep, gleženj in stopalo",
-        "english_description": "Flail joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.28",
-        "description": "Mlahav sklep, drugo mesto",
-        "english_description": "Flail joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.29",
-        "description": "Mlahav sklep, neopredeljeno mesto",
-        "english_description": "Flail joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.3",
-        "description": "Druge vrste nestabilnost sklepa",
-        "english_description": "Other instability of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.30",
-        "description": "Druge vrste nestabilnost sklepa, več mest",
-        "english_description": "Other instability of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.31",
-        "description": "Druge vrste nestabilnost sklepa, ramenski predel",
-        "english_description": "Other instability of joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.32",
-        "description": "Druge vrste nestabilnost sklepa, zgornji ud",
-        "english_description": "Other instability of joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.33",
-        "description": "Druge vrste nestabilnost sklepa, podlaket",
-        "english_description": "Other instability of joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.34",
-        "description": "Druge vrste nestabilnost sklepa, roka",
-        "english_description": "Other instability of joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.35",
-        "description": "Druge vrste nestabilnost sklepa, medenični predel in stegno",
-        "english_description": "Other instability of joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.37",
-        "description": "Druge vrste nestabilnost sklepa, gleženj in stopalo",
-        "english_description": "Other instability of joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.38",
-        "description": "Druge vrste nestabilnost sklepa, drugo mesto",
-        "english_description": "Other instability of joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.39",
-        "description": "Druge vrste nestabilnost sklepa, neopredeljeno mesto",
-        "english_description": "Other instability of joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.4",
-        "description": "Sklepni izliv",
-        "english_description": "Effusion of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.40",
-        "description": "Sklepni izliv, več mest",
-        "english_description": "Effusion of joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.41",
-        "description": "Sklepni izliv, ramenski predel",
-        "english_description": "Effusion of joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.42",
-        "description": "Sklepni izliv, zgornji ud",
-        "english_description": "Effusion of joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.43",
-        "description": "Sklepni izliv, podlaket",
-        "english_description": "Effusion of joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.44",
-        "description": "Sklepni izliv, roka",
-        "english_description": "Effusion of joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.45",
-        "description": "Sklepni izliv, medenični predel in stegno",
-        "english_description": "Effusion of joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.46",
-        "description": "Sklepni izliv, spodnji ud",
-        "english_description": "Effusion of joint, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.47",
-        "description": "Sklepni izliv, gleženj in stopalo",
-        "english_description": "Effusion of joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.48",
-        "description": "Sklepni izliv, drugo mesto",
-        "english_description": "Effusion of joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.49",
-        "description": "Sklepni izliv, neopredeljeno mesto",
-        "english_description": "Effusion of joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.5",
-        "description": "Sklepna bolečina",
-        "english_description": "Pain in a joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.50",
-        "description": "Sklepna bolečina, več mest",
-        "english_description": "Pain in a joint, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.51",
-        "description": "Sklepna bolečina, ramenski predel",
-        "english_description": "Pain in a joint, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.52",
-        "description": "Sklepna bolečina, zgornji ud",
-        "english_description": "Pain in a joint, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.53",
-        "description": "Sklepna bolečina, podlaket",
-        "english_description": "Pain in a joint, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.54",
-        "description": "Sklepna bolečina, roka",
-        "english_description": "Pain in a joint, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.55",
-        "description": "Sklepna bolečina, medenični predel in stegno",
-        "english_description": "Pain in a joint, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.56",
-        "description": "Sklepna bolečina, spodnji ud",
-        "english_description": "Pain in a joint, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.57",
-        "description": "Sklepna bolečina, gleženj in stopalo",
-        "english_description": "Pain in a joint, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.58",
-        "description": "Sklepna bolečina, drugo mesto",
-        "english_description": "Pain in a joint, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.59",
-        "description": "Sklepna bolečina, neopredeljeno mesto",
-        "english_description": "Pain in a joint, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.6",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje",
-        "english_description": "Stiffness of joint, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.60",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, več mest",
-        "english_description": "Stiffness of joint, not elsewhere classified, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.61",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, ramenski predel",
-        "english_description": "Stiffness of joint, not elsewhere classified, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.62",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, zgornji ud",
-        "english_description": "Stiffness of joint, not elsewhere classified, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.63",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, podlaket",
-        "english_description": "Stiffness of joint, not elsewhere classified, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.64",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, roka",
-        "english_description": "Stiffness of joint, not elsewhere classified, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.65",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, medenični predel in stegno",
-        "english_description": "Stiffness of joint, not elsewhere classified, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.66",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, spodnji ud",
-        "english_description": "Stiffness of joint, not elsewhere classified, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.67",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, gleženj in stopalo",
-        "english_description": "Stiffness of joint, not elsewhere classified, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.68",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, drugo mesto",
-        "english_description": "Stiffness of joint, not elsewhere classified, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.69",
-        "description": "Okorelost sklepa, ki ni uvrščena drugje, neopredeljeno mesto",
-        "english_description": "Stiffness of joint, not elsewhere classified, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.7",
-        "description": "Koščeni izrastek (osteofit)",
-        "english_description": "Osteophyte, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.70",
-        "description": "Koščeni izrastek (osteofit), več mest",
-        "english_description": "Osteophyte, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.71",
-        "description": "Koščeni izrastek (osteofit), ramenski predel",
-        "english_description": "Osteophyte, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.72",
-        "description": "Koščeni izrastek (osteofit), zgornji ud",
-        "english_description": "Osteophyte, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.73",
-        "description": "Koščeni izrastek (osteofit), podlaket",
-        "english_description": "Osteophyte, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.74",
-        "description": "Koščeni izrastek (osteofit), roka",
-        "english_description": "Osteophyte, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.75",
-        "description": "Koščeni izrastek (osteofit), medenični predel in stegno",
-        "english_description": "Osteophyte, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.76",
-        "description": "Koščeni izrastek (osteofit), spodnji ud",
-        "english_description": "Osteophyte, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.77",
-        "description": "Koščeni izrastek (osteofit), gleženj in stopalo",
-        "english_description": "Osteophyte, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.78",
-        "description": "Koščeni izrastek (osteofit), drugo mesto",
-        "english_description": "Osteophyte, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.79",
-        "description": "Koščeni izrastek (osteofit), neopredeljeno mesto",
-        "english_description": "Osteophyte, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.8",
-        "description": "Druge opredeljene motnje sklepa",
-        "english_description": "Other specified joint disorders, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.80",
-        "description": "Druge opredeljene motnje sklepa, več mest",
-        "english_description": "Other specified joint disorders, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.81",
-        "description": "Druge opredeljene motnje sklepa, ramenski predel",
-        "english_description": "Other specified joint disorders, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.82",
-        "description": "Druge opredeljene motnje sklepa, zgornji ud",
-        "english_description": "Other specified joint disorders, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.83",
-        "description": "Druge opredeljene motnje sklepa, podlaket",
-        "english_description": "Other specified joint disorders, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.84",
-        "description": "Druge opredeljene motnje sklepa, roka",
-        "english_description": "Other specified joint disorders, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.85",
-        "description": "Druge opredeljene motnje sklepa, medenični predel in stegno",
-        "english_description": "Other specified joint disorders, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.86",
-        "description": "Druge opredeljene motnje sklepa, spodnji ud",
-        "english_description": "Other specified joint disorders, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.87",
-        "description": "Druge opredeljene motnje sklepa, gleženj in stopalo",
-        "english_description": "Other specified joint disorders, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.88",
-        "description": "Druge opredeljene motnje sklepa, drugo mesto",
-        "english_description": "Other specified joint disorders, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.89",
-        "description": "Druge opredeljene motnje sklepa, neopredeljeno mesto",
-        "english_description": "Other specified joint disorders, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.9",
-        "description": "Motnja sklepa, neopredeljena",
-        "english_description": "Unspecified joint disorder, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.90",
-        "description": "Neopredeljena motnja sklepa, več mest",
-        "english_description": "Unspecified joint disorder, multiple sites",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.91",
-        "description": "Neopredeljena motnja sklepa, ramenski predel",
-        "english_description": "Unspecified joint disorder, shoulder region",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.92",
-        "description": "Neopredeljena motnja sklepa, zgornji ud",
-        "english_description": "Unspecified joint disorder, upper arm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.93",
-        "description": "Neopredeljena motnja sklepa, podlaket",
-        "english_description": "Unspecified joint disorder, forearm",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.94",
-        "description": "Neopredeljena motnja sklepa, roka",
-        "english_description": "Unspecified joint disorder, hand",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.95",
-        "description": "Neopredeljena motnja sklepa, medenični predel in stegno",
-        "english_description": "Unspecified joint disorder, pelvic region and thigh",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.96",
-        "description": "Neopredeljena motnja sklepa, spodnji ud",
-        "english_description": "Unspecified joint disorder, lower leg",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.97",
-        "description": "Neopredeljena motnja sklepa, gleženj in stopalo",
-        "english_description": "Unspecified joint disorder, ankle and foot",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.98",
-        "description": "Neopredeljena motnja sklepa, drugo mesto",
-        "english_description": "Unspecified joint disorder, other site",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "M25.99",
-        "description": "Neopredeljena motnja sklepa, neopredeljeno mesto",
-        "english_description": "Unspecified joint disorder, site unspecified",
-        "matched_query": "M20M25",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      }
-    ]
-  },
   "S40S49": {
     "original_matches": [
       {
@@ -5766,6 +3081,1879 @@
       }
     ]
   },
+  "U50U72": {
+    "original_matches": [
+      {
+        "code": "U50–U72",
+        "description": "Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času",
+        "matched_query": "U50U72"
+      }
+    ],
+    "hierarchical_matches": [
+      {
+        "code": "U50",
+        "description": "Ekipni športi z žogo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.0",
+        "description": "Nogomet",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.00",
+        "description": "Rugbi, avstralska pravila",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.01",
+        "description": "Rugbi, Rugbi union pravila",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.02",
+        "description": "Rugbi, Rugbi league pravila",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.03",
+        "description": "Rugbi, neopredeljen",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.04",
+        "description": "Nogomet",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.05",
+        "description": "Rugbi, Touch pravila",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.08",
+        "description": "Druga opredeljena vrsta nogometa",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.09",
+        "description": "Nogomet, neopredeljen",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.1",
+        "description": "Košarka",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.2",
+        "description": "Rokomet",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.3",
+        "description": "Netball",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.30",
+        "description": "Netball, v dvorani",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.39",
+        "description": "Netball, nedoločen",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.4",
+        "description": "Korfbal",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.5",
+        "description": "Odbojka",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.8",
+        "description": "Ostali opredeljeni ekipni športi z žogo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U50.9",
+        "description": "Neopredeljeni ekipni športi z žogo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51",
+        "description": "Ekipni športi s kijem ali palico",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.0",
+        "description": "Bejzbol",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.1",
+        "description": "Kriket",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.2",
+        "description": "Hokej",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.20",
+        "description": "Hokej na ledu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.21",
+        "description": "Hokej, street and ball pravila",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.22",
+        "description": "Hokej na travi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.23",
+        "description": "Floorball/hokej na parketu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.28",
+        "description": "Druga opredeljena vrsta hokeja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.29",
+        "description": "Hokej, neopredeljen",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.3",
+        "description": "Softball",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.4",
+        "description": "T-ball",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.8",
+        "description": "Ostali opredeljeni ekipni športi s kijem ali palico",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U51.9",
+        "description": "Neopredeljeni ekipni športi s kijem ali palico",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U52",
+        "description": "Ekipni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U52.0",
+        "description": "Sinhrono plavanje ",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U52.1",
+        "description": "Vaterpolo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U52.8",
+        "description": "Ostali opredeljeni ekipni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U52.9",
+        "description": "Neopredeljeni ekipni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53",
+        "description": "Vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.0",
+        "description": "Kanu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.1",
+        "description": "Vodni skuter",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.2",
+        "description": "Kajak",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.3",
+        "description": "Dirka čolnov",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.4",
+        "description": "Veslanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.5",
+        "description": "Surfanje s čolni",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.6",
+        "description": "Jadranje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.7",
+        "description": "Surfanje s smučmi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.8",
+        "description": "Drugi opredeljeni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U53.9",
+        "description": "Neopredeljeni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54",
+        "description": "Individualni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.0",
+        "description": "Skakanje v vodo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.00",
+        "description": "Skakanje v vodo, s pečine",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.01",
+        "description": "Skakanje v vodo, z odskočne deske",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.02",
+        "description": "Skakanje v vodo, s skakalnice",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.08",
+        "description": "Drugo opredeljeno skakanje v vodo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.09",
+        "description": "Skakanje v vodo, neopredeljeno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.1",
+        "description": "Ribolov",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.10",
+        "description": "Ribolov na skali",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.18",
+        "description": "Drug opredeljen ribolov",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.19",
+        "description": "Ribolov, neopredeljen",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.2",
+        "description": "Potapljanje s potapljaško opremo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.3",
+        "description": "Potapljanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.4",
+        "description": "Deskanje na vodi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.5",
+        "description": "Plavanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.50",
+        "description": "Plavanje, tekmovalno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.51",
+        "description": "Plavanje, rekreacijsko",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.59",
+        "description": "Plavanje, neopredeljeno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.6",
+        "description": "Smučanje na vodi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.60",
+        "description": "Skakanje s smučmi na vodi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.61",
+        "description": "Wake boarding",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.68",
+        "description": "Drugo opredeljeno smučanje na vodi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.69",
+        "description": "Smučanje na vodi, neopredeljeno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.7",
+        "description": "Deskanje na vodi z jadrom",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.8",
+        "description": "Drugi opredeljeni individualni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U54.9",
+        "description": "Neopredeljeni individualni vodni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55",
+        "description": "Zimski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.0",
+        "description": "Bob",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.1",
+        "description": "Drsanje in umetnostno drsanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.2",
+        "description": "Smučanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.20",
+        "description": "Alpsko smučanje in smuk",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.21",
+        "description": "Nordijsko smučanje in tek na smučeh",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.22",
+        "description": "Smučanje, prosti slog",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.23",
+        "description": "Smučarski skoki",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.28",
+        "description": "Drugo opredeljeno smučanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.29",
+        "description": "Smučanje, neopredeljeno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.3",
+        "description": "Motorne sani ",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.4",
+        "description": "Deskanje na snegu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.5",
+        "description": "Hitrostno drsanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.6",
+        "description": "Sankanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.7",
+        "description": "Curling",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.8",
+        "description": "Ostali opredeljeni zimski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U55.9",
+        "description": "Neopredeljeni zimski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56",
+        "description": "Individualne športne aktivnosti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.0",
+        "description": "Aerobika in dinamična vadba",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.00",
+        "description": "Aerobika",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.01",
+        "description": "Dinamična vadba",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.1",
+        "description": "Tek",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.2",
+        "description": "Hoja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.3",
+        "description": "Atletika",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.30",
+        "description": "Tek čez ovire",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.31",
+        "description": "Atletika, šprint in tek na srednje proge",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.32",
+        "description": "Atletika, tek na dolge proge",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.33",
+        "description": "Atletika, skok v višino",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.34",
+        "description": "Atletika, skok v daljino",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.35",
+        "description": "Atletika, skok ob palici",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.36",
+        "description": "Atletika, troskok",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.37",
+        "description": "Atletika, meti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.38",
+        "description": "Ostale opredeljene discipline atletike",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.39",
+        "description": "Atletika, neopredeljena",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.4",
+        "description": "Hitra hoja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.5",
+        "description": "Maraton",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.8",
+        "description": "Ostale opredeljene individualne atletske aktivnosti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U56.9",
+        "description": "Neopredeljene individualne atletske aktivnosti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57",
+        "description": "Akrobatski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.0",
+        "description": "Gimnastika",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.00",
+        "description": "Gimnastika, gred",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.01",
+        "description": "Gimnastika, na parterju",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.02",
+        "description": "Gimnastika, drog",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.03",
+        "description": "Gimnastika, bradlja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.04",
+        "description": "Gimnastika, krogi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.05",
+        "description": "Gimnastika, konj z ročaji",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.06",
+        "description": "Gimnastika, trampolin",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.07",
+        "description": "Gimnastika, preskok",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.08",
+        "description": "Ostala opredeljena gimnastika",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.09",
+        "description": "Gimnastika, neopredeljena",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.8",
+        "description": "Ostali opredeljeni akrobatski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U57.9",
+        "description": "Neopredeljeni akrobatski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U58",
+        "description": "Estetski šport",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U58.0",
+        "description": "Ples",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U58.8",
+        "description": "Drug opredeljen estetski šport",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U58.9",
+        "description": "Neopredeljen estetski šport",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59",
+        "description": "Športi z loparjem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.0",
+        "description": "Badminton",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.1",
+        "description": "Racquetball",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.2",
+        "description": "Skvoš",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.3",
+        "description": "Namizni tenis",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.4",
+        "description": "Tenis",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.8",
+        "description": "Ostali opredeljeni športi z loparjem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U59.9",
+        "description": "Neopredeljeni športi z loparjem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60",
+        "description": "Športi s tarčo, natančni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.0",
+        "description": "Lokostrelstvo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.1",
+        "description": "Biljardni šport",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.2",
+        "description": "Kegljanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.20",
+        "description": "Kegljanje na travi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.21",
+        "description": "Balinanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.22",
+        "description": "Kegljanje v dvorani",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.29",
+        "description": "Kegljanje, neopredeljeno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.3",
+        "description": "Kriket",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.4",
+        "description": "Pikado",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.5",
+        "description": "Golf",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.6",
+        "description": "Streljanje s pištolo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.8",
+        "description": "Ostali opredeljeni športi s tarčo in natančni poirti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U60.9",
+        "description": "Neopredeljeni športi s tarčo in natančni poirti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61",
+        "description": "Borilni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.0",
+        "description": "Aikido",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.1",
+        "description": "Boks",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.2",
+        "description": "Sabljanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.3",
+        "description": "Borilne veščine",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.30",
+        "description": "Judo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.31",
+        "description": "Ju-jitsu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.32",
+        "description": "Karate",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.33",
+        "description": "Kendo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.34",
+        "description": "Kikboks",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.35",
+        "description": "Kung fu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.36",
+        "description": "Taekwondo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.38",
+        "description": "Ostale opredeljene borilne veščine",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.39",
+        "description": "Neopredeljene borilne veščine",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.4",
+        "description": "Rokoborba",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.40",
+        "description": "Rokoborba, prosti slog",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.41",
+        "description": "Rokoborba, grško-rimski slog",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.42",
+        "description": "Poklicna rokoborba",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.48",
+        "description": "Ostala opredeljena rokoborba",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.49",
+        "description": "Rokoborba, neopredeljena",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.5",
+        "description": "Tečaj samoobrambe",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.8",
+        "description": "Ostali opredeljeni borilni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U61.9",
+        "description": "Neopredeljeni borilni športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62",
+        "description": "Trening moči",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.0",
+        "description": "Dvigovanje uteži",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.1",
+        "description": "Dvigovanje uteži",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.3",
+        "description": "Bodybuilding",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.4",
+        "description": "Tekmovanje v sekanju drv",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.5",
+        "description": "Tekmovanje v žaganju drv",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.8",
+        "description": "Ostali opredeljeni treningi moči",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U62.9",
+        "description": "Neopredeljeni treningi moči",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63",
+        "description": "Jahanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.0",
+        "description": "Jahalna tekmovanja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.01",
+        "description": "Dresurno jahanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.02",
+        "description": "Preskakovanje ovir",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.03",
+        "description": "Galopske dirke čez ovire",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.08",
+        "description": "Drugo opredeljeno jahalno tekmovanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.09",
+        "description": "Jahalno tekmovanje, neopredeljeno",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.1",
+        "description": "Vzdržljivostno jahanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.2",
+        "description": "Polo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.3",
+        "description": "Konjske dirke, dogodki",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.31",
+        "description": "Konjske dirke",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.32",
+        "description": "Konjske dirke čez ovire",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.4",
+        "description": "Rodeo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.5",
+        "description": "Navadno jahanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.6",
+        "description": "Jahanje v drncu",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.8",
+        "description": "Drugo opredeljeno konjsko jahanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U63.9",
+        "description": "Neopredeljeno konjsko jahanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64",
+        "description": "Adrenalinski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.0",
+        "description": "Spust po vrvi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.1",
+        "description": "Pohodništvo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.2",
+        "description": "Alpinizem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.3",
+        "description": "Orientacija",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.4",
+        "description": "Rafing",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.5",
+        "description": "Rafting na divjih vodah",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.6",
+        "description": "Plezanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.7",
+        "description": "Skok z elastiko",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.8",
+        "description": "Ostali opredeljeni adrenalinski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U64.9",
+        "description": "Neopredeljeni adrenalinski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65",
+        "description": "Motošporti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65.0",
+        "description": "Vožnja z ATV štirikolesniki",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65.1",
+        "description": "Motociklizem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65.2",
+        "description": "Avtomobilizem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65.3",
+        "description": "Gokart",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65.8",
+        "description": "Ostali opredeljeni motošporti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U65.9",
+        "description": "Neopredeljeni motošporti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66",
+        "description": "Športi na kolesih brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.0",
+        "description": "Kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.00",
+        "description": "Kolesarjenje, BMX",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.01",
+        "description": "Gorsko kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.02",
+        "description": "Cestno kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.03",
+        "description": "Velodrom",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.08",
+        "description": "Ostalo opredeljeno kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.09",
+        "description": "Neopredeljeno kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.1",
+        "description": "Inline drsanje in rolanje ",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.2",
+        "description": "Rolanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.3",
+        "description": "Rolkanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.4",
+        "description": "Vožnja s skirojem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.40",
+        "description": "Vožnja z zložljivim skirojem brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.49",
+        "description": "Druga in neopredeljena vrsta vožnje s skirojem brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.5",
+        "description": "Jadranje na kolesih",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.8",
+        "description": "Ostali opredeljeni športi na kolesih brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.9",
+        "description": "Neopredeljeni športi na kolesih brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67",
+        "description": "Večdisciplinski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.0",
+        "description": "Biatlon",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.1",
+        "description": "Deseteroboj",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.2",
+        "description": "Sedmeroboj",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.3",
+        "description": "Moderni peteroboj",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.4",
+        "description": "Triatlon",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.40",
+        "description": "Triatlon, kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.41",
+        "description": "Triatlon, tek",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.42",
+        "description": "Triatlon, plavanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.49",
+        "description": "Triatlon, nedoločen",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.8",
+        "description": "Ostali opredeljeni večdisciplinski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U67.9",
+        "description": "Neopredeljeni večdisciplinski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68",
+        "description": "Letalski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.1",
+        "description": "Akrobatsko letenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.2",
+        "description": "Jadranje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.3",
+        "description": "Jadranje z zmajem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.4",
+        "description": "Padalstvo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.5",
+        "description": "Preleti z jadralnimi padali",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.6",
+        "description": "Polet z balonom",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.8",
+        "description": "Ostali opredeljeni letalski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U68.9",
+        "description": "Neopredeljeni letalski športi",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U69",
+        "description": "Ostale rekreacijske aktivnosti povezane s šolo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U69.0",
+        "description": "Telovadba",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U69.8",
+        "description": "Ostale določene rekreacijske aktivnosti povezane s šolo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U69.9",
+        "description": "Nedoločene rekreacijske aktivnosti povezane s šolo",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U70",
+        "description": "Ostale določene športne in vadbene aktivnosti",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U70.0",
+        "description": "Aktivnosti povezane s fitnesom, neklasificirane",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U70.8",
+        "description": "Ostala določena športna in vadbena aktivnost",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U71",
+        "description": "Nedoločena športna in vadbena aktivnost",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U72",
+        "description": "Aktivnosti v prostem času, neklasificirane",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      }
+    ]
+  },
   "V10V19": {
     "original_matches": [
       {
@@ -6347,6 +5535,682 @@
         "description": "Kolesar, poškodovan v neopredeljeni prometni nezgodi",
         "english_description": "Pedal cyclist [any] injured in unspecified traffic accident",
         "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      }
+    ]
+  },
+  "W00W19": {
+    "original_matches": [
+      {
+        "code": "W00–W19",
+        "description": "Padci",
+        "matched_query": "W00W19"
+      }
+    ],
+    "hierarchical_matches": [
+      {
+        "code": "W00",
+        "description": "Padec na isti ravni, na ledu in snegu",
+        "english_description": "Fall on same level involving ice and snow",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W01",
+        "description": "Padec na isti ravni, ker oseba zdrsne, se spotakne ali zaplete",
+        "english_description": "Fall on same level from slipping",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W01.0",
+        "description": "Padec na isti ravni zaradi zdrsa",
+        "english_description": "Fall on same level from slipping",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W01.1",
+        "description": "Padec na isti ravni zaradi spotaknitve",
+        "english_description": "Fall on same level from tripping",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W01.2",
+        "description": "Padec na isti ravni zaradi zapletanja",
+        "english_description": "Fall on same level from stumbling",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02",
+        "description": "Padec na drsalkah, smučeh, kotalkah ali deskah za smučanje (na snegu)",
+        "english_description": "Fall involving roller-skates",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.0",
+        "description": "Padec z rolerji",
+        "english_description": "Fall involving roller-skates",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.1",
+        "description": "Padec z rolko",
+        "english_description": "Fall involving skateboard",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.2",
+        "description": "Padec z vodnimi smučmi",
+        "english_description": "Fall involving water ski",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.3",
+        "description": "Padec z zimskimi smučmi",
+        "english_description": "Fall involving snow ski",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.4",
+        "description": "Padec z bordom",
+        "english_description": "Fall involving snow board",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.5",
+        "description": "Padec z drsalkami",
+        "english_description": "Fall involving ice-skates",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.6",
+        "description": "Padec s skirojem",
+        "english_description": "Fall involving scooter, nonpowered",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.7",
+        "description": "Padec z otroškim vozičkom",
+        "english_description": "Fall involving baby carriage",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.8",
+        "description": "Padec z otroško hojico",
+        "english_description": "Fall involving baby walker",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.9",
+        "description": "Padec z drugim ali nedeločenim vozilom, namenjenim peščem",
+        "english_description": "Fall involving other and unspecified pedestrian conveyance",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W03",
+        "description": "Drugi padci na isti ravni zaradi trčenja ali prerivanja z drugo osebo",
+        "english_description": "Other fall on same level due to collision with, or pushing by, another person",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W04",
+        "description": "Padec osebe, ki jo nosijo ali podpirajo drugi",
+        "english_description": "Fall while being carried or supported by other persons",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W05",
+        "description": "Padec z invalidskega vozička",
+        "english_description": "Fall involving wheelchair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06",
+        "description": "Padec s postelje",
+        "english_description": "Fall involving bunk bed",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.0",
+        "description": "Padec s pograda",
+        "english_description": "Fall involving bunk bed",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.1",
+        "description": "Padec s postelje za posebne namene",
+        "english_description": "Fall involving special purpose bed",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.2",
+        "description": "Padec z otroške posteljice",
+        "english_description": "Fall involving cot",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.3",
+        "description": "Padec iz košare za dojenčke",
+        "english_description": "Fall involving bassinet",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.4",
+        "description": "Padec iz zibelke",
+        "english_description": "Fall involving cradle",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.5",
+        "description": "Padec z viseče postelje/viseče mreže",
+        "english_description": "Fall involving hammock",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.6",
+        "description": "Padec s postelje",
+        "english_description": "Fall involving conventional bed",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.8",
+        "description": "Padec z druge opredeljene postelje",
+        "english_description": "Fall involving other specified bed",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W06.9",
+        "description": "Padec z neopredeljene postelje",
+        "english_description": "Fall involving unspecified bed",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07",
+        "description": "Padec s stola",
+        "english_description": "Fall involving rocking chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.0",
+        "description": "Padec z gugalnega stola",
+        "english_description": "Fall involving rocking chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.1",
+        "description": "Padec s stolčka za hranjenje",
+        "english_description": "Fall involving folding chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.2",
+        "description": "Padec z vrtljivega stola",
+        "english_description": "Fall involving revolving chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.3",
+        "description": "Padec s stola brez naslonjala",
+        "english_description": "Fall involving stool",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.4",
+        "description": "Padec s stolčka za hranjenje",
+        "english_description": "Fall involving high-chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.5",
+        "description": "Padec s kopalnega stola",
+        "english_description": "Fall involving bath chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.6",
+        "description": "Padec s toaletnega stola",
+        "english_description": "Fall involving commode chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.7",
+        "description": "Padec s stopniščnega dvigala s stolom",
+        "english_description": "Fall involving lift assistance chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.8",
+        "description": "Padec z drugega opredeljenega stola",
+        "english_description": "Fall involving other specified chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W07.9",
+        "description": "Padec z neopredeljenega stola",
+        "english_description": "Fall involving unspecified chair",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W08",
+        "description": "Padec z drugega pohištva",
+        "english_description": "Fall involving baby change table",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W08.0",
+        "description": "Padec s previjalne mize",
+        "english_description": "Fall involving baby change table",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W08.1",
+        "description": "Padec s otroškega igralnega centra",
+        "english_description": "Fall involving baby exerciser",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W08.2",
+        "description": "Padec z mize",
+        "english_description": "Fall involving table",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W08.8",
+        "description": "Padec z drugega opredeljenega pohištva",
+        "english_description": "Fall involving other specified furniture",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W08.9",
+        "description": "Padec z neopredeljenega pohištva",
+        "english_description": "Fall involving unspecified furniture",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09",
+        "description": "Padec z igral na igrišču",
+        "english_description": "Fall involving tree house",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.0",
+        "description": "Padec iz hišice na drevesu",
+        "english_description": "Fall involving tree house",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.1",
+        "description": "Padec z igrala z zajlo",
+        "english_description": "Fall involving flying fox",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.2",
+        "description": "Padec s plezalnih naprav",
+        "english_description": "Fall involving playground climbing apparatus",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.3",
+        "description": "Padec s tobogana",
+        "english_description": "Fall involving slide",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.4",
+        "description": "Padec z gugalnice",
+        "english_description": "Fall involving swing",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.5",
+        "description": "Padec z gugalnice",
+        "english_description": "Fall involving seesaw",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.6",
+        "description": "Padec s trampolina",
+        "english_description": "Fall involving trampoline",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.8",
+        "description": "Padec z drugega opredeljenega zunanjega igrala",
+        "english_description": "Fall involving other specified playground equipment",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W09.9",
+        "description": "Padec z neopredeljenega zunanjega igrala",
+        "english_description": "Fall involving unspecified playground equipment",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W10",
+        "description": "Padec po stopnicah ali s stopnišča ali stopnic",
+        "english_description": "Fall on and from escalator",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W10.0",
+        "description": "Padec po in s tekočih stopnic",
+        "english_description": "Fall on and from escalator",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W10.1",
+        "description": "Padec po in s premičnih stopnic",
+        "english_description": "Fall on and from travelator",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W10.2",
+        "description": "Padec po in s ploščadi",
+        "english_description": "Fall on and from ramp",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W10.9",
+        "description": "Padec po in z ostalih neopredeljenih stopnišč in stopnic",
+        "english_description": "Fall on and from other and unspecified stairs and steps",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W11",
+        "description": "Padec na lestvi ali z nje",
+        "english_description": "Fall on and from ladder",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W12",
+        "description": "Padec na zidarskem odru ali z njega",
+        "english_description": "Fall on and from scaffolding",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13",
+        "description": "Padec iz zgradbe ali konstrukcije ali skoznjo",
+        "english_description": "Fall from or through balcony or veranda",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.0",
+        "description": "Padec z balkona ali verande",
+        "english_description": "Fall from or through balcony or veranda",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.1",
+        "description": "Padec čez okno",
+        "english_description": "Fall out of or through window",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.2",
+        "description": "Padec skozi steklena vrata",
+        "english_description": "Fall out of or through glass door",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.3",
+        "description": "Padec s strehe",
+        "english_description": "Fall from roof",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.4",
+        "description": "Padec skozi streho",
+        "english_description": "Fall through roof",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.5",
+        "description": "Padec iz ali med nadstropji",
+        "english_description": "Fall from or through floor",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.8",
+        "description": "Padec iz ostale opredeljene zgradbe ali konstrukcije ali skoznjo",
+        "english_description": "Fall from, out of or through other specified building or structure",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W13.9",
+        "description": "Padec iz neopredeljene zgradbe ali konstrukcije ali skoznjo",
+        "english_description": "Fall from, out of or through unspecified building or structure",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W14",
+        "description": "Padec z drevesa",
+        "english_description": "Fall from tree",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W15",
+        "description": "Padec s pečine",
+        "english_description": "Fall from cliff",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W16",
+        "description": "Potapljanje ali skakanje v vodo, ob katerem nastane poškodba, ki ni utopitev ali potopitev",
+        "english_description": "Diving or jumping into water striking or hitting bottom",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W16.0",
+        "description": "Potapljanje ali skakanje v vodo in udarec ob dno",
+        "english_description": "Diving or jumping into water striking or hitting bottom",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W16.1",
+        "description": "Potapljanje ali skakanje v vodo in udarec ob stene ali skakalno desko",
+        "english_description": "Diving or jumping into water striking or hitting wall or diving board",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W16.2",
+        "description": "Potapljanje ali skakanje v vodo in udarec ob vodno gladino",
+        "english_description": "Diving or jumping into water striking or hitting water surface",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W16.9",
+        "description": "Drug in neopredeljen kontakt kot posledica potapljanja ali skakanja v vodo, ob katerem nastane poškodba, ki ni utopitev ali potopitev",
+        "english_description": "Other and unspecified contact when diviing or jumping into water causing injury other than drowning or submersion",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17",
+        "description": "Druge vrste padec z ene ravni na drugo",
+        "english_description": "Fall into hole",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.0",
+        "description": "Padec v luknjo",
+        "english_description": "Fall into hole",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.1",
+        "description": "Padec v kamnolom",
+        "english_description": "Fall into quarry",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.2",
+        "description": "Padec v odvodni kanal",
+        "english_description": "Fall into storm drain",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.3",
+        "description": "Padec v jašek",
+        "english_description": "Fall into shaft",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.4",
+        "description": "Padec v izpraznjen plavalni bazen",
+        "english_description": "Fall into empty swimming-pool",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.5",
+        "description": "Padec s premičnega dvignjenega delovnega odra [MEWP]",
+        "english_description": "Fall from mobile elevated work platform [MEWP]",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.8",
+        "description": "Ostali opredeljeni padci z ene ravni na drugo",
+        "english_description": "Other specified fall from one level to another",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W17.9",
+        "description": "Neopredeljeni padci z ene ravni na drugo",
+        "english_description": "Unspecified fall from one level to another",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W18",
+        "description": "Druge vrste padec na isti ravni",
+        "english_description": "Fall from bumping against object",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W18.0",
+        "description": "Padec zaradi odboja s predmetom",
+        "english_description": "Fall from bumping against object",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W18.1",
+        "description": "Padec s straniščne školjke",
+        "english_description": "Fall from or off toilet",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W18.2",
+        "description": "Padec v kopalni kadi in kabini za tuširanje",
+        "english_description": "Fall in or into bath-tub or shower",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W18.8",
+        "description": "Ostali opredeljeni padci na isti ravni",
+        "english_description": "Other specified fall on same level",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W18.9",
+        "description": "Neopredeljeni padci na isti ravni",
+        "english_description": "Unspecified fall on same level",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W19",
+        "description": "Neopredeljen padec",
+        "english_description": "Unspecified fall",
+        "matched_query": "W00W19",
         "match_type": "hierarchical_SKLOP / 3. NIVO"
       }
     ]

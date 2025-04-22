@@ -1,28 +1,32 @@
-**Izbrani kodni zapisi za opisano stanje pacienta**
+**Izbrani kodirani diagnozi in okoliščine po MKB-10-AM**
 
-1. **Primarni poškodbe:**
-	* **S60.0**: **Odrgnina in potegov na zapestju in roki** (Slovenian description) - **Rationale:** Odrašnina v prelu desne dlani in po vseh prstih te roke, največja rana v predelu desnega zapestja.
-	* **S40.0**: **Odrgnina in potegov na rami** (Slovenian description) - **Rationale:** Vidna odrgnina na levi rami.
-	* **S60.0** (ponovitev za drugo stran): **Odrgnina in potegov na zapestju in roki** - **Rationale:** Odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani.
-	* **S80.0**: **Odrgnina in potegov na kolenu in goleni** (Slovenian description) - **Rationale:** Dve večji odrgnini v predelu levega kolena, levo koleno je blago otečeno.
-2. **Mehanske poškodbe, ki niso uvrščene drugje (za MCL):**
-	* **M23.3**: **Drugih specifičnih bolezni kolenskega sklepa** (Slovenian description) - **Rationale:** MCL (medialni kolateralni ligament) nekoliko boleč na nateg in palpatorno, brez drugih ustreznih kod.
-3. **Zunanji vzrok (mechanizem poškodbe):**
-	* **V19.4**: **Kolesar, poškodovan v transportni nezgodi, neopredeljena udeležba** (Slovenian description) - **Rationale:** Včeraj je padel s kolesa.
-4. **Aktivnost (če je na voljo):**
-	* **U72**: **Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** (Slovenian description) - **Rationale:** Padenje s kolesa se lahko šteje za aktivnost v prostem času.
+**Primarni diagnozi in poškodbe:**
 
-**Seznam izbranih kodov:**
+1. **S60.0 - Odrgnina in tržna rana, ki ni navedena drugje, zapestja in roke**
+	* **Razlog za izbiro:** Odrasnina v predelu desnega zapestja in po vseh prstih te roke.
+2. **S40.0 - Odrgnina in tržna rana, ki ni navedena drugje, ramena in zgorjnji del hrbta**
+	* **Razlog za izbiro:** Odrasnina na levi rami.
+3. **S50.0 - Odrgnina in tržna rana, ki ni navedena drugje, komolca in podlakti**
+	* **Razlog za izbiro:** Odrasnine v področju leve nadlahti in leve podlahti.
+4. **S60.0 - Odrgnina in tržna rana, ki ni navedena drugje, zapestja in roke** (ponovljena za drugo roko)
+	* **Razlog za izbiro:** Odrasnine v predelu leve dlani.
+5. **S80.0 - Odrgnina in tržna rana, ki ni navedena drugje, kolena in goleni**
+	* **Razlog za izbiro:** Dve večji odrgnini v predelu levega kolena.
 
-1. **S60.0** - Odrgnina in potegov na zapestju in roki
-2. **S40.0** - Odrgnina in potegov na rami
-3. **S60.0** (za drugo stran) - Odrgnina in potegov na zapestju in roki
-4. **S80.0** - Odrgnina in potegov na kolenu in goleni
-5. **M23.3** - Druge specifične bolezni kolenskega sklepa
-6. **V19.4** - Kolesar, poškodovan v transportni nezgodi, neopredeljena udeležba
-7. **U72** - Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+**Zunanji vzroki in okoliščine:**
 
-**Nejasnosti ali potreba po dodatnih informacijah:**
+1. **V19.4 - Kolesar, poškodovan v transportni nezgodi, neopredeljena udeležba**
+	* **Razlog za izbiro:** Pacient je bil poškodovan pri padcu s kolesa.
+2. **W19 - Izpostavljenost neživim mehaničnim silam, neopredeljena**
+	* **Razlog za izbiro:** Padec s kolesa, ki ustreza izpostavljenosti neživim mehaničnim silam.
 
-- Za podrobnejši opis stanja MCL bi bile priporočljive dodatne informacije ali specializirana diagnoza.
-- Če so bile prisotne druge aktivnosti ob kolesarjenju (npr. tekmovalno kolesarjenje), bi bile potrebne za še bolj specifično kodiranje aktivnosti.
+**Aktivnost:**
+
+1. **U71 - Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času**
+	* **Razlog za izbiro:** Vožnja s kolesom se šteje za aktivnost v prostem času.
+
+**Opombe in nedoločene točke:**
+
+- **Potrditveni RTG posnetki** so pokazali brez prepričljivih znakov sveže poškodbe skeleta, vendar so bili izbrani kodirani diagnozi temeljiti na klinični slikii opisu poškodbe.
+- **Dodatne informacije** o morebitnih zapletih, kot so infekcije ali daljše posledice, bi lahko v prihodnosti zahtevale dodatno kodiranje, vendar na podlagi trenutno dostopnih podatkov to ni mogoče.
+- **Kodiranje za antitetanično zaščito** ni bilo izvedeno, saj ta informacija ni neposredno povezana z diagnozo poškodbe, temveč z preventivnimi ukrepi.

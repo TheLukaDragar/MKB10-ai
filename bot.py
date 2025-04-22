@@ -182,7 +182,6 @@ class SpecificCodesResponse(openai.BaseModel):
         return type(f'SpecificCodesResponse_{prefix}', (cls,), namespace)
 
 extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
-print(extracted_categories)
 
 def clean_code(code: str) -> str:
     """Clean MKB-10 code by removing dashes and standardizing format"""

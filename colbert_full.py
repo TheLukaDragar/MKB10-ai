@@ -1,6 +1,6 @@
 import pandas as pd
 from pylate import indexes, models, retrieve
-from params import SECTIONS_FILE
+from params import SECTIONS_FILE, ENGLISH_SECTIONS_FILE
 # Initialize the ColBERT model
 model = models.ColBERT(
     model_name_or_path="jinaai/jina-colbert-v2",
@@ -11,20 +11,15 @@ model = models.ColBERT(
     device="mps"
 )
 
-# Load the medical classification data
-# sklopi_slo = pd.read_csv(SECTIONS_FILE)
 
-all_codes = pd.read_csv("/Users/carbs/mkb102/mkb_slo_df_eng.csv")
+all_codes = pd.read_csv(ENGLISH_SECTIONS_FILE)
 
-# Create documents by combining SKLOP and SLOVENSKI NAZIV
 documents = [f"{row['SLOVENSKI NAZIV']}" for _, row in all_codes.iterrows()]
 document_ids = [str(i) for i in range(len(documents))]
 codes = [row['KODA'] for _, row in all_codes.iterrows()]
 
 mapping = dict(zip(document_ids, codes))
 
-
-# Initialize the Voyager index
 index = indexes.Voyager(
     index_folder="pylate-index",
     index_name="medical-classifications-all",
@@ -32,25 +27,6 @@ index = indexes.Voyager(
 )
 
 
-
-# # Encode documents and add to index
-# print("Encoding documents...")
-# document_embeddings = model.encode(
-#     documents,
-#     batch_size=128,
-#     is_query=False,
-#     show_progress_bar=True,
-# )
-
-# # Add documents to the index
-# print("Adding documents to index...")
-# index.add_documents(
-#     documents_ids=document_ids,
-#     documents_embeddings=document_embeddings,
-# )
-
-
-# Initialize retriever
 retriever = retrieve.ColBERT(index=index)
 
 def get_relevant_docs(query, k=3):
@@ -63,14 +39,11 @@ def get_relevant_docs(query, k=3):
         show_progress_bar=False,
     )
     
-    # Retrieve top-k documents
     results = retriever.retrieve(
         queries_embeddings=query_embedding,
         k=k,
     )[0]  # Get first (and only) query results
-    
-    # Return documents with their scores
-    #
+
     return [(documents[int(res["id"])], codes[int(res["id"])], res["score"] ) for res in results]
 
 # Example usage

@@ -11,24 +11,17 @@ model = models.ColBERT(
     device="mps"
 )
 
-# Load the medical classification data
 sklopi_slo = pd.read_csv(SECTIONS_FILE)
 
-#all_codes = pd.read_csv("/Users/carbs/mkb102/mkb_slo_df_eng.csv")
-
-# Create documents by combining SKLOP and SLOVENSKI NAZIV
 documents = [f"{row['SKLOP']}: {row['SLOVENSKI NAZIV']}" for _, row in sklopi_slo.iterrows()]
-#documents = [f"{row['KODA']}: {row['ENGLISH DESCRIPTION POSTPROCESED']}" for _, row in all_codes.iterrows()]
 document_ids = [str(i) for i in range(len(documents))]
 
-# Initialize the Voyager index
 index = indexes.Voyager(
     index_folder="pylate-index",
     index_name="medical-classifications",
-    override=True,  # This will override any existing index
+    override=True,
 )
 
-# Encode documents and add to index
 print("Encoding documents...")
 document_embeddings = model.encode(
     documents,
@@ -37,14 +30,12 @@ document_embeddings = model.encode(
     show_progress_bar=True,
 )
 
-# Add documents to the index
 print("Adding documents to index...")
 index.add_documents(
     documents_ids=document_ids,
     documents_embeddings=document_embeddings,
 )
 
-# Initialize retriever
 retriever = retrieve.ColBERT(index=index)
 
 def get_relevant_docs(query, k=3):

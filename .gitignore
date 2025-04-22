@@ -36,3 +36,6 @@ env/
 # Logs
 *.log 
 pylate-index/*
+
+# DS store
+.DS_Store

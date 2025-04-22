@@ -14,6 +14,7 @@ import asyncio
 import random
 import httpx
 from concurrent.futures import ThreadPoolExecutor
+from params import SECTIONS_FILE
 
 dotenv.load_dotenv()
 
@@ -67,7 +68,7 @@ def get_available_workers():
         return []
 
 #load the available categories
-available_categories = open("/Users/carbs/mkb102/sklopi_slo_df.csv", "r").read()
+available_categories = open(SECTIONS_FILE, "r").read()
 
 async def try_worker(worker, request_data):
     """
@@ -281,7 +282,7 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
     return results
 
 # Load both category files
-df_slo = pd.read_csv("/Users/carbs/mkb102/sklopi_slo_df.csv")
+df_slo = pd.read_csv(SECTIONS_FILE)
 df_eng = pd.read_csv("/Users/carbs/mkb102/mkb_slo_df_eng.csv")
 
 # Parse the extracted categories from JSON string

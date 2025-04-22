@@ -1,6 +1,6 @@
 import pandas as pd
 from pylate import indexes, models, retrieve
-
+from params import SECTIONS_FILE
 # Initialize the ColBERT model
 model = models.ColBERT(
     model_name_or_path="jinaai/jina-colbert-v2",
@@ -12,7 +12,7 @@ model = models.ColBERT(
 )
 
 # Load the medical classification data
-sklopi_slo = pd.read_csv("/Users/carbs/mkb102/sklopi_slo_df.csv")
+sklopi_slo = pd.read_csv(SECTIONS_FILE)
 
 #all_codes = pd.read_csv("/Users/carbs/mkb102/mkb_slo_df_eng.csv")
 

@@ -12,13 +12,10 @@ import dotenv
 import aiohttp
 import asyncio
 import random
-import httpx
-from concurrent.futures import ThreadPoolExecutor
-from params import SECTIONS_FILE
+from params import SECTIONS_FILE, WORKERS_FILE
 
 dotenv.load_dotenv()
 
-# Configure logging with a more detailed format
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -32,11 +29,10 @@ client = openai.OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
     base_url=base_url.rstrip("/") + "/v1"
 )
+available_categories = open(SECTIONS_FILE, "r").read()
 
-# Worker configuration
-WORKERS_FILE = "/Users/carbs/mkb102/available_workers.json"
-WORKER_TIMEOUT = timedelta(minutes=1000)  # Consider worker dead after 5 minutes of no updates
-MAX_RETRIES = 3  # Maximum number of retries with different workers
+WORKER_TIMEOUT = timedelta(minutes=1000)
+MAX_RETRIES = 3
 
 def get_available_workers():
     """
@@ -67,8 +63,6 @@ def get_available_workers():
         logger.error(f"Error reading workers file: {e}")
         return []
 
-#load the available categories
-available_categories = open(SECTIONS_FILE, "r").read()
 
 async def try_worker(worker, request_data):
     """
@@ -129,20 +123,14 @@ def llm_call(prompt, model_name="nemotron", **kwargs):
     """
     return asyncio.run(_async_llm_call(prompt, model_name=model_name, **kwargs))
 
-#call the llm to get selected categ
-
-diagnosis = "Anamneza Včeraj je panel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. Status ob sprejemu Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
-
-# First LLM
+diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \n Status ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 
 if os.path.exists("reasoning.txt") and False:
     with open("reasoning.txt", "r") as f:
         reasoning = f.read()
 else:
-    #call the llm to get reasoning
     reasoning = llm_call(summarize_and_select_categories_prompt.format(diagnosis=diagnosis,available_categories=available_categories))
 
-    #save to file
     with open("reasoning.txt", "w") as f:
         f.write(reasoning)
 

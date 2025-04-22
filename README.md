@@ -94,7 +94,10 @@ diagnosis = """
 Anamneza: Včeraj je panel s kolesa in se udaril po desni dlani...
 """
 
-# Run the classification pipeline
+# Run the worker
+python worker.py
+
+# Run the pipeline
 python bot.py
 ```
 

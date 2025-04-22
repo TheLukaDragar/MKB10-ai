@@ -1,33 +1,41 @@
-**Izbrani kode v pravilnem zaporedju (primarni pogoj prvi, sledijo zunanji vzroki in prispevajoči dejavniki)**
+**Izbrani kodovi za opisano stanje:**
 
-1. **Primarni pogoji (poškodbe)**
-	* **S60.0**: Odrgnina in poteg na zapestju in roki (desna dlan, vsi prsti, zapestje, levá rama, levá nadlaht, levá podlaht, levá dlan, levé koleno)
-	* **S80.0**: Odrgnina in poteg na kolenu in goleni (dve večji odrgnini v predelu levega kolena)
-	* **M25.7**: Druga specifična stanja sklepa, neopredeljena (blago otečeno levo koleno, MCL nekoliko boleč na nateg in palpatorno)
-2. **Zunanji vzroki**
-	* **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba (panel s kolesa)
-3. **Aktivnost (če je podatka dovolj)**
-	* **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (kolesarjenje, če je to športna/aktivnost v prostem času)
+1. **Primarni poškodbe:**
+	* **S60.0**: Odrgnina in poteg na zapestju in roki (desna dlan, prsti, zapestje)
+	* **S40.0**: Odrgnina in poteg na rami (leva rama)
+	* **S50.0**: Odrgnina in poteg na komolcu in podlakti (leva nadlaht, levapodlaht)
+	* **S60.0**: Odrgnina in poteg na zapestju in roki (leva dlan)
+	* **S80.0**: Odrgnina in poteg na kolku in stegnu (levem kolenu)
+2. **Dodatne poškodbe (koleno):**
+	* **M23.3**: Druga nestabilnost kolena (levem kolenu, MCL nekoliko boleč na nateg)
+	* **M25.3**: Druga specifična bolečina v sklepu (levem kolenu, blago otečeno)
+3. **Zunanji vzrok:**
+	* **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba (padec s kolesa)
+4. **Aktivnost:**
+	* **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (vožnja s kolesom)
 
-**Slovenski nazivi za izbrane kode**
+**Slovenski nazivi in utemeljitev za izbor kod:**
 
-1. **Primarni pogoji (poškodbe)**
-	* **S60.0**: Odrgnina in poteg na zapestju in roki
-	* **S80.0**: Odrgnina in poteg na kolenu in goleni
-	* **M25.7**: Druge specifične stanje sklepa, neopredeljeno
-2. **Zunanji vzroki**
-	* **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba
-3. **Aktivnost**
-	* **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+1. **S60.0**: Odrgnina in poteg na zapestju in roki
+	* Utemeljitev: Opisano je več odrgnin na desnem zapestju, prstih, levem zapestju in dlani.
+2. **S40.0**: Odrgnina in poteg na rami
+	* Utemeljitev: Omenjena je odrgnina na levi rami.
+3. **S50.0**: Odrgnina in poteg na komolcu in podlakti
+	* Utemeljitev: Omenjene so odrgnine na levi nadlahti in podlahti.
+4. **S60.0** (ponovljeno za levo roko):
+	* Utemeljitev: Omenjena je odrgnina na levi dlani.
+5. **S80.0**: Odrgnina in poteg na kolku in stegnu
+	* Utemeljitev: Omenjene so dve večji odrgnini na levem kolenu.
+6. **M23.3**: Druga nestabilnost kolena
+	* Utemeljitev: Kolateralni ligamenti delujejo čvrsti, vendar je MCL nekoliko boleč na nateg, kar kaže na nestabilnost.
+7. **M25.3**: Druga specifična bolečina v sklepu
+	* Utemeljitev: Levem koleno je blago otečeno, kar kaže na dodatno specifično bolečino.
+8. **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba
+	* Utemeljitev: Poškodba se je zgodila pri padcu s kolesa.
+9. **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+	* Utemeljitev: Vožnja s kolesom se šteje za športno/prostočasno aktivnost.
 
-**Razlogi za izbor kode**
+**Nejasnosti ali potreba po dodatnih informacijah:**
 
-* **S60.0** in **S80.0** so izbrane zaradi navedbe več odrgnin na različnih delih telesa, ki ustrezajo opisu poškodbe zapestja, roke, kolena in goleni.
-* **M25.7** je izbrana zaradi opisa blage otekline in bolečine v MCL (medialnem kolateralnem ligamentu) levega kolena, ki ne ustreza natančneje opredeljenim stanjem v drugih kodah.
-* **V19.4** je izbrana kot zunanji vzrok, saj se navedeno vključuje v transportne nezgode, ki vključujejo kolesarje.
-* **U72** je izbrana kot aktivnost, čeprav ni podrobnosti, ali je kolesarjenje v tem kontekstu športna/aktivnost v prostem času; **OPOMBA**: Če je kolesarjenje v tem primeru primarno prevozno sredstvo, bi bila aktivnost manj relevantna ali bi se uporabila drugačna koda, če bi bila na voljo.
-
-**Nedoločene ali potencialno sporne točke**
-
-* Natančen karakter kolesarjenja (prevoz, šport, aktivnost v prostem času) bi lahko vplival na izbiro aktivnosti.
-* Dodatni podrobnosti o stanju kolena (npr., resna poškodba MCL, druga poškodba) bi lahko omogočili izbiro bolj specifične kode za poškodbo kolena.
+- Za bolj natančno kodiranje poškodbe levem kolenu bi bile priporočljive dodatne informacije o resnosti poškodbe MCL in oteklina.
+- Če bi bile prisotne dodatne simptome ali diagnoze, ki niso omenjene (npr. glavobol, zmedenost, druge telesne poškodbe), bi bile potrebne dodatne kode za njihovo predstavitev.

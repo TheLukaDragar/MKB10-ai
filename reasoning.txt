@@ -1,22 +1,33 @@
-**Izbrane kode v pravilnem vrstnem redu (primarni pogoj prvi, sledijo zunanjega vzroka in prispevajoči dejavniki)**
+**Izbrani kode v pravilnem zaporedju (primarni pogoj prvi, sledijo zunanji vzroki in prispevajoči dejavniki)**
 
 1. **Primarni pogoji (poškodbe)**
-	* **S60.0** - **Ranljiva poškodba zapestja in roke** (Slovenian description) 
-		+ **Razlog izbire:** Omenjena je "rana v predelu desnega zapestja" v diagnozi.
-	* **S40.0** - **Poškodba rame** (Slovenian description) 
-		+ **Razlog izbire:** Omenjena je "odrgnina na levi rami" v diagnozi.
-	* **S80.0** - **Poškodba kolena** (Slovenian description) 
-		+ **Razlog izbire:** Omenjene so "dve večji odrgnini v predelu levega kolena" v diagnozi.
-	* **S60.8** - **Druga poškodba zapestja in roke** (Slovenian description) 
-		+ **Razlog izbire:** Omenjene so številne odrgnine po vseh prstih desne roke in levi dlani.
-2. **Zunanji vzrok**
-	* **V19.4** - **Kolesar, poškodovan v transportni nezgodi** (Slovenian description) 
-		+ **Razlog izbire:** Omenjeno je, da se je pacient "udaril kot kolesar" (panel s kolesa).
-3. **Aktivnost (če je na voljo)**
-	* **U72** - **Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** (Slovenian description) 
-		+ **Razlog izbire:** Kolesarjenje se lahko šteje za športno/prostočasno aktivnost, vendar je treba opozoriti, da ta kode ni specifična; uporaba je odvisna od konteksta, ki v diagnozi ni natančno opredeljen.
+	* **S60.0**: Odrgnina in poteg na zapestju in roki (desna dlan, vsi prsti, zapestje, levá rama, levá nadlaht, levá podlaht, levá dlan, levé koleno)
+	* **S80.0**: Odrgnina in poteg na kolenu in goleni (dve večji odrgnini v predelu levega kolena)
+	* **M25.7**: Druga specifična stanja sklepa, neopredeljena (blago otečeno levo koleno, MCL nekoliko boleč na nateg in palpatorno)
+2. **Zunanji vzroki**
+	* **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba (panel s kolesa)
+3. **Aktivnost (če je podatka dovolj)**
+	* **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (kolesarjenje, če je to športna/aktivnost v prostem času)
 
-**Neopredeljenosti ali potreba po dodatnih informacijah:**
+**Slovenski nazivi za izbrane kode**
 
-- Za podrobnejšo klasifikacijo poškodbe kolena (npr., S83.0 - **Poškodba kolateralnih ligamentov kolena**) bi bile potrebne dodatne informacije o resni poškodbe MCL (medialni kolateralni ligament).
-- Kode za aktivnost (U72) je uporabljena z zamerno, saj ni jasno, ali je kolesarjenje v kontekstu diagnoze športna/prostočasna aktivnost ali ne; za natančnejšo klasifikacijo bi bile potrebne dodatne informacije.
+1. **Primarni pogoji (poškodbe)**
+	* **S60.0**: Odrgnina in poteg na zapestju in roki
+	* **S80.0**: Odrgnina in poteg na kolenu in goleni
+	* **M25.7**: Druge specifične stanje sklepa, neopredeljeno
+2. **Zunanji vzroki**
+	* **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba
+3. **Aktivnost**
+	* **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+
+**Razlogi za izbor kode**
+
+* **S60.0** in **S80.0** so izbrane zaradi navedbe več odrgnin na različnih delih telesa, ki ustrezajo opisu poškodbe zapestja, roke, kolena in goleni.
+* **M25.7** je izbrana zaradi opisa blage otekline in bolečine v MCL (medialnem kolateralnem ligamentu) levega kolena, ki ne ustreza natančneje opredeljenim stanjem v drugih kodah.
+* **V19.4** je izbrana kot zunanji vzrok, saj se navedeno vključuje v transportne nezgode, ki vključujejo kolesarje.
+* **U72** je izbrana kot aktivnost, čeprav ni podrobnosti, ali je kolesarjenje v tem kontekstu športna/aktivnost v prostem času; **OPOMBA**: Če je kolesarjenje v tem primeru primarno prevozno sredstvo, bi bila aktivnost manj relevantna ali bi se uporabila drugačna koda, če bi bila na voljo.
+
+**Nedoločene ali potencialno sporne točke**
+
+* Natančen karakter kolesarjenja (prevoz, šport, aktivnost v prostem času) bi lahko vplival na izbiro aktivnosti.
+* Dodatni podrobnosti o stanju kolena (npr., resna poškodba MCL, druga poškodba) bi lahko omogočili izbiro bolj specifične kode za poškodbo kolena.

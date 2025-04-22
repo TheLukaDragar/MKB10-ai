@@ -1,14 +1,19 @@
 import os
-from typing import List
+from typing import List, Dict
 import openai
 import pandas as pd
 from prompts import *
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from collections import defaultdict
 from colorama import Fore, Style
 import json
 import dotenv
+import aiohttp
+import asyncio
+import random
+import httpx
+from concurrent.futures import ThreadPoolExecutor
 
 dotenv.load_dotenv()
 
@@ -27,54 +32,107 @@ client = openai.OpenAI(
     base_url=base_url.rstrip("/") + "/v1"
 )
 
+# Worker configuration
+WORKERS_FILE = "/Users/carbs/mkb102/available_workers.json"
+WORKER_TIMEOUT = timedelta(minutes=1000)  # Consider worker dead after 5 minutes of no updates
+MAX_RETRIES = 3  # Maximum number of retries with different workers
+
+def get_available_workers():
+    """
+    Read and return list of available workers from the registration file
+    """
+    if not os.path.exists(WORKERS_FILE):
+        logger.warning("No workers file found. Please start some workers first.")
+        return []
+    
+    try:
+        with open(WORKERS_FILE, 'r') as f:
+            workers = json.load(f)
+        
+        # Filter out potentially dead workers
+        current_time = datetime.now()
+        active_workers = []
+        for worker in workers:
+            start_time = datetime.fromisoformat(worker['start_time'])
+            if current_time - start_time <= WORKER_TIMEOUT:
+                active_workers.append(worker)
+        
+        if not active_workers:
+            logger.warning("No active workers found. Please start some workers.")
+        
+        return active_workers
+    
+    except Exception as e:
+        logger.error(f"Error reading workers file: {e}")
+        return []
 
 #load the available categories
 available_categories = open("/Users/carbs/mkb102/sklopi_slo_df.csv", "r").read()
 
+async def try_worker(worker, request_data):
+    """
+    Try to make a request to a specific worker
+    """
+    async with aiohttp.ClientSession() as session:
+        worker_url = f"http://{worker['host']}:{worker['port']}/process"
+        try:
+            async with session.post(worker_url, json=request_data) as response:
+                if response.status == 200:
+                    result = await response.json()
+                    return True, result["result"]
+                else:
+                    logger.error(f"Worker {worker['worker_id']} returned status {response.status}")
+                    return False, None
+        except Exception as e:
+            logger.error(f"Error calling worker {worker['worker_id']}: {e}")
+            return False, None
+
+async def _async_llm_call(prompt, model_name="nemotron", **kwargs):
+    """
+    Distributed LLM call that uses available workers
+    """
+    workers = get_available_workers()
+    if not workers:
+        raise RuntimeError("No available workers found. Please start some workers first.")
+    
+    # Make a copy of workers list to try different ones
+    available_workers = workers.copy()
+    retries = 0
+    
+    while available_workers and retries < MAX_RETRIES:
+        # Randomly select a worker
+        worker = random.choice(available_workers)
+        available_workers.remove(worker)  # Remove this worker from retry pool
+        
+        # Prepare the request
+        request_data = {
+            "prompt": prompt,
+            "model_name": model_name,
+            "worker_id": worker['worker_id'],
+            "extra_kwargs": kwargs
+        }
+        
+        success, result = await try_worker(worker, request_data)
+        if success:
+            return result
+        
+        retries += 1
+        if available_workers:
+            logger.info(f"Retrying with another worker (attempt {retries}/{MAX_RETRIES})...")
+    
+    raise RuntimeError(f"All workers failed to process the request after {retries} attempts")
+
+def llm_call(prompt, model_name="nemotron", **kwargs):
+    """
+    Synchronous wrapper for the async LLM call
+    """
+    return asyncio.run(_async_llm_call(prompt, model_name=model_name, **kwargs))
 
 #call the llm to get selected categ
 
 diagnosis = "Anamneza Včeraj je panel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. Status ob sprejemu Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 
 # First LLM
-
-def llm_call(prompt, model_name="nemotron",**kwargs):
-    # Log start of call with clear separator
-    logger.info("="*80)
-    logger.info(f"🤖 Starting LLM call with model: {model_name}")
-    logger.info("-"*40 + " PROMPT " + "-"*40)
-    logger.info(f"\033[94m{prompt}\033[0m")  # Blue color for prompt
-    logger.info("-"*80)
-    
-    response = client.chat.completions.create(
-        model=model_name,
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=4000,
-        stream=True,
-    
-        **kwargs
-    )
-    
-    logger.info("-"*40 + " RESPONSE " + "-"*39)
-    full_response = ""
-    start_time = datetime.now()
-    
-    for chunk in response:
-        if chunk.choices[0].delta.content is not None:
-            content = chunk.choices[0].delta.content
-            full_response += content
-            # Print chunks in green with no newline
-            print(f"\033[32m{content}\033[0m", end="", flush=True)
-    
-    # Calculate and log duration
-    duration = (datetime.now() - start_time).total_seconds()
-    print()  # Add newline after streaming response
-    logger.info("-"*80)
-    logger.info(f"✅ LLM call completed in {duration:.2f} seconds")
-    logger.info("="*80)
-    
-    return full_response
-
 
 if os.path.exists("reasoning.txt") and False:
     with open("reasoning.txt", "r") as f:
@@ -268,13 +326,13 @@ with open(output_filename, "w", encoding='utf-8') as f:
 
 print(f"\n{Fore.CYAN}Initial matches saved to {output_filename}{Style.RESET_ALL}")
 
-# Process each category group separately
-all_final_codes = []
+# Process all categories in parallel
+all_categories = []
+descriptions_lookup = {}
 
 for query, matches in json_output.items():
-    # Format matches for this category and create lookup dictionary
     category_codes = []
-    descriptions_lookup = {}
+    # Build descriptions lookup while processing matches
     for match_type in ['original_matches', 'hierarchical_matches']:
         for match in matches[match_type]:
             code = match['code']
@@ -282,69 +340,104 @@ for query, matches in json_output.items():
                 'slo_description': match['description'],
                 'eng_description': match.get('english_description', '')
             }
-            # Simplified data structure for LLM
             code_info = {
                 'code': code,
                 'slo_description': match['description'],
-                'eng_description': match.get('english_description', '')
+                'eng_description': match.get('english_description', ''),
+                'matched_query': query
             }
             category_codes.append(code_info)
+    if category_codes:
+        all_categories.append({'matched_query': query, 'codes': category_codes})
+
+logger.info(f"{Fore.CYAN}Starting parallel processing with {len(all_categories)} categories{Style.RESET_ALL}")
+print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
+
+async def process_category_async(category: Dict, diagnosis: str, descriptions_lookup: Dict) -> Dict:
+    """
+    Process a single category asynchronously
+    """
+    query = category['matched_query']
+    logger.info(f"{Fore.CYAN}Starting processing of category: {query}{Style.RESET_ALL}")
     
-    if not category_codes:
-        continue
-        
-    category_codes_text = json.dumps(category_codes, ensure_ascii=False, indent=2)
-    
-    print(f"\n{Fore.CYAN}Processing category group: {query}{Style.RESET_ALL}")
-    
-    # First LLM call - Reasoning step (unguided)
-    print(f"{Fore.BLUE}Step 1: Analyzing codes...{Style.RESET_ALL}")
-    reasoning_result = llm_call(
-        reason_specific_codes_prompt.format(
-            diagnosis=diagnosis,
-            matched_codes=category_codes_text
-        )
-    )
-    
-    print(f"{Fore.BLUE}Step 2: Extracting specific codes...{Style.RESET_ALL}")
-    # Second LLM call - Guided extraction with the reasoning context
-    specific_codes = llm_call(
-        extract_specific_codes_prompt.format(
-            diagnosis=diagnosis,
-            matched_codes=category_codes_text
-        ) + f"\n\nPrevious analysis:\n{reasoning_result}",
-        extra_body={"guided_json": SpecificCodesResponse.for_category(query).model_json_schema()},
-        temperature=0.0
-    )
-    
-    # Parse results and add descriptions from lookup
     try:
+        # First get reasoning for this category
+        logger.info(f"{Fore.BLUE}[{query}] Step 1: Analyzing codes...{Style.RESET_ALL}")
+        reasoning_result = await _async_llm_call(
+            reason_specific_codes_prompt.format(
+                diagnosis=diagnosis,
+                matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2)
+            )
+        )
+        
+        # Then get specific codes with the reasoning context
+        logger.info(f"{Fore.BLUE}[{query}] Step 2: Extracting specific codes...{Style.RESET_ALL}")
+        specific_codes = await _async_llm_call(
+            extract_specific_codes_prompt.format(
+                diagnosis=diagnosis,
+                matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2)
+            ) + f"\n\nPrevious analysis:\n{reasoning_result}",
+            extra_body={"guided_json": SpecificCodesResponse.for_category(query).model_json_schema()},
+            temperature=0.0
+        )
+        
+        # Parse results and add descriptions
         category_final_codes = json.loads(specific_codes)
         if 'final_codes' in category_final_codes:
             valid_codes = []
             for code in category_final_codes['final_codes']:
-                # Verify code belongs to current category
-                if not code['code'].startswith(query[0]):
-                    print(f"{Fore.YELLOW}Skipping code {code['code']} - does not belong to category {query}{Style.RESET_ALL}")
-                    continue
-                    
-                # Only include codes that we have descriptions for
-                if code['code'] in descriptions_lookup:
-                    desc = descriptions_lookup[code['code']]
-                    code['slo_description'] = desc['slo_description']
-                    code['eng_description'] = desc['eng_description']
-                    code['category_group'] = query
-                    code['reasoning'] = reasoning_result  # Store the reasoning for reference
-                    valid_codes.append(code)
+                if code['code'].startswith(query[0]):
+                    if code['code'] in descriptions_lookup:
+                        desc = descriptions_lookup[code['code']]
+                        code['slo_description'] = desc['slo_description']
+                        code['eng_description'] = desc['eng_description']
+                        code['category_group'] = query
+                        code['reasoning'] = reasoning_result
+                        valid_codes.append(code)
+                        logger.info(f"{Fore.GREEN}[{query}] Added code: {code['code']}{Style.RESET_ALL}")
+                    else:
+                        logger.warning(f"{Fore.YELLOW}[{query}] Skipping code {code['code']} - no matching description found{Style.RESET_ALL}")
                 else:
-                    print(f"{Fore.YELLOW}Skipping code {code['code']} - no matching description found{Style.RESET_ALL}")
+                    logger.warning(f"{Fore.YELLOW}[{query}] Skipping code {code['code']} - does not belong to category {query}{Style.RESET_ALL}")
             
-            if valid_codes:
-                all_final_codes.extend(valid_codes)
-            else:
-                print(f"{Fore.YELLOW}No valid codes found for category {query}{Style.RESET_ALL}")
-    except json.JSONDecodeError as e:
-        print(f"{Fore.RED}Error parsing results for category {query}: {e}{Style.RESET_ALL}")
+            logger.info(f"{Fore.CYAN}Completed processing of category {query} with {len(valid_codes)} valid codes{Style.RESET_ALL}")
+            return {
+                'category': query,
+                'codes': valid_codes,
+                'reasoning': reasoning_result
+            }
+    except Exception as e:
+        logger.error(f"{Fore.RED}Error processing category {query}: {e}{Style.RESET_ALL}")
+        return {
+            'category': query,
+            'codes': [],
+            'error': str(e)
+        }
+
+async def process_all_categories_async(categories: List[Dict], diagnosis: str, descriptions_lookup: Dict) -> List[Dict]:
+    """
+    Process all categories in parallel
+    """
+    logger.info(f"{Fore.CYAN}Starting parallel processing of {len(categories)} categories{Style.RESET_ALL}")
+    tasks = [process_category_async(category, diagnosis, descriptions_lookup) for category in categories]
+    return await asyncio.gather(*tasks)
+
+def process_categories_parallel(categories: List[Dict], diagnosis: str, descriptions_lookup: Dict) -> List[Dict]:
+    """
+    Synchronous wrapper for parallel category processing
+    """
+    return asyncio.run(process_all_categories_async(categories, diagnosis, descriptions_lookup))
+
+# Process all categories in parallel
+results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
+
+# Combine all valid codes from parallel processing
+all_final_codes = []
+for result in results:
+    if 'error' not in result:
+        all_final_codes.extend(result['codes'])
+
+logger.info(f"{Fore.GREEN}Successfully processed {len(all_final_codes)} codes across all categories{Style.RESET_ALL}")
 
 # Prepare final output
 final_output = {

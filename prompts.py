@@ -81,7 +81,7 @@ Return the extracted applicable codes in JSON format.
 
 extract_specific_codes_prompt = """
 <instructions>
-Select aplicable codes FROM THE PROVIDED CODES ONLY.
+Select applicable codes FROM THE PROVIDED CODES ONLY.
 
 Rules for code selection:
 1. ONLY use codes from the provided matched_codes list
@@ -95,9 +95,9 @@ The output must follow the exact JSON format specified.
 </instructions>
 
 <input>
-<original_diagnosis>
+<diagnosis>
 {diagnosis}
-</original_diagnosis>
+</diagnosis>
 
 <matched_codes>
 {matched_codes}
@@ -143,9 +143,9 @@ First, analyze:
 </instructions>
 
 <input>
-<original_diagnosis>
+<diagnosis>
 {diagnosis}
-</original_diagnosis>
+</diagnosis>
 
 <matched_codes>
 {matched_codes}

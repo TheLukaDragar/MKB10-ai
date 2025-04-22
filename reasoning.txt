@@ -1,33 +1,48 @@
-**Izbrani kodni razponi za opisano diagnozo:**
+**Izbrani kodni razponi za diagnozo**
 
-1. **Primarni pogoji (poškodbe):**
-	* **S60-S69:** Poškodbe zapestja in roke (za poškodbe desnega zapestja in leve dlani)
-	* **S40-S49:** Poškodbe rame in nadlakti (za poškodbo leve rami)
-	* **S50-S59:** Poškodbe komolca in podlakti (za poškodbe leve nadlahti in leve podlahti)
-	* **S80-S89:** Poškodbe kolena in goleni (za poškodbo levega kolena)
-2. **Zunanji vzroki (mechanizem poškodbe):**
-	* **V10-V19:** Kolesar, poškodovan v transportni nezgodi (kot kolesar, ki se je smrčkal)
-	* **W00-W19:** Padci (specifično **W18.0**: Padec s kolesa, ki ni vključen v promet)
-3. **Aktivnost (dejavnost ob poškodbi):**
-	* **U50-U72:** Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (športna aktivnost, kot je kolesarjenje)
+**Primarni pogoji (poškodbe):**
 
-**Slovenski nazivi in utemeljitev za izbor kod:**
+1. **S60-S69, Poškodbe zapestja in roke**
+	* Slovenski naziv: Poškodbe zapestja in roke
+	* Racional: Omenjeno je, da ima pacient "odrgnine v predelu desne dlani in po vseh prstih te roke" in "največja rana v predelu desnega zapestja".
+	* Specifični kod: **S61, Otvorena rana zapestja in roke** (za rano na desnem zapestju)
+	* Specifični kod: **S60, Poškodba mišic in tetive zapestja in roke** (za odrgnine na desni dlani in prstih)
+2. **S80-S89, Poškodbe kolena in goleni**
+	* Slovenski naziv: Poškodbe kolena in goleni
+	* Racional: Opisano je, da ima pacient "dve večji odrgnini v predelu levega kolena" in "levo koleno je blago otečeno".
+	* Specifični kod: **S81, Otvorena rana kolena in goleni** (za odrgnine na levem kolenu)
+3. **S50-S59, Poškodbe komolca in podlakti**
+	* Slovenski naziv: Poškodbe komolca in podlakti
+	* Racional: Omenjeno je, da ima pacient "odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti".
+	* Specifični kod: **S50, Poškodba mišic in tetive komolca in podlakti** (za odrgnine na levem nadlahti in podlahti)
+4. **S40-S49, Poškodbe rame in nadlakti**
+	* Slovenski naziv: Poškodbe rame in nadlakti
+	* Racional: Opisano je, da ima pacient "odrgnino na levi rami".
+	* Specifični kod: **S40, Poškodba mišic in tetive rame in nadlakti** (za odrgnino na levem rami)
 
-1. **S60-S69:** **Poškodbe zapestja in roke** - Utemeljitev: Opisana poškodba desnega zapestja in leve dlani.
-	* **Slovenski naziv:** Poškodbe zapestja in roke
-2. **S40-S49:** **Poškodbe rame in nadlakti** - Utemeljitev: Opisana poškodba leve rami.
-	* **Slovenski naziv:** Poškodbe rame in nadlakti
-3. **S50-S59:** **Poškodbe komolca in podlakti** - Utemeljitev: Opisane poškodbe leve nadlahti in leve podlahti.
-	* **Slovenski naziv:** Poškodbe komolca in podlakti
-4. **S80-S89:** **Poškodbe kolena in goleni** - Utemeljitev: Opisana poškodba levega kolena.
-	* **Slovenski naziv:** Poškodbe kolena in goleni
-5. **V10-V19:** **Kolesar, poškodovan v transportni nezgodi** - Utemeljitev: Bolnik se je smrčkal s kolesa.
-	* **Slovenski naziv:** Kolesar, poškodovan v transportni nezgodi
-6. **W00-W19:** **Padci** - Utemeljitev: Bolnik je padel s kolesa.
-	* **Slovenski naziv:** Padci
-7. **U50-U72:** **Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** - Utemeljitev: Kolesarjenje kot športna aktivnost.
-	* **Slovenski naziv:** Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+**Zunanji vzroki (mechanizem poškodbe):**
 
-**Nejasnosti ali potreba po dodatnih informacijah:**
-- Za podrobnejši kod (npr. za **S60-S69**, **S40-S49**, **S50-S59**, **S80-S89**) bi bila potrebna dodatna specifikacija o naravi poškodbe (npr. zlom, izvlačina, odrgnina itd.), ki ni bila izrecno navedena v opisu.
-- Če bi bile prisotne dodatne zdravstvene težave (npr. infekcije, druge bolezni), ki bi bile direktno povezane z poškodbami, bi bile potrebne dodatne kode za njihov opis.
+1. **V00-V99, Transportne nezgode**
+	* Slovenski naziv: Transportne nezgode
+	* Racional: Pacient se je "padel s kolesa".
+	* Specifični kod: **V19, Kolesar, poškodovan v transportni nezgodi** (kot kolesar)
+
+**Aktivnost (čase poškodbe):**
+
+1. **U50-U73, Aktivnost**
+	* Slovenski naziv: Aktivnost
+	* Racional: Pacient je bil "s kolesom" (še posebej povezano z **U72, Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času**).
+	* Specifični kod: **U72** (za športno/prostočasno aktivnost s kolesom)
+
+**Popolna seznam izbranih kodov:**
+
+1. **S61, Otvorena rana zapestja in roke** (desno zapestje)
+2. **S60, Poškodba mišic in tetive zapestja in roke** (odrgnine desna dlan in prsti)
+3. **S81, Otvorena rana kolena in goleni** (odrgnine levo koleno)
+4. **S50, Poškodba mišic in tetive komolca in podlakti** (odrgnine leva nadlaht in podlaht)
+5. **S40, Poškodba mišic in tetive rame in nadlakti** (odrgnina leva rama)
+6. **V19, Kolesar, poškodovan v transportni nezgodi** (zunanji vzrok)
+7. **U72, Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** (aktivnost)
+
+**Nedoločene točke ali potreba po dodatnih informacijah:**
+- Dodatne informacije o resnosti poškodbe (npr., potreba po hospitalizaciji, trajanje okrevanja) bi lahko pomagale pri izbiri še bolj specifičnih kod za kasne posledice (sekvele) ali za zapleti.

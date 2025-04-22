@@ -196,6 +196,7 @@ def find_matching_codes(categories: List[str], available_categories_df: pd.DataF
             for _, row in matches.iterrows():
                 results.append({
                     'code': row['SKLOP'],
+                    'level': row['RAVEN'],
                     'description': row['SLOVENSKI NAZIV'],
                     'matched_query': category
                 })
@@ -221,6 +222,7 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
             for _, row in exact_matches.iterrows():
                 results.append({
                     'code': row['KODA'],
+                    'level': row['RAVEN'],
                     'description': row['SLOVENSKI NAZIV'],
                     'english_description': row['ENGLISH DESCRIPTION POSTPROCESED'],
                     'matched_query': category,
@@ -242,6 +244,7 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
                         for _, row in matches.iterrows():
                             results.append({
                                 'code': row['KODA'],
+                                'level': row['RAVEN'],
                                 'description': row['SLOVENSKI NAZIV'],
                                 'english_description': row['ENGLISH DESCRIPTION POSTPROCESED'],
                                 'matched_query': category,
@@ -341,7 +344,7 @@ def process_categories_parallel(categories: List[Dict], diagnosis: str, descript
 
 
 if __name__ == "__main__":
-    diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \n Status ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
+    diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \nStatus ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 
     reasoning = llm_call(summarize_and_select_categories_prompt.format(diagnosis=diagnosis,available_categories=available_categories))
 
@@ -349,8 +352,6 @@ if __name__ == "__main__":
         f.write(reasoning)
 
     extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
-
-    print('extracted_categories', extracted_categories)
     df_slo = pd.read_csv(SECTIONS_FILE)
     df_eng = pd.read_csv(ENGLISH_SECTIONS_FILE)
 
@@ -369,9 +370,10 @@ if __name__ == "__main__":
     for query in all_queries:
         slo = grouped_slo.get(query, [])
         hier = grouped_hierarchical.get(query, [])
-        print('query', query)
-        print('slo', slo)
-        print('hier', hier)
+
+        slo = [code for code in slo if code['level'] == 3]
+        hier = [code for code in hier if code['level'] == 3]
+
         json_output[query] = {
             "original_matches": slo,
             "hierarchical_matches": hier

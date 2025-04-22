@@ -1,41 +1,28 @@
-**Izbrani kodovi za opisano stanje:**
+**Izbrani kodni zapisi za opisano stanje pacienta**
 
 1. **Primarni poškodbe:**
-	* **S60.0**: Odrgnina in poteg na zapestju in roki (desna dlan, prsti, zapestje)
-	* **S40.0**: Odrgnina in poteg na rami (leva rama)
-	* **S50.0**: Odrgnina in poteg na komolcu in podlakti (leva nadlaht, levapodlaht)
-	* **S60.0**: Odrgnina in poteg na zapestju in roki (leva dlan)
-	* **S80.0**: Odrgnina in poteg na kolku in stegnu (levem kolenu)
-2. **Dodatne poškodbe (koleno):**
-	* **M23.3**: Druga nestabilnost kolena (levem kolenu, MCL nekoliko boleč na nateg)
-	* **M25.3**: Druga specifična bolečina v sklepu (levem kolenu, blago otečeno)
-3. **Zunanji vzrok:**
-	* **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba (padec s kolesa)
-4. **Aktivnost:**
-	* **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času (vožnja s kolesom)
+	* **S60.0**: **Odrgnina in potegov na zapestju in roki** (Slovenian description) - **Rationale:** Odrašnina v prelu desne dlani in po vseh prstih te roke, največja rana v predelu desnega zapestja.
+	* **S40.0**: **Odrgnina in potegov na rami** (Slovenian description) - **Rationale:** Vidna odrgnina na levi rami.
+	* **S60.0** (ponovitev za drugo stran): **Odrgnina in potegov na zapestju in roki** - **Rationale:** Odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani.
+	* **S80.0**: **Odrgnina in potegov na kolenu in goleni** (Slovenian description) - **Rationale:** Dve večji odrgnini v predelu levega kolena, levo koleno je blago otečeno.
+2. **Mehanske poškodbe, ki niso uvrščene drugje (za MCL):**
+	* **M23.3**: **Drugih specifičnih bolezni kolenskega sklepa** (Slovenian description) - **Rationale:** MCL (medialni kolateralni ligament) nekoliko boleč na nateg in palpatorno, brez drugih ustreznih kod.
+3. **Zunanji vzrok (mechanizem poškodbe):**
+	* **V19.4**: **Kolesar, poškodovan v transportni nezgodi, neopredeljena udeležba** (Slovenian description) - **Rationale:** Včeraj je padel s kolesa.
+4. **Aktivnost (če je na voljo):**
+	* **U72**: **Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času** (Slovenian description) - **Rationale:** Padenje s kolesa se lahko šteje za aktivnost v prostem času.
 
-**Slovenski nazivi in utemeljitev za izbor kod:**
+**Seznam izbranih kodov:**
 
-1. **S60.0**: Odrgnina in poteg na zapestju in roki
-	* Utemeljitev: Opisano je več odrgnin na desnem zapestju, prstih, levem zapestju in dlani.
-2. **S40.0**: Odrgnina in poteg na rami
-	* Utemeljitev: Omenjena je odrgnina na levi rami.
-3. **S50.0**: Odrgnina in poteg na komolcu in podlakti
-	* Utemeljitev: Omenjene so odrgnine na levi nadlahti in podlahti.
-4. **S60.0** (ponovljeno za levo roko):
-	* Utemeljitev: Omenjena je odrgnina na levi dlani.
-5. **S80.0**: Odrgnina in poteg na kolku in stegnu
-	* Utemeljitev: Omenjene so dve večji odrgnini na levem kolenu.
-6. **M23.3**: Druga nestabilnost kolena
-	* Utemeljitev: Kolateralni ligamenti delujejo čvrsti, vendar je MCL nekoliko boleč na nateg, kar kaže na nestabilnost.
-7. **M25.3**: Druga specifična bolečina v sklepu
-	* Utemeljitev: Levem koleno je blago otečeno, kar kaže na dodatno specifično bolečino.
-8. **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena oseba
-	* Utemeljitev: Poškodba se je zgodila pri padcu s kolesa.
-9. **U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
-	* Utemeljitev: Vožnja s kolesom se šteje za športno/prostočasno aktivnost.
+1. **S60.0** - Odrgnina in potegov na zapestju in roki
+2. **S40.0** - Odrgnina in potegov na rami
+3. **S60.0** (za drugo stran) - Odrgnina in potegov na zapestju in roki
+4. **S80.0** - Odrgnina in potegov na kolenu in goleni
+5. **M23.3** - Druge specifične bolezni kolenskega sklepa
+6. **V19.4** - Kolesar, poškodovan v transportni nezgodi, neopredeljena udeležba
+7. **U72** - Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
 
 **Nejasnosti ali potreba po dodatnih informacijah:**
 
-- Za bolj natančno kodiranje poškodbe levem kolenu bi bile priporočljive dodatne informacije o resnosti poškodbe MCL in oteklina.
-- Če bi bile prisotne dodatne simptome ali diagnoze, ki niso omenjene (npr. glavobol, zmedenost, druge telesne poškodbe), bi bile potrebne dodatne kode za njihovo predstavitev.
+- Za podrobnejši opis stanja MCL bi bile priporočljive dodatne informacije ali specializirana diagnoza.
+- Če so bile prisotne druge aktivnosti ob kolesarjenju (npr. tekmovalno kolesarjenje), bi bile potrebne za še bolj specifično kodiranje aktivnosti.

@@ -2684,6 +2684,717 @@
       }
     ]
   },
+  "S40S49": {
+    "original_matches": [
+      {
+        "code": "S40–S49",
+        "description": "Poškodbe rame in nadlakti",
+        "matched_query": "S40S49"
+      }
+    ],
+    "hierarchical_matches": [
+      {
+        "code": "S40",
+        "description": "Površinska poškodba rame in nadlakti",
+        "english_description": "Contusion of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.0",
+        "description": "Udarnina rame in nadlakti",
+        "english_description": "Contusion of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.7",
+        "description": "Multiple površinske poškodbe rame in nadlakti",
+        "english_description": "Multiple superficial injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.8",
+        "description": "Druge površinske poškodbe rame in nadlakti",
+        "english_description": "Other superficial injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.81",
+        "description": "Odrgnina rame in nadlakti",
+        "english_description": "Abrasion of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.82",
+        "description": "Hematom rame in nadlakti",
+        "english_description": "Blister of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.83",
+        "description": "Pik žuželke rame in nadlakti",
+        "english_description": "Insect bite of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.84",
+        "description": "Tujek rame in nadlakti",
+        "english_description": "Superficial foreign body (splinter) of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.88",
+        "description": "Druge povrhnje poškodbe rame in nadlakti",
+        "english_description": "Other superficial injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.9",
+        "description": "Površinska poškodba rame in nadlakti, neopredeljena",
+        "english_description": "Superficial injury of shoulder and upper arm, unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41",
+        "description": "Rana na rami in nadlakti",
+        "english_description": "Open wound of shoulder",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.0",
+        "description": "Rana na rami",
+        "english_description": "Open wound of shoulder",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.1",
+        "description": "Rana na nadlakti",
+        "english_description": "Open wound of upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.7",
+        "description": "Multiple rane na rami in nadlakti",
+        "english_description": "Multiple open wounds of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.8",
+        "description": "Rana drugih in neopredeljenih delov ramenskega obroča",
+        "english_description": "Unspecified open wound of other and unspecified parts of shoulder region",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.80",
+        "description": "Rana drugih in neopredeljenih delov ramenskega obroča, neopredeljena",
+        "english_description": "Unspecified open wound of other and unspecified parts of shoulder region",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.81",
+        "description": "Rana drugih in neopredeljenih delov ramenskega obroča, ki komunicira z zlomom",
+        "english_description": "Open wound (of any part of shoulder and upper arm) communicating with a fracture",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S41.82",
+        "description": "Rana drugih in neopredeljenih delov ramenskega obroča, ki komunicira z izpahom",
+        "english_description": "Open wound (of any part of shoulder and upper arm) communicating with a dislocation",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42",
+        "description": "Zlom rame in nadlakti",
+        "english_description": "Fracture of clavicle, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.0",
+        "description": "Zlom ključnice",
+        "english_description": "Fracture of clavicle, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.00",
+        "description": "Zlom ključnice, neopredeljen del",
+        "english_description": "Fracture of clavicle, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.01",
+        "description": "Zlom ključnice, notranji del",
+        "english_description": "Fracture of sternal end of clavicle",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.02",
+        "description": "Zlom ključnice, osrednji del",
+        "english_description": "Fracture of shaft of clavicle",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.03",
+        "description": "Zlom ključnice, zunanji del",
+        "english_description": "Fracture of acromial end of clavicle",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.09",
+        "description": "Multipli zlomi ključnice",
+        "english_description": "Multiple fractures of clavicle ",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.1",
+        "description": "Zlom lopatice",
+        "english_description": "Fracture of scapula, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.10",
+        "description": "Zlom lopatice, neopredeljen del",
+        "english_description": "Fracture of scapula, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.11",
+        "description": "Zlom lopatice, telo",
+        "english_description": "Fracture of body of scapula",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.12",
+        "description": "Zlom lopatice, akromion",
+        "english_description": "Fracture of acromial process",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.13",
+        "description": "Zlom lopatice, korakoidni odrastek",
+        "english_description": "Fracture of coracoid process",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.14",
+        "description": "Zlom lopatice, glenoid in vrat",
+        "english_description": "Fracture of glenoid cavity and neck of scapula",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.19",
+        "description": "Multipli zlomi lopatice",
+        "english_description": "Multiple fractures of scapula",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.2",
+        "description": "Zlom zgornjega dela nadlaktnice",
+        "english_description": "Fracture of upper end of humerus, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.20",
+        "description": "Zlom zgornjega dela nadlaktnice, neopredeljen del",
+        "english_description": "Fracture of upper end of humerus, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.21",
+        "description": "Zlom zgornjega dela nadlaktnice, glava",
+        "english_description": "Fracture of head of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.22",
+        "description": "Zlom zgornjega dela nadlaktnice, kirurški vrat",
+        "english_description": "Fracture of surgical neck of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.23",
+        "description": "Zlom zgornjega dela nadlaktnice, anatomski vrat",
+        "english_description": "Fracture of anatomical neck of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.24",
+        "description": "Zlom zgornjega dela nadlaktnice, velika grča",
+        "english_description": "Fracture of greater tuberosity of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.29",
+        "description": "Zlom zgornjega dela nadlaktnice, drugi in multipli deli",
+        "english_description": "Fracture of other and multiple parts of upper end of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.3",
+        "description": "Zlom diafize nadlaktnice",
+        "english_description": "Fracture of shaft of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.4",
+        "description": "Zlom spodnjega dela nadlaktnice",
+        "english_description": "Fracture of lower end of humerus, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.40",
+        "description": "Zlom spodnjega dela nadlaktnice, neopredeljen",
+        "english_description": "Fracture of lower end of humerus, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.41",
+        "description": "Zlom spodnjega dela nadlaktnice, suprakondilarni",
+        "english_description": "Supracondylar fracture of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.42",
+        "description": "Zlom spodnjega dela nadlaktnice, zunanji kondil",
+        "english_description": "Fracture of lateral condyle of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.43",
+        "description": "Zlom spodnjega dela nadlaktnice, notranji kondil",
+        "english_description": "Fracture of medial condyle of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.44",
+        "description": "Zlom spodnjega dela nadlaktnice, obeh kondilov, neopredeljen",
+        "english_description": "Fracture of condyle(s) of humerus, unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.45",
+        "description": "Zlom spodnjega dela nadlaktnice, T zlom",
+        "english_description": NaN,
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.49",
+        "description": "Zlom spodnjega dela nadlaktnice, drugi zlomi in multipli zlomi",
+        "english_description": "Other and multiple fractures of lower end of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.7",
+        "description": "Multipli zlomi ključnice, lopatice in nadlaktnice",
+        "english_description": "Multiple fractures of clavicle, scapula and humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.8",
+        "description": "Zlom drugih delov na rami in nadlakti",
+        "english_description": "Fracture of other parts of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S42.9",
+        "description": "Zlom ramenskega obroča, del neopredeljen",
+        "english_description": "Fracture of shoulder girdle, part unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43",
+        "description": "Izpah, izvin in nateg sklepov in vezi ramenskega obroča",
+        "english_description": "Dislocation of shoulder, unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.0",
+        "description": "Izpah ramenskega sklepa",
+        "english_description": "Dislocation of shoulder, unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.00",
+        "description": "Izpah rame, neopredeljen",
+        "english_description": "Dislocation of shoulder, unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.01",
+        "description": "Sprednji izpah ramenskega sklepa ",
+        "english_description": "Anterior dislocation of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.02",
+        "description": "Zadnji izpah ramenskega sklepa",
+        "english_description": "Posterior dislocation of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.03",
+        "description": "Spodnji izpah ramenskega sklepa",
+        "english_description": "Inferior dislocation of humerus",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.08",
+        "description": "Izpah drugih delov rame",
+        "english_description": "Dislocation of other part of shoulder",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.1",
+        "description": "Akromioklavikularna sindezmoliza",
+        "english_description": "Dislocation of acromioclavicular joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.2",
+        "description": "Sternoklavikularna sindezmoliza",
+        "english_description": "Dislocation of sternoclavicular joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.3",
+        "description": "Izpah drugih in neopredeljenih delov ramenskega obroča",
+        "english_description": "Dislocation of other and unspecified parts of shoulder girdle",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.4",
+        "description": "Zvin in nateg ramenskega sklepa",
+        "english_description": "Sprain and strain of shoulder joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.5",
+        "description": "Zvin in nateg akromioklavikularne sindezmoze",
+        "english_description": "Sprain and strain of acromioclavicular joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.6",
+        "description": "Zvin in nateg sternoklavikularne sindezmoze",
+        "english_description": "Sprain and strain of sternoclavicular joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S43.7",
+        "description": "Zvin in nateg drugih in neopredeljenih delov ramenskega obroča",
+        "english_description": "Sprain and strain of other and unspecified parts of shoulder girdle",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44",
+        "description": "Poškodba živcev v predelu rame in nadlakti",
+        "english_description": "Injury of ulnar nerve at upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.0",
+        "description": "Poškodba ulnarnega živca v predelu nadlakti",
+        "english_description": "Injury of ulnar nerve at upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.1",
+        "description": "Poškodba medianega živca v predelu nadlakti",
+        "english_description": "Injury of median nerve at upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.2",
+        "description": "Poškodba radialnega živca v predelu nadlakti",
+        "english_description": "Injury of radial nerve at upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.3",
+        "description": "Poškodba aksilarnega živca",
+        "english_description": "Injury of axillary nerve",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.4",
+        "description": "Poškodba muskulokutanega živca",
+        "english_description": "Injury of musculocutaneous nerve",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.5",
+        "description": "Poškodba kožnega senzoričnega živca v predelu rame in nadlakti",
+        "english_description": "Injury of cutaneous sensory nerve at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.7",
+        "description": "Poškodba več živcev v predelu rame in nadlakti",
+        "english_description": "Injury of multiple nerves at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.8",
+        "description": "Poškodba drugih živcev v predelu rame in nadlakti ",
+        "english_description": "Injury of other nerves at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S44.9",
+        "description": "Poškodba neopredeljenega živca v predelu rame in nadlakti",
+        "english_description": "Injury of unspecified nerve at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45",
+        "description": "Poškodba krvnih žil v predelu rame in nadlakti",
+        "english_description": "Injury of axillary artery",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.0",
+        "description": "Poškodba aksilarne arterije",
+        "english_description": "Injury of axillary artery",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.1",
+        "description": "Poškodba brahialne arterije",
+        "english_description": "Injury of brachial artery",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.2",
+        "description": "Poškodba aksilarne ali brahialne arterije",
+        "english_description": "Injury of axillary or brachial vein",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.3",
+        "description": "Poškodba površinske vene v predelu rame in nadlakti",
+        "english_description": "Injury of superficial vein at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.7",
+        "description": "Poškodba več krvnih žil v predelu rame in nadlakti",
+        "english_description": "Injury of multiple blood vessels at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.8",
+        "description": "Poškodba drugih krvnih žil v predelu rame in nadlakti",
+        "english_description": "Injury of other blood vessels at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S45.9",
+        "description": "Poškodba neopredeljene krvne žile v predelu rame in nadlakti",
+        "english_description": "Injury of unspecified blood vessel at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46",
+        "description": "Poškodba mišice in tetive v predelu rame in nadlakti",
+        "english_description": "Injury of muscles and tendons of the rotator cuff of shoulder",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.0",
+        "description": "Poškodba mišice (mišic) in tetive (tetiv) rotatorne manšete na rami",
+        "english_description": "Injury of muscles and tendons of the rotator cuff of shoulder",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.1",
+        "description": "Poškodba mišice in tetive dolge glave bicepsa ",
+        "english_description": "Injury of muscle and tendon of long head of biceps",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.2",
+        "description": "Poškodba mišice in tetive drugih delov bicepsa",
+        "english_description": "Injury of muscle and tendon of other parts of biceps",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.3",
+        "description": "Poškodba mišice in tetive tricepsa",
+        "english_description": "Injury of muscle and tendon of triceps",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.7",
+        "description": "Poškodba več mišic in tetiv v predelu rame in nadlakti",
+        "english_description": "Injury of multiple muscles and tendons at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.8",
+        "description": "Poškodba drugih mišic in tetiv v predelu rame in nadlakti",
+        "english_description": "Injury of other muscles and tendons at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S46.9",
+        "description": "Poškodba neopredeljene mišice in tetive v predelu rame in nadlakti",
+        "english_description": "Injury of unspecified muscle and tendon at shoulder and upper arm level",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S47",
+        "description": "Crush poškodba rame in nadlakti",
+        "english_description": "Crushing injury of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S48",
+        "description": "Poškodbena amputacija rame in nadlakti",
+        "english_description": "Traumatic amputation at shoulder joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S48.0",
+        "description": "Poškodbena amputacija v ramenskem sklepu",
+        "english_description": "Traumatic amputation at shoulder joint",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S48.1",
+        "description": "Poškodbena amputacija v predelu nadlakti",
+        "english_description": "Traumatic amputation at level between shoulder and elbow",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S48.9",
+        "description": "Poškodbena amputacija rame in nadlakti, predel neopredeljen",
+        "english_description": "Traumatic amputation of shoulder and upper arm, level unspecified",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S49",
+        "description": "Druge in neopredeljene poškodbe rame in nadlakti",
+        "english_description": NaN,
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S49.7",
+        "description": "Multiple poškodbe rame in nadlakti",
+        "english_description": "Multiple injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S49.8",
+        "description": "Druge opredeljene poškodbe rame in nadlakti",
+        "english_description": "Other specified injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S49.9",
+        "description": "Neopredeljena poškodba rame in nadlakti",
+        "english_description": "Unspecified injury of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      }
+    ]
+  },
   "S60S69": {
     "original_matches": [
       {

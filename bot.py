@@ -12,7 +12,7 @@ import dotenv
 import aiohttp
 import asyncio
 import random
-from params import SECTIONS_FILE, WORKERS_FILE
+from params import SECTIONS_FILE, WORKERS_FILE, ENGLISH_SECTIONS_FILE
 
 dotenv.load_dotenv()
 
@@ -125,17 +125,10 @@ def llm_call(prompt, model_name="nemotron", **kwargs):
 
 diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \n Status ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 
-if os.path.exists("reasoning.txt") and False:
-    with open("reasoning.txt", "r") as f:
-        reasoning = f.read()
-else:
-    reasoning = llm_call(summarize_and_select_categories_prompt.format(diagnosis=diagnosis,available_categories=available_categories))
+reasoning = llm_call(summarize_and_select_categories_prompt.format(diagnosis=diagnosis,available_categories=available_categories))
 
-    with open("reasoning.txt", "w") as f:
-        f.write(reasoning)
-
-
-# Define Pydantic model for structured output
+with open("reasoning.txt", "w") as f:
+    f.write(reasoning)
 class MKB10Response(openai.BaseModel):
     applicable_categories: List[str]
 
@@ -189,6 +182,7 @@ class SpecificCodesResponse(openai.BaseModel):
         return type(f'SpecificCodesResponse_{prefix}', (cls,), namespace)
 
 extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
+print(extracted_categories)
 
 def clean_code(code: str) -> str:
     """Clean MKB-10 code by removing dashes and standardizing format"""
@@ -269,36 +263,24 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
     
     return results
 
-# Load both category files
 df_slo = pd.read_csv(SECTIONS_FILE)
-df_eng = pd.read_csv("/Users/carbs/mkb102/mkb_slo_df_eng.csv")
+df_eng = pd.read_csv(ENGLISH_SECTIONS_FILE)
 
-# Parse the extracted categories from JSON string
 categories = json.loads(extracted_categories)['applicable_categories']
-
-# Get unique first letters from categories for filtering
 letters = set(category[0] for category in categories)
 
-# # Filter categories from df_slo that start with any of the letters
-# mask = df_slo['SKLOP'].str[0].isin(letters)
-# categories_containing_letters = df_slo[mask]['SKLOP'].values
-
-# Find matching codes in both dataframes
 matching_results_slo = find_matching_codes(categories, df_slo)
 matching_results_hierarchical = find_matching_codes_hierarchical(categories, df_eng)
 
-# Group results by query
 def group_results_by_query(results):
     grouped = defaultdict(list)
     for result in results:
         grouped[result['matched_query']].append(result)
     return dict(grouped)
 
-# Group both result sets
 grouped_slo = group_results_by_query(matching_results_slo)
 grouped_hierarchical = group_results_by_query(matching_results_hierarchical)
 
-# Create structured JSON output
 json_output = {}
 all_queries = sorted(set(list(grouped_slo.keys()) + list(grouped_hierarchical.keys())))
 
@@ -456,14 +438,3 @@ for category, codes in sorted(category_grouped_codes.items()):
         print(f"    {Fore.CYAN}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
         print()
     print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
-
-
-
-
-
-
-
-
-
-
-

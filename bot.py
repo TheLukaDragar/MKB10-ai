@@ -123,12 +123,6 @@ def llm_call(prompt, model_name="nemotron", **kwargs):
     """
     return asyncio.run(_async_llm_call(prompt, model_name=model_name, **kwargs))
 
-diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \n Status ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
-
-reasoning = llm_call(summarize_and_select_categories_prompt.format(diagnosis=diagnosis,available_categories=available_categories))
-
-with open("reasoning.txt", "w") as f:
-    f.write(reasoning)
 class MKB10Response(openai.BaseModel):
     applicable_categories: List[str]
 
@@ -181,7 +175,6 @@ class SpecificCodesResponse(openai.BaseModel):
         
         return type(f'SpecificCodesResponse_{prefix}', (cls,), namespace)
 
-extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
 
 def clean_code(code: str) -> str:
     """Clean MKB-10 code by removing dashes and standardizing format"""
@@ -262,14 +255,6 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
     
     return results
 
-df_slo = pd.read_csv(SECTIONS_FILE)
-df_eng = pd.read_csv(ENGLISH_SECTIONS_FILE)
-
-categories = json.loads(extracted_categories)['applicable_categories']
-letters = set(category[0] for category in categories)
-
-matching_results_slo = find_matching_codes(categories, df_slo)
-matching_results_hierarchical = find_matching_codes_hierarchical(categories, df_eng)
 
 def group_results_by_query(results):
     grouped = defaultdict(list)
@@ -277,51 +262,6 @@ def group_results_by_query(results):
         grouped[result['matched_query']].append(result)
     return dict(grouped)
 
-grouped_slo = group_results_by_query(matching_results_slo)
-grouped_hierarchical = group_results_by_query(matching_results_hierarchical)
-
-json_output = {}
-all_queries = sorted(set(list(grouped_slo.keys()) + list(grouped_hierarchical.keys())))
-
-for query in all_queries:
-    json_output[query] = {
-        "original_matches": grouped_slo.get(query, []),
-        "hierarchical_matches": grouped_hierarchical.get(query, [])
-    }
-
-# Save initial matches to JSON
-output_filename = "mkb10_matches.json"
-with open(output_filename, "w", encoding='utf-8') as f:
-    json.dump(json_output, f, ensure_ascii=False, indent=2)
-
-print(f"\n{Fore.CYAN}Initial matches saved to {output_filename}{Style.RESET_ALL}")
-
-# Process all categories in parallel
-all_categories = []
-descriptions_lookup = {}
-
-for query, matches in json_output.items():
-    category_codes = []
-    # Build descriptions lookup while processing matches
-    for match_type in ['original_matches', 'hierarchical_matches']:
-        for match in matches[match_type]:
-            code = match['code']
-            descriptions_lookup[code] = {
-                'slo_description': match['description'],
-                'eng_description': match.get('english_description', '')
-            }
-            code_info = {
-                'code': code,
-                'slo_description': match['description'],
-                'eng_description': match.get('english_description', ''),
-                'matched_query': query
-            }
-            category_codes.append(code_info)
-    if category_codes:
-        all_categories.append({'matched_query': query, 'codes': category_codes})
-
-logger.info(f"{Fore.CYAN}Starting parallel processing with {len(all_categories)} categories{Style.RESET_ALL}")
-print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
 
 async def process_category_async(category: Dict, diagnosis: str, descriptions_lookup: Dict) -> Dict:
     """
@@ -398,42 +338,109 @@ def process_categories_parallel(categories: List[Dict], diagnosis: str, descript
     """
     return asyncio.run(process_all_categories_async(categories, diagnosis, descriptions_lookup))
 
-# Process all categories in parallel
-results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
 
-# Combine all valid codes from parallel processing
-all_final_codes = []
-for result in results:
-    if 'error' not in result:
-        all_final_codes.extend(result['codes'])
 
-logger.info(f"{Fore.GREEN}Successfully processed {len(all_final_codes)} codes across all categories{Style.RESET_ALL}")
+if __name__ == "__main__":
+    diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \n Status ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 
-# Prepare final output
-final_output = {
-    "final_codes": all_final_codes
-}
+    reasoning = llm_call(summarize_and_select_categories_prompt.format(diagnosis=diagnosis,available_categories=available_categories))
 
-# Save final codes to file
-final_output_filename = "mkb10_final_codes.json"
-with open(final_output_filename, "w", encoding='utf-8') as f:
-    json.dump(final_output, f, ensure_ascii=False, indent=2)
+    with open("reasoning.txt", "w") as f:
+        f.write(reasoning)
 
-# Group codes by category for display
-category_grouped_codes = defaultdict(list)
-for code_info in final_output['final_codes']:
-    category_grouped_codes[code_info['category_group']].append(code_info)
+    extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
 
-# Print organized results
-print(f"\n{Fore.CYAN}Final Low-Level MKB-10 Codes by Category:{Style.RESET_ALL}")
-print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
+    df_slo = pd.read_csv(SECTIONS_FILE)
+    df_eng = pd.read_csv(ENGLISH_SECTIONS_FILE)
 
-for category, codes in sorted(category_grouped_codes.items()):
-    print(f"\n{Fore.YELLOW}Category {category}:{Style.RESET_ALL}")
-    for code_info in codes:
-        print(f"  → {Fore.GREEN}{code_info['code']}{Style.RESET_ALL}")
-        print(f"    {Fore.CYAN}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
-        print(f"    {Fore.CYAN}English:{Style.RESET_ALL} {code_info['eng_description']}")
-        print(f"    {Fore.CYAN}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
-        print()
-    print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
+    categories = json.loads(extracted_categories)['applicable_categories']
+    letters = set(category[0] for category in categories)
+
+    matching_results_slo = find_matching_codes(categories, df_slo)
+    matching_results_hierarchical = find_matching_codes_hierarchical(categories, df_eng)
+
+    grouped_slo = group_results_by_query(matching_results_slo)
+    grouped_hierarchical = group_results_by_query(matching_results_hierarchical)
+
+    json_output = {}
+    all_queries = sorted(set(list(grouped_slo.keys()) + list(grouped_hierarchical.keys())))
+
+    for query in all_queries:
+        json_output[query] = {
+            "original_matches": grouped_slo.get(query, []),
+            "hierarchical_matches": grouped_hierarchical.get(query, [])
+        }
+
+    # Save initial matches to JSON
+    output_filename = "mkb10_matches.json"
+    with open(output_filename, "w", encoding='utf-8') as f:
+        json.dump(json_output, f, ensure_ascii=False, indent=2)
+
+    print(f"\n{Fore.CYAN}Initial matches saved to {output_filename}{Style.RESET_ALL}")
+
+    # Process all categories in parallel
+    all_categories = []
+    descriptions_lookup = {}
+
+    for query, matches in json_output.items():
+        category_codes = []
+        # Build descriptions lookup while processing matches
+        for match_type in ['original_matches', 'hierarchical_matches']:
+            for match in matches[match_type]:
+                code = match['code']
+                descriptions_lookup[code] = {
+                    'slo_description': match['description'],
+                    'eng_description': match.get('english_description', '')
+                }
+                code_info = {
+                    'code': code,
+                    'slo_description': match['description'],
+                    'eng_description': match.get('english_description', ''),
+                    'matched_query': query
+                }
+                category_codes.append(code_info)
+        if category_codes:
+            all_categories.append({'matched_query': query, 'codes': category_codes})
+
+    logger.info(f"{Fore.CYAN}Starting parallel processing with {len(all_categories)} categories{Style.RESET_ALL}")
+    print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
+
+    # Process all categories in parallel
+    results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
+
+    # Combine all valid codes from parallel processing
+    all_final_codes = []
+    for result in results:
+        if 'error' not in result:
+            all_final_codes.extend(result['codes'])
+
+    logger.info(f"{Fore.GREEN}Successfully processed {len(all_final_codes)} codes across all categories{Style.RESET_ALL}")
+
+    # Prepare final output
+    final_output = {
+        "final_codes": all_final_codes
+    }
+
+    # Save final codes to file
+    final_output_filename = "mkb10_final_codes.json"
+    with open(final_output_filename, "w", encoding='utf-8') as f:
+        json.dump(final_output, f, ensure_ascii=False, indent=2)
+
+    # Group codes by category for display
+    category_grouped_codes = defaultdict(list)
+    for code_info in final_output['final_codes']:
+        category_grouped_codes[code_info['category_group']].append(code_info)
+
+    # Print organized results
+    print(f"\n{Fore.CYAN}Final Low-Level MKB-10 Codes by Category:{Style.RESET_ALL}")
+    print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
+
+    for category, codes in sorted(category_grouped_codes.items()):
+        print(f"\n{Fore.YELLOW}Category {category}:{Style.RESET_ALL}")
+        for code_info in codes:
+            print(f"  → {Fore.GREEN}{code_info['code']}{Style.RESET_ALL}")
+            print(f"    {Fore.CYAN}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
+            print(f"    {Fore.CYAN}English:{Style.RESET_ALL} {code_info['eng_description']}")
+            print(f"    {Fore.CYAN}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
+            print()
+        print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")

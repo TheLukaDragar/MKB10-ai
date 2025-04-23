@@ -1,35 +1,42 @@
-**Izbrani kodni razponi za opisano stanje**
+**Izbrani kodni razponi za diagnozo**
 
-1. **Primarni stanji (poškodbe)**
-	* **S60-S69**: Poškodbe zapestja in roke
-		+ **S60.0**: Odrgnina in poteg na zapestju in roki
-		+ **Razlog izbire**: Opisano je več odrgnin v prelu desne dlani, po vseh prstih te roke, in največja rana v predelu desnega zapestja.
-	* **S80-S89**: Poškodbe kolena in goleni
-		+ **S80.0**: Odrgnina in poteg na kolenu in goleni
-		+ **Razlog izbire**: Opisane so dve večji odrgnini v predelu levega kolena, ki je tudi blago otečeno.
-	* **S50-S59**: Poškodbe komolca in podlakti
-		+ **S50.0**: Odrgnina in poteg na komolcu in podlakti
-		+ **Razlog izbire**: Omenjena je odrgnina na levi rami in odrgnine brez znakov vnetja v področju leve nadlahti in leve podlahti.
-2. **Zunanji vzroki (mechanizem poškodbe)**
-	* **V10-V19**: Kolesar, poškodovan v transportni nezgodi
-		+ **V19.4**: Kolesar, poškodovan v transportni nezgodi, neopredeljena
-		+ **Razlog izbire**: Pacient je padel s kolesa.
-3. **Aktivnost (čase poškodbe)**
-	* **U50-U72**: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
-		+ **U71.0**: Med vožnjo s kolesom (brez motora)
-		+ **Razlog izbire**: Pacient je bil med vožnjo s kolesom, ko se je zgodila nezgoda.
+**Primarni pogoji (poškodbe):**
 
-**Popolni seznam izbranih kod z razlagami:**
+1. **S60-S69, Poškodbe zapestja in roke**
+	* Slovenian description: Poškodbe zapestja in roke
+	* Rationale: Omenjeno je "rana v predelu desnega zapestja" in "odrgnine v prelu desne dlani in po vseh prstih te roke".
+2. **S50-S59, Poškodbe komolca in podlakti**
+	* Slovenian description: Poškodbe komolca in podlakti
+	* Rationale: Omenjena je "odrgnina na levi rami" in "odrgnine... v področju leve nadlahti, leve podlahti".
+3. **S80-S89, Poškodbe kolena in goleni**
+	* Slovenian description: Poškodbe kolena in goleni
+	* Rationale: Omenjene so "dve večji odrgnini v predelu levega kolena" in "levo koleno je blago otečeno".
 
-| **Kod** | **Slovenski naziv** | **Razlog izbire** |
-| --- | --- | --- |
-| **S60.0** | Odrgnina in poteg na zapestju in roki | Več odrgnin v prelu desne dlani in po vseh prstih te roke, največja rana v predelu desnega zapestja. |
-| **S80.0** | Odrgnina in poteg na kolenu in goleni | Dve večji odrgnini v predelu levega kolena, ki je tudi blago otečeno. |
-| **S50.0** | Odrgnina in poteg na komolcu in podlakti | Odrgnina na levi rami in odrgnine brez znakov vnetja v področju leve nadlahti in leve podlahti. |
-| **V19.4** | Kolesar, poškodovan v transportni nezgodi, neopredeljena | Pacient je padel s kolesa. |
-| **U71.0** | Med vožnjo s kolesom (brez motora) | Pacient je bil med vožnjo s kolesom, ko se je zgodila nezgoda. |
+**Zunanji vzroki (mechanizem in okolnosti):**
 
-**Nedoločenosti ali potreba po dodatnih informacijah:**
+1. **V10-V19, Kolesar, poškodovan v transportni nezgodi**
+	* Slovenian description: Kolesar, poškodovan v transportni nezgodi
+	* Rationale: Omenjeno je, da se je pacient "padel s kolesa".
+2. **W00-W19, Padci**
+	* Slovenian description: Padci
+	* Rationale: Dodatno opredelitev padca s kolesa, ki je povzročil poškodbe.
 
-- Za podrobnejši opis poškodbe levega kolena bi bile priporočljive dodatne informacije o rezultatih RTG slik in detaljnejši opis stanja kolena (npr., prisotnost morebitnih fraktur, ki niso bile omenjene).
-- Če bi bile dostopne dodatne informacije o okoljskih dejavnikih (npr., vremenske razmere, stanje vozlišča), bi se lahko uporabile za še bolj specifično kodiranje zunanjih vzrokov.
+**Aktivnost (če je na voljo):**
+
+1. **U50-U72, Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času**
+	* Slovenian description: Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+	* Rationale: Vožnja s kolesom lahko spada pod športne ali prostočasne aktivnosti.
+
+**Skupni izpis izbranih kod:**
+
+- **S60-S69**, Poškodbe zapestja in roke
+- **S50-S59**, Poškodbe komolca in podlakti
+- **S80-S89**, Poškodbe kolena in goleni
+- **V10-V19**, Kolesar, poškodovan v transportni nezgodi
+- **W00-W19**, Padci
+- **U50-U72**, Med ukvarjanjem s športnimi aktivnostmi in aktivnostmi v prostem času
+
+**Nejasnosti ali potreba po dodatnih informacijah:**
+
+- Za podrobnejšo kodiranje bi bile priporočljive dodatne informacije o resnosti posameznih poškodob (npr., stopnja oteklina, potreba po kirurški oskrbi ipd.).
+- Če so bile pri poškodbi uporabljene zaščitne opreme (npr., čelada), bi to lahko vplivalo na kodiranje zunanjih vzrokov ali dodatnih dejavnikov.

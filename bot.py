@@ -1,5 +1,5 @@
 import os
-from typing import List, Dict
+from typing import List, Dict, Tuple
 import openai
 import pandas as pd
 from prompts import *
@@ -222,6 +222,7 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
                 results.append({
                     'code': row['KODA'],
                     'level': row['RAVEN'],
+                    'category': row['KATEGORIJA'],
                     'description': row['SLOVENSKI NAZIV'],
                     'english_description': row['ENGLISH DESCRIPTION POSTPROCESED'],
                     'matched_query': category,
@@ -244,6 +245,7 @@ def find_matching_codes_hierarchical(categories: List[str], available_categories
                             results.append({
                                 'code': row['KODA'],
                                 'level': row['RAVEN'],
+                                'category': row['KATEGORIJA'],
                                 'description': row['SLOVENSKI NAZIV'],
                                 'english_description': row['ENGLISH DESCRIPTION POSTPROCESED'],
                                 'matched_query': category,
@@ -422,28 +424,44 @@ def get_first_level_codes(all_queries: List[str], grouped_slo: Dict, grouped_hie
         json.dump(json_output, f, ensure_ascii=False, indent=2)
 
     print(f"\n{Fore.CYAN}Initial matches saved to {output_filename}{Style.RESET_ALL}")
-    return json_output
 
-if __name__ == "__main__":
-    diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \nStatus ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
+    all_categories, descriptions_lookup = analyse_first_level_codes(json_output)
+    return all_categories, descriptions_lookup
 
-    reasoning = reasoning_to_categories(diagnosis, available_categories)
-    extracted_categories = extract_categories_ranges(reasoning)
+def get_second_level_filtered_codes(all_queries: List[str], grouped_slo: Dict, grouped_hierarchical: Dict, codes: List[str]) -> List[Dict]:
+    """
+    Get the second level codes from the matching results
+    """
+    json_output = {}
+    for query in all_queries:
+        slo = grouped_slo.get(query, [])
+        hier = grouped_hierarchical.get(query, [])
+        hier = [code for code in hier if code['level'] >= 3 and code['category'] in codes]
 
-    categories, letters = get_categories_from_json(extracted_categories)
-    
-    matching_results_slo, matching_results_hierarchical = get_matching_codes(categories)
+        json_output[query] = {
+            "original_matches": slo,
+            "hierarchical_matches": hier
+        }
 
-    grouped_slo, grouped_hierarchical, all_queries = get_all_queries(matching_results_slo, matching_results_hierarchical)
+    output_filename = "debug/mkb10_matches.json"
 
-    json_output = get_first_level_codes(all_queries, grouped_slo, grouped_hierarchical)
+    with open(output_filename, "w", encoding='utf-8') as f:
+        json.dump(json_output, f, ensure_ascii=False, indent=2)
 
+    print(f"\n{Fore.CYAN}Initial matches saved to {output_filename}{Style.RESET_ALL}")
+
+    all_categories, descriptions_lookup = analyse_first_level_codes(json_output)
+    return all_categories, descriptions_lookup
+
+
+def analyse_first_level_codes(json_output: Dict) -> Tuple[List[Dict], Dict]: 
     all_categories = []
     descriptions_lookup = {}
 
     for query, matches in json_output.items():
         category_codes = []
         for match_type in ['original_matches', 'hierarchical_matches']:
+            print(f"Processing {match_type} for query: {query}")
             for match in matches[match_type]:
                 code = match['code']
                 descriptions_lookup[code] = {
@@ -463,34 +481,76 @@ if __name__ == "__main__":
     logger.info(f"{Fore.CYAN}Starting parallel processing with {len(all_categories)} categories{Style.RESET_ALL}")
     print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
 
-    results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
+    return all_categories, descriptions_lookup
 
-    print('results', results)
-
+def extract_codes_from_results(results: List[Dict], debug: bool = True) -> List[Dict]:
+    """
+    Extract the codes from the results
+    """
     all_final_codes = []
     for result in results:
         if 'error' not in result:
             all_final_codes.extend(result['codes'])
 
+    if debug:
+        final_output = {
+            "final_codes": all_final_codes
+        }
+
+        with open("debug/final_codes.json", "w", encoding='utf-8') as f:
+            json.dump(final_output, f, ensure_ascii=False, indent=2)
+
+    codes = [code_info['code'] for code_info in all_final_codes]
+    print('codes', codes)
+
     logger.info(f"{Fore.GREEN}Successfully processed {len(all_final_codes)} codes across all categories{Style.RESET_ALL}")
-
-    final_output = {
-        "final_codes": all_final_codes
-    }
-
-    final_output_filename = "mkb10_final_codes.json"
-    with open(final_output_filename, "w", encoding='utf-8') as f:
-        json.dump(final_output, f, ensure_ascii=False, indent=2)
-
+    
     category_grouped_codes = defaultdict(list)
-    for code_info in final_output['final_codes']:
+    for code_info in all_final_codes:
         category_grouped_codes[code_info['category_group']].append(code_info)
+
 
     print(f"\n{Fore.CYAN}Final Low-Level MKB-10 Codes by Category:{Style.RESET_ALL}")
     print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
 
-    for category, codes in sorted(category_grouped_codes.items()):
-        print(f"\n{Fore.YELLOW}Category {category}:{Style.RESET_ALL}")
+    return codes, category_grouped_codes
+
+if __name__ == "__main__":
+    diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \nStatus ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
+
+    reasoning = reasoning_to_categories(diagnosis, available_categories)
+    extracted_categories = extract_categories_ranges(reasoning)
+
+    categories, letters = get_categories_from_json(extracted_categories)
+    
+    matching_results_slo, matching_results_hierarchical = get_matching_codes(categories)
+
+    grouped_slo, grouped_hierarchical, all_queries = get_all_queries(matching_results_slo, matching_results_hierarchical)
+
+    all_categories, descriptions_lookup = get_first_level_codes(all_queries, grouped_slo, grouped_hierarchical)
+
+    first_level_results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
+
+    first_level_codes, first_level_category_grouped_codes = extract_codes_from_results(first_level_results)
+
+
+    for category, codes in sorted(first_level_category_grouped_codes.items()):
+        print(f"\n{Fore.YELLOW}Intermediate Category {category}:{Style.RESET_ALL}")
+        for code_info in codes:
+            print(f"  → {Fore.GREEN}{code_info['code']}{Style.RESET_ALL}")
+            print(f"    {Fore.CYAN}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
+            print(f"    {Fore.CYAN}English:{Style.RESET_ALL} {code_info['eng_description']}")
+            print(f"    {Fore.CYAN}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
+            print()
+        print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
+
+    second_level_categories, second_level_descriptions_lookup = get_second_level_filtered_codes(all_queries, grouped_slo, grouped_hierarchical, first_level_codes)
+
+    second_level_results = process_categories_parallel(second_level_categories, diagnosis, second_level_descriptions_lookup)
+    second_level_codes, second_level_category_grouped_codes = extract_codes_from_results(second_level_results)
+
+    for category, codes in sorted(second_level_category_grouped_codes.items()):
+        print(f"\n{Fore.YELLOW}Final Category {category}:{Style.RESET_ALL}")
         for code_info in codes:
             print(f"  → {Fore.GREEN}{code_info['code']}{Style.RESET_ALL}")
             print(f"    {Fore.CYAN}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")

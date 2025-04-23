@@ -11,80 +11,99 @@
       {
         "code": "S50",
         "level": 3,
+        "category": "S50",
         "description": "Površinska poškodba podlakti",
         "english_description": "Contusion of elbow",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S51",
-        "level": 3,
-        "description": "Rana na podlakti",
-        "english_description": "Open wound of elbow",
+        "code": "S50.0",
+        "level": 4,
+        "category": "S50",
+        "description": "Udarnina komolca",
+        "english_description": "Contusion of elbow",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S52",
-        "level": 3,
-        "description": "Zlom podlakti",
-        "english_description": "Fracture of upper end of ulna, part unspecified",
+        "code": "S50.1",
+        "level": 4,
+        "category": "S50",
+        "description": "Udarnina na drugih in neopredeljenih delih podlakti",
+        "english_description": "Contusion of other and unspecified parts of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S53",
-        "level": 3,
-        "description": "Izpah, izvin in nateg sklepov in vezi komolca",
-        "english_description": "Dislocation of radial head",
+        "code": "S50.7",
+        "level": 4,
+        "category": "S50",
+        "description": "Multiple površinske poškodbe podlakti",
+        "english_description": "Multiple superficial injuries of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S54",
-        "level": 3,
-        "description": "Poškodba živcev v predelu podlakti",
-        "english_description": "Injury of ulnar nerve at forearm level",
+        "code": "S50.8",
+        "level": 4,
+        "category": "S50",
+        "description": "Druge površinske poškodbe podlakti",
+        "english_description": "Other superficial injuries of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S55",
-        "level": 3,
-        "description": "Poškodba krvnih žil v predelu podlakti",
-        "english_description": "Injury of ulnar artery at forearm level",
+        "code": "S50.81",
+        "level": 5,
+        "category": "S50",
+        "description": "Odrgnina podlakti",
+        "english_description": "Abrasion of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S56",
-        "level": 3,
-        "description": "Poškodba mišice in tetive v predelu podlakti",
-        "english_description": "Injury of flexor muscle and tendon of thumb at forearm level",
+        "code": "S50.82",
+        "level": 5,
+        "category": "S50",
+        "description": "Hematom podlakti",
+        "english_description": "Blister of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S57",
-        "level": 3,
-        "description": "Crush poškodba podlakti",
-        "english_description": "Crushing injury of elbow",
+        "code": "S50.83",
+        "level": 5,
+        "category": "S50",
+        "description": "Pik žuželke podlakti",
+        "english_description": "Insect bite of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S58",
-        "level": 3,
-        "description": "Poškodbena amputacija podlakti",
-        "english_description": "Traumatic amputation at elbow joint",
+        "code": "S50.84",
+        "level": 5,
+        "category": "S50",
+        "description": "Tujek podlakti",
+        "english_description": "Superficial foreign body (splinter) of forearm",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S59",
-        "level": 3,
-        "description": "Druge in neopredeljene poškodbe podlakti",
-        "english_description": NaN,
+        "code": "S50.88",
+        "level": 5,
+        "category": "S50",
+        "description": "Druge površinske poškodbe podlakti",
+        "english_description": "Other superficial injuries of forearm",
+        "matched_query": "S50S59",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S50.9",
+        "level": 4,
+        "category": "S50",
+        "description": "Površinska poškodba podlakti, neopredeljena",
+        "english_description": "Superficial injury of forearm, unspecified",
         "matched_query": "S50S59",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       }
@@ -102,80 +121,108 @@
       {
         "code": "S60",
         "level": 3,
+        "category": "S60",
         "description": "Površinska poškodba zapestja in roke",
         "english_description": "Contusion of finger(s) without damage to nail",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S61",
-        "level": 3,
-        "description": "Rana na zapestju in roki",
-        "english_description": "Open wound of finger(s) without damage to nail",
+        "code": "S60.0",
+        "level": 4,
+        "category": "S60",
+        "description": "Udarnina prsta(-ov) brez poškodbe nohta",
+        "english_description": "Contusion of finger(s) without damage to nail",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S62",
-        "level": 3,
-        "description": "Zlom v predelu zapestja in roke",
-        "english_description": "Fracture of navicular [scaphoid] bone of hand",
+        "code": "S60.1",
+        "level": 4,
+        "category": "S60",
+        "description": "Udarnina prsta(-ov) s poškodbo nohta",
+        "english_description": "Contusion of finger(s) with damage to nail",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S63",
-        "level": 3,
-        "description": "Izpah, izvin in nateg sklepov in vezi v predelu zapestja in roke",
-        "english_description": "Dislocation of wrist, part unspecified",
+        "code": "S60.2",
+        "level": 4,
+        "category": "S60",
+        "description": "Udarnina drugih delov zapestja in roke",
+        "english_description": "Contusion of other parts of wrist and hand",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S64",
-        "level": 3,
-        "description": "Poškodba živcev v predelu zapestja in roke",
-        "english_description": "Injury of ulnar nerve at wrist and hand level",
+        "code": "S60.7",
+        "level": 4,
+        "category": "S60",
+        "description": "Multiple površinske poškodbe zapestja in roke",
+        "english_description": "Multiple superficial injuries of wrist and hand",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S65",
-        "level": 3,
-        "description": "Poškodba krvnih žil v predelu zapestja in roke",
-        "english_description": "Injury of ulnar artery at wrist and hand level",
+        "code": "S60.8",
+        "level": 4,
+        "category": "S60",
+        "description": "Druge površinske poškodbe zapestja in roke",
+        "english_description": "Other superficial injuries of wrist and hand",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S66",
-        "level": 3,
-        "description": "Poškodba mišice in tetive v predelu zapestja in roke",
-        "english_description": "Injury of long flexor muscle and tendon of thumb at wrist and hand level",
+        "code": "S60.81",
+        "level": 5,
+        "category": "S60",
+        "description": "Odrgnina zapestja in roke",
+        "english_description": "Abrasion of wrist and hand",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S67",
-        "level": 3,
-        "description": "Crush poškodba zapestja in roke",
-        "english_description": "Crushing injury of thumb and other finger(s)",
+        "code": "S60.82",
+        "level": 5,
+        "category": "S60",
+        "description": "Podplutba zapestja in roke",
+        "english_description": "Blister of wrist and hand",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S68",
-        "level": 3,
-        "description": "Poškodbena amputacija zapestja in roke",
-        "english_description": "Traumatic amputation of thumb (complete)(partial)",
+        "code": "S60.83",
+        "level": 5,
+        "category": "S60",
+        "description": "Pik žuželke zapestja in roke",
+        "english_description": "Insect bite of wrist and hand",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S69",
-        "level": 3,
-        "description": "Druge in neopredeljene poškodbe zapestja in roke",
-        "english_description": NaN,
+        "code": "S60.84",
+        "level": 5,
+        "category": "S60",
+        "description": "Tujek zapestja in roke",
+        "english_description": "Superficial foreign body (splinter) of wrist and hand",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S60.88",
+        "level": 5,
+        "category": "S60",
+        "description": "Neopredeljena poškodba zapestja in roke",
+        "english_description": "Other superficial injuries of wrist and hand",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S60.9",
+        "level": 4,
+        "category": "S60",
+        "description": "Površinska poškodba zapestja in roke, neopredeljena",
+        "english_description": "Superficial injury of wrist and hand, unspecified",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       }
@@ -193,80 +240,135 @@
       {
         "code": "S80",
         "level": 3,
+        "category": "S80",
         "description": "Površinska poškodba goleni",
         "english_description": "Contusion of knee",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S81",
-        "level": 3,
-        "description": "Rana na goleni",
-        "english_description": "Open wound of knee",
+        "code": "S80.0",
+        "level": 4,
+        "category": "S80",
+        "description": "Udarnina kolena",
+        "english_description": "Contusion of knee",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S82",
-        "level": 3,
-        "description": "Zlom goleni, vključno s skočnim sklepom",
-        "english_description": "Fracture of patella",
+        "code": "S80.1",
+        "level": 4,
+        "category": "S80",
+        "description": "Udarnina na drugih in neopredeljenih delih goleni",
+        "english_description": "Contusion of other and unspecified parts of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S83",
-        "level": 3,
-        "description": "Izpah, izvin in nateg sklepov in vezi kolena",
-        "english_description": "Dislocation of patella",
+        "code": "S80.7",
+        "level": 4,
+        "category": "S80",
+        "description": "Multiple površinske poškodbe goleni",
+        "english_description": "Multiple superficial injuries of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S84",
-        "level": 3,
-        "description": "Poškodba živcev v predelu goleni",
-        "english_description": "Injury of tibial nerve at lower leg level",
+        "code": "S80.8",
+        "level": 4,
+        "category": "S80",
+        "description": "Druge površinske poškodbe goleni",
+        "english_description": "Other superficial injuries of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S85",
-        "level": 3,
-        "description": "Poškodba krvnih žil v predelu goleni",
-        "english_description": "Injury of popliteal artery",
+        "code": "S80.81",
+        "level": 5,
+        "category": "S80",
+        "description": "Odrgnina goleni",
+        "english_description": "Abrasion of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S86",
-        "level": 3,
-        "description": "Poškodba mišice in tetive v predelu goleni",
-        "english_description": "Injury of Achilles tendon",
+        "code": "S80.82",
+        "level": 5,
+        "category": "S80",
+        "description": "Podplutba goleni",
+        "english_description": "Blister of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S87",
-        "level": 3,
-        "description": "Crush poškodba goleni",
-        "english_description": "Crushing injury of knee",
+        "code": "S80.83",
+        "level": 5,
+        "category": "S80",
+        "description": "Pik žuželke goleni",
+        "english_description": "Insect bite of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S88",
-        "level": 3,
-        "description": "Poškodbena amputacija goleni",
-        "english_description": "Traumatic amputation at knee joint",
+        "code": "S80.84",
+        "level": 5,
+        "category": "S80",
+        "description": "Tujek goleni",
+        "english_description": "Superficial foreign body (splinter) of lower leg",
+        "matched_query": "S80S89",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S80.88",
+        "level": 5,
+        "category": "S80",
+        "description": "Druge površinske poškodbe goleni",
+        "english_description": "Other superficial injuries of lower leg",
+        "matched_query": "S80S89",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S80.9",
+        "level": 4,
+        "category": "S80",
+        "description": "Površinska poškodba goleni, neopredeljena",
+        "english_description": "Superficial injury of lower leg, unspecified",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
         "code": "S89",
         "level": 3,
+        "category": "S89",
         "description": "Druge in neopredeljene poškodbe goleni",
         "english_description": NaN,
+        "matched_query": "S80S89",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S89.7",
+        "level": 4,
+        "category": "S89",
+        "description": "Več poškodb goleni",
+        "english_description": "Multiple injuries of lower leg",
+        "matched_query": "S80S89",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S89.8",
+        "level": 4,
+        "category": "S89",
+        "description": "Druge opredeljene poškodbe goleni",
+        "english_description": "Other specified injuries of lower leg",
+        "matched_query": "S80S89",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S89.9",
+        "level": 4,
+        "category": "S89",
+        "description": "Neopredeljena poškodba goleni",
+        "english_description": "Unspecified injury of lower leg",
         "matched_query": "S80S89",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       }
@@ -282,185 +384,154 @@
     ],
     "hierarchical_matches": [
       {
-        "code": "U50",
-        "level": 3,
-        "description": "Ekipni športi z žogo",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U51",
-        "level": 3,
-        "description": "Ekipni športi s kijem ali palico",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U52",
-        "level": 3,
-        "description": "Ekipni vodni športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U53",
-        "level": 3,
-        "description": "Vodni športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U54",
-        "level": 3,
-        "description": "Individualni vodni športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U55",
-        "level": 3,
-        "description": "Zimski športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U56",
-        "level": 3,
-        "description": "Individualne športne aktivnosti",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U57",
-        "level": 3,
-        "description": "Akrobatski športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U58",
-        "level": 3,
-        "description": "Estetski šport",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U59",
-        "level": 3,
-        "description": "Športi z loparjem",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U60",
-        "level": 3,
-        "description": "Športi s tarčo, natančni športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U61",
-        "level": 3,
-        "description": "Borilni športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U62",
-        "level": 3,
-        "description": "Trening moči",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U63",
-        "level": 3,
-        "description": "Jahanje",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U64",
-        "level": 3,
-        "description": "Adrenalinski športi",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
-        "code": "U65",
-        "level": 3,
-        "description": "Motošporti",
-        "english_description": NaN,
-        "matched_query": "U50U72",
-        "match_type": "hierarchical_SKLOP / 2. NIVO"
-      },
-      {
         "code": "U66",
         "level": 3,
+        "category": "U66",
         "description": "Športi na kolesih brez motorja",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
       },
       {
-        "code": "U67",
-        "level": 3,
-        "description": "Večdisciplinski športi",
+        "code": "U66.0",
+        "level": 4,
+        "category": "U66",
+        "description": "Kolesarjenje",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
       },
       {
-        "code": "U68",
-        "level": 3,
-        "description": "Letalski športi",
+        "code": "U66.00",
+        "level": 5,
+        "category": "U66",
+        "description": "Kolesarjenje, BMX",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
       },
       {
-        "code": "U69",
-        "level": 3,
-        "description": "Ostale rekreacijske aktivnosti povezane s šolo",
+        "code": "U66.01",
+        "level": 5,
+        "category": "U66",
+        "description": "Gorsko kolesarjenje",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
       },
       {
-        "code": "U70",
-        "level": 3,
-        "description": "Ostale določene športne in vadbene aktivnosti",
+        "code": "U66.02",
+        "level": 5,
+        "category": "U66",
+        "description": "Cestno kolesarjenje",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
       },
       {
-        "code": "U71",
-        "level": 3,
-        "description": "Nedoločena športna in vadbena aktivnost",
+        "code": "U66.03",
+        "level": 5,
+        "category": "U66",
+        "description": "Velodrom",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
       },
       {
-        "code": "U72",
-        "level": 3,
-        "description": "Aktivnosti v prostem času, neklasificirane",
+        "code": "U66.08",
+        "level": 5,
+        "category": "U66",
+        "description": "Ostalo opredeljeno kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.09",
+        "level": 5,
+        "category": "U66",
+        "description": "Neopredeljeno kolesarjenje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.1",
+        "level": 4,
+        "category": "U66",
+        "description": "Inline drsanje in rolanje ",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.2",
+        "level": 4,
+        "category": "U66",
+        "description": "Rolanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.3",
+        "level": 4,
+        "category": "U66",
+        "description": "Rolkanje",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.4",
+        "level": 4,
+        "category": "U66",
+        "description": "Vožnja s skirojem",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.40",
+        "level": 5,
+        "category": "U66",
+        "description": "Vožnja z zložljivim skirojem brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.49",
+        "level": 5,
+        "category": "U66",
+        "description": "Druga in neopredeljena vrsta vožnje s skirojem brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.5",
+        "level": 4,
+        "category": "U66",
+        "description": "Jadranje na kolesih",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.8",
+        "level": 4,
+        "category": "U66",
+        "description": "Ostali opredeljeni športi na kolesih brez motorja",
+        "english_description": NaN,
+        "matched_query": "U50U72",
+        "match_type": "hierarchical_SKLOP / 2. NIVO"
+      },
+      {
+        "code": "U66.9",
+        "level": 4,
+        "category": "U66",
+        "description": "Neopredeljeni športi na kolesih brez motorja",
         "english_description": NaN,
         "matched_query": "U50U72",
         "match_type": "hierarchical_SKLOP / 2. NIVO"
@@ -477,83 +548,185 @@
     ],
     "hierarchical_matches": [
       {
-        "code": "V10",
-        "level": 3,
-        "description": "Kolesar, poškodovan pri trčenju s pešcem ali živaljo",
-        "english_description": "Pedal cyclist injured in collision with pedestrian or animal, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V11",
-        "level": 3,
-        "description": "Kolesar, poškodovan v trčenju z drugim kolesom",
-        "english_description": "Pedal cyclist injured in collision with other pedal cycle, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V12",
-        "level": 3,
-        "description": "Kolesar, poškodovan v trčenju z dvo- ali trokolesnim motornim vozilom",
-        "english_description": "Pedal cyclist injured in collision with two- or three-wheeled motor vehicle, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V13",
-        "level": 3,
-        "description": "Kolesar, poškodovan v trčenju z avtomobilom, poltovornjakom ali kombijem",
-        "english_description": "Pedal cyclist injured in collision with car, pick-up truck or van, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V14",
-        "level": 3,
-        "description": "Kolesar, poškodovan pri trčenju s težkim transportnim vozilom ali avtobusom",
-        "english_description": "Pedal cyclist injured in collision with heavy transport vehicle or bus, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V15",
-        "level": 3,
-        "description": "Kolesar, poškodovan v trčenju z vlakom ali vozilom na tirih",
-        "english_description": "Pedal cyclist injured in collision with railway train or railway vehicle, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V16",
-        "level": 3,
-        "description": "Kolesar, poškodovan pri trčenju z druge vrste nemotornim vozilom",
-        "english_description": "Pedal cyclist injured in collision with other nonmotor vehicle, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "V17",
-        "level": 3,
-        "description": "Kolesar, poškodovan v trčenju z nepremičnim ali mirujočim predmetom",
-        "english_description": "Pedal cyclist injured in collision with fixed or stationary object, driver injured in nontraffic accident",
-        "matched_query": "V10V19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
         "code": "V18",
         "level": 3,
+        "category": "V18",
         "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja",
         "english_description": "Pedal cyclist injured in noncollision transport accident, driver injured in nontraffic accident",
         "matched_query": "V10V19",
         "match_type": "hierarchical_SKLOP / 3. NIVO"
       },
       {
-        "code": "V19",
-        "level": 3,
-        "description": "Kolesar, poškodovan v drugih in neopredeljenih transportnih nezgodah",
-        "english_description": "Pedal cyclist injured in collision with other and unspecified motor vehicles in nontraffic accident",
+        "code": "V18.0",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, voznik, neprometna nezgoda",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, driver injured in nontraffic accident",
         "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "V18.1",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, potnik, neprometna nezgoda",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, passenger injured in nontraffic accident",
+        "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "V18.2",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, neopredeljena oseba na kolesu, neprometna nezgoda",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, unspecified pedal cyclist injured in nontraffic accident",
+        "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "V18.3",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, med vsedanjem na kolo ali sestopanjem s kolesa",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, injured while boarding or alighting",
+        "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "V18.4",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, voznik na kolesu, prometna nezgoda",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, driver injured in traffic accident",
+        "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "V18.5",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, sopotnik na kolesu, prometna nezgoda",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, passenger injured in traffic accident",
+        "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "V18.9",
+        "level": 4,
+        "category": "V18",
+        "description": "Kolesar, poškodovan v transportni nezgodi brez trčenja, neopredeljena oseba na kolesu, prometna nezgoda",
+        "english_description": "Pedal cyclist injured in noncollision transport accident, unspecified pedal cyclist injured in traffic accident",
+        "matched_query": "V10V19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      }
+    ]
+  },
+  "W00W19": {
+    "original_matches": [
+      {
+        "code": "W00–W19",
+        "description": "Padci",
+        "matched_query": "W00W19"
+      }
+    ],
+    "hierarchical_matches": [
+      {
+        "code": "W02",
+        "level": 3,
+        "category": "W02",
+        "description": "Padec na drsalkah, smučeh, kotalkah ali deskah za smučanje (na snegu)",
+        "english_description": "Fall involving roller-skates",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.0",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z rolerji",
+        "english_description": "Fall involving roller-skates",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.1",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z rolko",
+        "english_description": "Fall involving skateboard",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.2",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z vodnimi smučmi",
+        "english_description": "Fall involving water ski",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.3",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z zimskimi smučmi",
+        "english_description": "Fall involving snow ski",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.4",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z bordom",
+        "english_description": "Fall involving snow board",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.5",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z drsalkami",
+        "english_description": "Fall involving ice-skates",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.6",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec s skirojem",
+        "english_description": "Fall involving scooter, nonpowered",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.7",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z otroškim vozičkom",
+        "english_description": "Fall involving baby carriage",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.8",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z otroško hojico",
+        "english_description": "Fall involving baby walker",
+        "matched_query": "W00W19",
+        "match_type": "hierarchical_SKLOP / 3. NIVO"
+      },
+      {
+        "code": "W02.9",
+        "level": 4,
+        "category": "W02",
+        "description": "Padec z drugim ali nedeločenim vozilom, namenjenim peščem",
+        "english_description": "Fall involving other and unspecified pedestrian conveyance",
+        "matched_query": "W00W19",
         "match_type": "hierarchical_SKLOP / 3. NIVO"
       }
     ]

@@ -7,7 +7,6 @@ KEY CODING PRINCIPLES:
 1. ONLY select code ranges that appear in the provided available_categories list
 2. Follow the hierarchical structure: primary condition first, followed by external causes and contributing factors
 3. Multiple codes may be necessary to fully represent the case
-4. Select as many codes as possible from the available_categories list
 
 SYSTEMATIC ANALYSIS PROCESS:
 1. First, carefully examine all provided available_categories
@@ -146,7 +145,7 @@ First, analyze:
 <input>
 <diagnosis>
 {diagnosis}
-</diagnosis>
+</original_diagnosis>
 
 <matched_codes>
 {matched_codes}

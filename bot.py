@@ -196,7 +196,6 @@ def find_matching_codes(categories: List[str], available_categories_df: pd.DataF
             for _, row in matches.iterrows():
                 results.append({
                     'code': row['SKLOP'],
-                    'level': row['RAVEN'],
                     'description': row['SLOVENSKI NAZIV'],
                     'matched_query': category
                 })
@@ -370,8 +369,6 @@ if __name__ == "__main__":
     for query in all_queries:
         slo = grouped_slo.get(query, [])
         hier = grouped_hierarchical.get(query, [])
-
-        slo = [code for code in slo if code['level'] == 3]
         hier = [code for code in hier if code['level'] == 3]
 
         json_output[query] = {

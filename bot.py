@@ -546,11 +546,11 @@ if __name__ == "__main__":
     second_level_codes, second_level_category_grouped_codes = extract_codes_from_results(second_level_results, file_name="final_codes.json")
 
     for category, codes in sorted(second_level_category_grouped_codes.items()):
-        print(f"\n{Fore.YELLOW}Final Category {category}:{Style.RESET_ALL}")
+        print(f"\n{Fore.GREEN}Final Category {category}:{Style.RESET_ALL}")
         for code_info in codes:
-            print(f"  → {Fore.GREEN}{code_info['code']}{Style.RESET_ALL}")
-            print(f"    {Fore.CYAN}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
-            print(f"    {Fore.CYAN}English:{Style.RESET_ALL} {code_info['eng_description']}")
-            print(f"    {Fore.CYAN}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
+            print(f"  → {Fore.YELLOW}{code_info['code']}{Style.RESET_ALL}")
+            print(f"    {Fore.LIGHTMAGENTA_EX}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
+            print(f"    {Fore.LIGHTMAGENTA_EX}English:{Style.RESET_ALL} {code_info['eng_description']}")
+            print(f"    {Fore.LIGHTMAGENTA_EX}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
             print()
         print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")

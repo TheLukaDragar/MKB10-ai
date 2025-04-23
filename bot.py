@@ -358,6 +358,7 @@ def extract_categories_ranges(reasoning_text: str, debug: bool = True) -> List[D
     Extract the range of categories from the list of categories
     """
     extracted_categories = llm_call(extract_categories_prompt.format(text=reasoning_text),extra_body={"guided_json": MKB10Response.model_json_schema()},temperature=0.0)
+
     if debug:
         with open("debug/extracted_categories.txt", "w") as f:
             f.write(extracted_categories)
@@ -375,11 +376,6 @@ def get_categories_from_json(json_text: str, debug: bool = True) -> List[Dict]:
             f.write(str(categories))
         with open("debug/letters.txt", "w") as f:
             f.write(str(letters))
-        
-        print('-'*80)
-        print('categories', categories)
-        print('letters', letters)
-        print('-'*80)
 
     return categories, letters
 
@@ -483,7 +479,7 @@ def analyse_first_level_codes(json_output: Dict) -> Tuple[List[Dict], Dict]:
 
     return all_categories, descriptions_lookup
 
-def extract_codes_from_results(results: List[Dict], debug: bool = True) -> List[Dict]:
+def extract_codes_from_results(results: List[Dict], debug: bool = True, file_name: str = "final_codes.json") -> List[Dict]:
     """
     Extract the codes from the results
     """
@@ -497,7 +493,7 @@ def extract_codes_from_results(results: List[Dict], debug: bool = True) -> List[
             "final_codes": all_final_codes
         }
 
-        with open("debug/final_codes.json", "w", encoding='utf-8') as f:
+        with open(f"debug/{file_name}", "w", encoding='utf-8') as f:
             json.dump(final_output, f, ensure_ascii=False, indent=2)
 
     codes = [code_info['code'] for code_info in all_final_codes]
@@ -531,7 +527,7 @@ if __name__ == "__main__":
 
     first_level_results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
 
-    first_level_codes, first_level_category_grouped_codes = extract_codes_from_results(first_level_results)
+    first_level_codes, first_level_category_grouped_codes = extract_codes_from_results(first_level_results, file_name="first_level_codes.json")
 
 
     for category, codes in sorted(first_level_category_grouped_codes.items()):
@@ -547,7 +543,7 @@ if __name__ == "__main__":
     second_level_categories, second_level_descriptions_lookup = get_second_level_filtered_codes(all_queries, grouped_slo, grouped_hierarchical, first_level_codes)
 
     second_level_results = process_categories_parallel(second_level_categories, diagnosis, second_level_descriptions_lookup)
-    second_level_codes, second_level_category_grouped_codes = extract_codes_from_results(second_level_results)
+    second_level_codes, second_level_category_grouped_codes = extract_codes_from_results(second_level_results, file_name="final_codes.json")
 
     for category, codes in sorted(second_level_category_grouped_codes.items()):
         print(f"\n{Fore.YELLOW}Final Category {category}:{Style.RESET_ALL}")

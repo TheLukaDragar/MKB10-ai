@@ -1,8 +1,8 @@
 {
     "applicable_categories": [
         "S60-S69",
-        "S50-S59",
         "S80-S89",
+        "S40-S49",
         "V10-V19",
         "W00-W19",
         "U50-U72"

@@ -1,110 +1,101 @@
 {
-  "S50S59": {
+  "S40S49": {
     "original_matches": [
       {
-        "code": "S50–S59",
-        "description": "Poškodbe komolca in podlakti",
-        "matched_query": "S50S59"
+        "code": "S40–S49",
+        "description": "Poškodbe rame in nadlakti",
+        "matched_query": "S40S49"
       }
     ],
     "hierarchical_matches": [
       {
-        "code": "S50",
+        "code": "S40",
         "level": 3,
-        "category": "S50",
-        "description": "Površinska poškodba podlakti",
-        "english_description": "Contusion of elbow",
-        "matched_query": "S50S59",
+        "category": "S40",
+        "description": "Površinska poškodba rame in nadlakti",
+        "english_description": "Contusion of shoulder and upper arm",
+        "matched_query": "S40S49",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S50.0",
+        "code": "S40.0",
         "level": 4,
-        "category": "S50",
-        "description": "Udarnina komolca",
-        "english_description": "Contusion of elbow",
-        "matched_query": "S50S59",
+        "category": "S40",
+        "description": "Udarnina rame in nadlakti",
+        "english_description": "Contusion of shoulder and upper arm",
+        "matched_query": "S40S49",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S50.1",
+        "code": "S40.7",
         "level": 4,
-        "category": "S50",
-        "description": "Udarnina na drugih in neopredeljenih delih podlakti",
-        "english_description": "Contusion of other and unspecified parts of forearm",
-        "matched_query": "S50S59",
+        "category": "S40",
+        "description": "Multiple površinske poškodbe rame in nadlakti",
+        "english_description": "Multiple superficial injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S50.7",
+        "code": "S40.8",
         "level": 4,
-        "category": "S50",
-        "description": "Multiple površinske poškodbe podlakti",
-        "english_description": "Multiple superficial injuries of forearm",
-        "matched_query": "S50S59",
+        "category": "S40",
+        "description": "Druge površinske poškodbe rame in nadlakti",
+        "english_description": "Other superficial injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       },
       {
-        "code": "S50.8",
+        "code": "S40.81",
+        "level": 5,
+        "category": "S40",
+        "description": "Odrgnina rame in nadlakti",
+        "english_description": "Abrasion of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.82",
+        "level": 5,
+        "category": "S40",
+        "description": "Hematom rame in nadlakti",
+        "english_description": "Blister of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.83",
+        "level": 5,
+        "category": "S40",
+        "description": "Pik žuželke rame in nadlakti",
+        "english_description": "Insect bite of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.84",
+        "level": 5,
+        "category": "S40",
+        "description": "Tujek rame in nadlakti",
+        "english_description": "Superficial foreign body (splinter) of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.88",
+        "level": 5,
+        "category": "S40",
+        "description": "Druge povrhnje poškodbe rame in nadlakti",
+        "english_description": "Other superficial injuries of shoulder and upper arm",
+        "matched_query": "S40S49",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S40.9",
         "level": 4,
-        "category": "S50",
-        "description": "Druge površinske poškodbe podlakti",
-        "english_description": "Other superficial injuries of forearm",
-        "matched_query": "S50S59",
-        "match_type": "hierarchical_SKLOP / 1. NIVO"
-      },
-      {
-        "code": "S50.81",
-        "level": 5,
-        "category": "S50",
-        "description": "Odrgnina podlakti",
-        "english_description": "Abrasion of forearm",
-        "matched_query": "S50S59",
-        "match_type": "hierarchical_SKLOP / 1. NIVO"
-      },
-      {
-        "code": "S50.82",
-        "level": 5,
-        "category": "S50",
-        "description": "Hematom podlakti",
-        "english_description": "Blister of forearm",
-        "matched_query": "S50S59",
-        "match_type": "hierarchical_SKLOP / 1. NIVO"
-      },
-      {
-        "code": "S50.83",
-        "level": 5,
-        "category": "S50",
-        "description": "Pik žuželke podlakti",
-        "english_description": "Insect bite of forearm",
-        "matched_query": "S50S59",
-        "match_type": "hierarchical_SKLOP / 1. NIVO"
-      },
-      {
-        "code": "S50.84",
-        "level": 5,
-        "category": "S50",
-        "description": "Tujek podlakti",
-        "english_description": "Superficial foreign body (splinter) of forearm",
-        "matched_query": "S50S59",
-        "match_type": "hierarchical_SKLOP / 1. NIVO"
-      },
-      {
-        "code": "S50.88",
-        "level": 5,
-        "category": "S50",
-        "description": "Druge površinske poškodbe podlakti",
-        "english_description": "Other superficial injuries of forearm",
-        "matched_query": "S50S59",
-        "match_type": "hierarchical_SKLOP / 1. NIVO"
-      },
-      {
-        "code": "S50.9",
-        "level": 4,
-        "category": "S50",
-        "description": "Površinska poškodba podlakti, neopredeljena",
-        "english_description": "Superficial injury of forearm, unspecified",
-        "matched_query": "S50S59",
+        "category": "S40",
+        "description": "Površinska poškodba rame in nadlakti, neopredeljena",
+        "english_description": "Superficial injury of shoulder and upper arm, unspecified",
+        "matched_query": "S40S49",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       }
     ]
@@ -223,6 +214,87 @@
         "category": "S60",
         "description": "Površinska poškodba zapestja in roke, neopredeljena",
         "english_description": "Superficial injury of wrist and hand, unspecified",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61",
+        "level": 3,
+        "category": "S61",
+        "description": "Rana na zapestju in roki",
+        "english_description": "Open wound of finger(s) without damage to nail",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.0",
+        "level": 4,
+        "category": "S61",
+        "description": "Rana na prstu(-ih) brez poškodbe nohta",
+        "english_description": "Open wound of finger(s) without damage to nail",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.1",
+        "level": 4,
+        "category": "S61",
+        "description": "Rana na prstu(-ih) s poškodbo nohta",
+        "english_description": "Open wound of finger(s) with damage to nail",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.7",
+        "level": 4,
+        "category": "S61",
+        "description": "Multiple rane na zapestju in roki",
+        "english_description": "Multiple open wounds of wrist and hand",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.8",
+        "level": 4,
+        "category": "S61",
+        "description": "Rana na drugih delih zapestja in roke",
+        "english_description": "Open wound of other parts of wrist and hand",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.81",
+        "level": 5,
+        "category": "S61",
+        "description": "Rana na drugih delih zapestja in roke, ki komunicira z zlomom",
+        "english_description": "Open wound (of any part of wrist and hand) communicating with a fracture",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.82",
+        "level": 5,
+        "category": "S61",
+        "description": "Rana na drugih delih zapestja in roke, ki komunicira z izpahom",
+        "english_description": "Open wound (of any part of wrist and hand) communicating with a dislocation",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.88",
+        "level": 5,
+        "category": "S61",
+        "description": "Rana na drugih delih zapestja in roke",
+        "english_description": "Open wound of other parts of wrist and hand",
+        "matched_query": "S60S69",
+        "match_type": "hierarchical_SKLOP / 1. NIVO"
+      },
+      {
+        "code": "S61.9",
+        "level": 4,
+        "category": "S61",
+        "description": "Rana na zapestju in roki, del neopredeljen",
+        "english_description": "Open wound of wrist and hand, part unspecified",
         "matched_query": "S60S69",
         "match_type": "hierarchical_SKLOP / 1. NIVO"
       }
@@ -631,101 +703,11 @@
     ],
     "hierarchical_matches": [
       {
-        "code": "W02",
+        "code": "W19",
         "level": 3,
-        "category": "W02",
-        "description": "Padec na drsalkah, smučeh, kotalkah ali deskah za smučanje (na snegu)",
-        "english_description": "Fall involving roller-skates",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.0",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z rolerji",
-        "english_description": "Fall involving roller-skates",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.1",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z rolko",
-        "english_description": "Fall involving skateboard",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.2",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z vodnimi smučmi",
-        "english_description": "Fall involving water ski",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.3",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z zimskimi smučmi",
-        "english_description": "Fall involving snow ski",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.4",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z bordom",
-        "english_description": "Fall involving snow board",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.5",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z drsalkami",
-        "english_description": "Fall involving ice-skates",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.6",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec s skirojem",
-        "english_description": "Fall involving scooter, nonpowered",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.7",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z otroškim vozičkom",
-        "english_description": "Fall involving baby carriage",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.8",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z otroško hojico",
-        "english_description": "Fall involving baby walker",
-        "matched_query": "W00W19",
-        "match_type": "hierarchical_SKLOP / 3. NIVO"
-      },
-      {
-        "code": "W02.9",
-        "level": 4,
-        "category": "W02",
-        "description": "Padec z drugim ali nedeločenim vozilom, namenjenim peščem",
-        "english_description": "Fall involving other and unspecified pedestrian conveyance",
+        "category": "W19",
+        "description": "Neopredeljen padec",
+        "english_description": "Unspecified fall",
         "matched_query": "W00W19",
         "match_type": "hierarchical_SKLOP / 3. NIVO"
       }

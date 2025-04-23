@@ -39,3 +39,5 @@ pylate-index/*
 
 # DS store
 .DS_Store
+
+debug/

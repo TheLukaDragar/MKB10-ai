@@ -29,7 +29,7 @@ pip install -r requirements.txt
 - `sklopi_slo_df.csv` - Slovenian MKB-10 category mappings
 - `mkb_slo_df_eng.csv` - Combined Slovenian-English MKB-10 codes
 
-4. Configure your LLM endpoint in `bot.py`:
+4. Configure your LLM endpoint in `llm_approach.py`:
 ```python
 base_url = "http://localhost:8001/"  # Update with your LLM endpoint
 ```
@@ -59,7 +59,7 @@ The pipeline follows these steps:
 
 ```
 .
-├── bot.py              # Main pipeline implementation
+├── llm_approach.py              # Main pipeline implementation
 ├── prompts.py         # LLM prompt templates
 ├── sklopi_slo_df.csv  # Slovenian category mappings
 ├── mkb_slo_df_eng.csv # Combined SLO-ENG mappings
@@ -98,7 +98,7 @@ Anamneza: Včeraj je panel s kolesa in se udaril po desni dlani...
 python worker.py
 
 # Run the pipeline
-python bot.py
+python llm_approach.py
 ```
 
 ## 🔄 Pipeline Steps in Detail

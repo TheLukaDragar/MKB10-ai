@@ -41,3 +41,5 @@ pylate-index/*
 .DS_Store
 
 debug/
+
+available_workers.json

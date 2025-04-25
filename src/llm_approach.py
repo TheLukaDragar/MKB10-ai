@@ -293,9 +293,20 @@ async def process_category_async(category: Dict, diagnosis: str, descriptions_lo
             extra_body={"guided_json": SpecificCodesResponse.for_category(query).model_json_schema()},
             temperature=0.0
         )
+
+        with open(f"debug/specific_codes_{query}.json", "w", encoding='utf-8') as f:
+            try:
+                parsed_data = json.loads(specific_codes)
+                json.dump(parsed_data, f, ensure_ascii=False, indent=2)
+            except json.JSONDecodeError:
+                f.write(specific_codes)
         
-        # Parse results and add descriptions
-        category_final_codes = json.loads(specific_codes)
+        try:
+            category_final_codes = json.loads(specific_codes)
+        except json.JSONDecodeError:
+            logger.error(f"{Fore.RED}[{query}] Failed to parse specific_codes JSON for further processing{Style.RESET_ALL}")
+            category_final_codes = {'final_codes': []} # Default to empty list to avoid crashing later
+
         if 'final_codes' in category_final_codes:
             valid_codes = []
             for code in category_final_codes['final_codes']:

@@ -98,8 +98,8 @@ Rules for code selection:
 4. Use the most specific code available from the provided options
 5. Consider laterality when available in the codes
 6. If there are multiple codes list them all
-7. ALWAYS include at least 5 codes, even if some are less directly relevant
-8. Order all codes by relevance, with most relevant codes first
+7. Include at least 5 codes, ordered by relevance
+8. Do not include ranges like U50–U72 or similar
 
 The output must follow the exact JSON format specified.
 </instructions>
@@ -119,23 +119,17 @@ The output must follow the exact JSON format specified.
     "final_codes": [
         {{
             "code": "S40.81",  // Must be one of the provided codes
-            "rationale": "Matches exactly with provided code list and describes left shoulder abrasion",
-            "relevance": "Primary - direct match to main condition"
-        }},
-        // Include at least 5 codes total, ordered by relevance
+            "rationale": "Matches exactly with provided code list and describes left shoulder abrasion"
+        }}
     ]
 }}
 </output_format>
 
 <example>
 Diagnosis excerpt: "Abrasion of left shoulder"
-Available codes: ["S40.81", "S40.82", "S40.9", "S41.0", "S41.1"]
-Correct output would include:
-1. S40.81 (highest relevance - exact match for left shoulder abrasion)
-2. S40.82 (medium relevance - similar but wrong laterality)
-3. S40.9 (lower relevance - correct body part but unspecified injury)
-4. S41.0 (low relevance - nearby body region)
-5. S41.1 (lowest relevance - included to meet minimum 5 codes)
+Available codes: ["S40.81", "S40.82", "S40.9"]
+Correct: S40.81 (matches exact location and laterality)
+Wrong: S40.9 (too general when more specific code is available)
 </example>
 </output>
 """

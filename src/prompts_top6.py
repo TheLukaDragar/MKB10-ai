@@ -98,8 +98,7 @@ Rules for code selection:
 4. Use the most specific code available from the provided options
 5. Consider laterality when available in the codes
 6. If there are multiple codes list them all
-7. Include at least 5 codes, ordered by relevance
-8. Do not include ranges like U50–U72 or similar
+7. Include at least 6 codes, ordered by relevance
 
 The output must follow the exact JSON format specified.
 </instructions>
@@ -145,8 +144,7 @@ Key Principles:
    - Use the most specific code available from the provided options
    - Consider laterality (left/sin. or right/dex.) when available
    - Match the exact type of injury described
-4. ALWAYS include at least 5 codes, even if some are less directly relevant
-5. Order all codes by relevance, with most relevant codes first
+   - Order all codes by relevance, with most relevant codes first
 
 First, analyze:
 0. Write a comprehensive summary of the diagnosis in English, including primary and secondary conditions, anatomical locations, and relevant circumstances.

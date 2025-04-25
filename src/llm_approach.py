@@ -2,7 +2,7 @@ import os
 from typing import List, Dict, Tuple
 import openai
 import pandas as pd
-from prompts_top5 import *
+from prompts_top6 import *
 import logging
 from datetime import datetime, timedelta
 from collections import defaultdict

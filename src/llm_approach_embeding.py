@@ -2,7 +2,7 @@ import os
 from typing import List, Dict, Tuple
 import openai
 import pandas as pd
-from prompts import *
+from src.prompts import *
 import logging
 from datetime import datetime, timedelta
 from collections import defaultdict
@@ -12,7 +12,74 @@ import dotenv
 import aiohttp
 import asyncio
 import random
-from params import SECTIONS_FILE, WORKERS_FILE, ENGLISH_SECTIONS_FILE
+from src.params import SECTIONS_FILE, WORKERS_FILE, ENGLISH_SECTIONS_FILE
+
+import pandas as pd
+from pylate import indexes, models, retrieve
+from src.params import SECTIONS_FILE, ENGLISH_SECTIONS_FILE
+from src.embedding_search import searcher
+
+# # Initialize the ColBERT model
+# model = models.ColBERT(
+#     model_name_or_path="jinaai/jina-colbert-v2",
+#     query_prefix="[QueryMarker]",
+#     document_prefix="[DocumentMarker]",
+#     attend_to_expansion_tokens=True,
+#     trust_remote_code=True,
+#     device="mps"
+# )
+
+
+# all_codes = pd.read_csv(ENGLISH_SECTIONS_FILE)
+
+# documents = [f"{row['SLOVENSKI NAZIV']}" for _, row in all_codes.iterrows()]
+# document_ids = [str(i) for i in range(len(documents))]
+# codes = [row['KODA'] for _, row in all_codes.iterrows()]
+
+# mapping = dict(zip(document_ids, codes))
+
+# index = indexes.Voyager(
+#     index_folder="pylate-index",
+#     index_name="medical-classifications-with-llm",
+#     #override=True,  # This will override any existing index
+# )
+
+
+# print("Encoding documents...")
+# document_embeddings = model.encode(
+# documents,
+# batch_size=128,
+# is_query=False,
+# show_progress_bar=True,
+# )
+
+# print("Adding documents to index...")
+# index.add_documents(
+#     documents_ids=document_ids,
+#     documents_embeddings=document_embeddings,
+#     )
+
+
+# retriever = retrieve.ColBERT(index=index)
+
+# def get_relevant_docs(query, k=3):
+#     """Retrieve the most relevant documents for a query."""
+#     # Encode the query
+#     query_embedding = model.encode(
+#         [query],
+#         batch_size=1,
+#         is_query=True,
+#         show_progress_bar=False,
+#     )
+    
+#     results = retriever.retrieve(
+#         queries_embeddings=query_embedding,
+#         k=k,
+#     )[0]  # Get first (and only) query results
+
+#     return [(documents[int(res["id"])], codes[int(res["id"])], res["score"] ) for res in results]
+
+# Example 
 
 dotenv.load_dotenv()
 
@@ -274,17 +341,44 @@ async def process_category_async(category: Dict, diagnosis: str, descriptions_lo
     logger.info(f"{Fore.CYAN}Starting processing of category: {query}{Style.RESET_ALL}")
     
     try:
-        # First get reasoning for this category
-        logger.info(f"{Fore.BLUE}[{query}] Step 1: Analyzing codes...{Style.RESET_ALL}")
+        # Get indices for valid codes in this category
+        valid_indices = []
+        df = pd.read_csv(ENGLISH_SECTIONS_FILE)
+        codes_list = df['KODA'].tolist()
+        for code_info in category['codes']:
+            try:
+                idx = codes_list.index(code_info['code'])
+                valid_indices.append(idx)
+            except ValueError:
+                continue
+
+        # First get embedding search results for this category
+        logger.info(f"{Fore.BLUE}[{query}] Step 1: Running embedding search...{Style.RESET_ALL}")
+        embedding_results = searcher.search_in_category(diagnosis, valid_indices, query)
+        
+        if embedding_results:
+            logger.info(f"{Fore.GREEN}[{query}] Found {len(embedding_results)} relevant matches via embedding search{Style.RESET_ALL}")
+            for doc, code, score in embedding_results:
+                logger.info(f"{Fore.GREEN}[{query}] → {code} (score: {score:.2f}): {doc}{Style.RESET_ALL}")
+        
+        # Get reasoning for this category
+        logger.info(f"{Fore.BLUE}[{query}] Step 2: Analyzing codes...{Style.RESET_ALL}")
+        
+        # Include embedding results in the reasoning prompt
+        # embedding_context = ""
+        # if embedding_results:
+        #     embedding_context = "\n\nEmbedding search found these relevant matches:\n" + \
+        #         "\n".join([f"- {code} ({score:.2f}): {doc}" for doc, code, score in embedding_results])
+        
         reasoning_result = await _async_llm_call(
             reason_specific_codes_prompt.format(
                 diagnosis=diagnosis,
                 matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2)
-            )
+            ) #+ embedding_context
         )
         
         # Then get specific codes with the reasoning context
-        logger.info(f"{Fore.BLUE}[{query}] Step 2: Extracting specific codes...{Style.RESET_ALL}")
+        logger.info(f"{Fore.BLUE}[{query}] Step 3: Extracting specific codes...{Style.RESET_ALL}")
         specific_codes = await _async_llm_call(
             extract_specific_codes_prompt.format(
                 diagnosis=diagnosis,
@@ -317,7 +411,8 @@ async def process_category_async(category: Dict, diagnosis: str, descriptions_lo
             return {
                 'category': query,
                 'codes': valid_codes,
-                'reasoning': reasoning_result
+                'reasoning': reasoning_result,
+                'embedding_results': embedding_results
             }
     except Exception as e:
         logger.error(f"{Fore.RED}Error processing category {query}: {e}{Style.RESET_ALL}")
@@ -504,13 +599,46 @@ def extract_codes_from_results(results: List[Dict], debug: bool = True, file_nam
     for code_info in all_final_codes:
         category_grouped_codes[code_info['category_group']].append(code_info)
 
-
-    print(f"\n{Fore.CYAN}Final Low-Level MKB-10 Codes by Category:{Style.RESET_ALL}")
+    print(f"\n{Fore.CYAN}Final MKB-10 Codes by Category with Embedding Search Results:{Style.RESET_ALL}")
     print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
+
+    # Print embedding results and LLM results together for each category
+    for result in results:
+        if 'error' in result or not result.get('codes'):
+            continue
+            
+        category = result['category']
+        print(f"\n{Fore.YELLOW}Category {category}:{Style.RESET_ALL}")
+        
+        # Print embedding search results first
+        if result.get('embedding_results'):
+            print(f"\n{Fore.CYAN}Embedding Search Suggestions:{Style.RESET_ALL}")
+            for doc, code, score in result['embedding_results']:
+                print(f"  → {Fore.GREEN}{code}{Style.RESET_ALL} (score: {score:.2f})")
+                print(f"    {doc}")
+        
+        # Print LLM-selected codes
+        print(f"\n{Fore.CYAN}LLM Selected & Justified Codes:{Style.RESET_ALL}")
+        for code_info in category_grouped_codes[category]:
+            print(f"  → {Fore.GREEN}{code_info['code']}{Style.RESET_ALL}")
+            print(f"    {Fore.MAGENTA}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
+            if code_info['eng_description'] and code_info['eng_description'] != 'nan':
+                print(f"    {Fore.MAGENTA}English:{Style.RESET_ALL} {code_info['eng_description']}")
+            print(f"    {Fore.MAGENTA}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
+            print()
+        
+        print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
 
     return codes, category_grouped_codes
 
 if __name__ == "__main__":
+    # Initialize the embedding searcher
+    print(f"{Fore.CYAN}Initializing embedding search...{Style.RESET_ALL}")
+    df_eng = pd.read_csv(ENGLISH_SECTIONS_FILE)
+    searcher.initialize_with_dataframe(df_eng)
+    print(f"{Fore.GREEN}Embedding search initialized{Style.RESET_ALL}")
+    print(f"{Fore.BLUE}{'=' * 80}{Style.RESET_ALL}")
+
     diagnosis = '''Anamneza:
         Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi
         dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja.
@@ -541,6 +669,9 @@ if __name__ == "__main__":
     # diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \nStatus ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 
     reasoning = reasoning_to_categories(diagnosis, available_categories)
+
+
+
     extracted_categories = extract_categories_ranges(reasoning)
 
     categories, letters = get_categories_from_json(extracted_categories)

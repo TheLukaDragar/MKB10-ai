@@ -1,6 +1,6 @@
 import pandas as pd
 from pylate import indexes, models, retrieve
-from params import SECTIONS_FILE
+from src.params import SECTIONS_FILE
 # Initialize the ColBERT model
 model = models.ColBERT(
     model_name_or_path="jinaai/jina-colbert-v2",

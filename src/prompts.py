@@ -145,6 +145,7 @@ Key Principles:
    - Match the exact type of injury described
 
 First, analyze:
+0. Write a comprehensive summary of the diagnosis in English, including primary and secondary conditions, anatomical locations, and relevant circumstances.
 1. Which injuries from the diagnosis fit THIS specific category
 2. Which of the provided codes most precisely match these injuries
 3. Whether laterality information can be captured with the available codes
@@ -162,6 +163,9 @@ First, analyze:
 
 <output_format>
 Provide your analysis in a structured format:
+
+DIAGNOSIS SUMMARY:
+[Comprehensive summary of the diagnosis in English]
 
 CATEGORY ANALYSIS:
 [Which injuries from the diagnosis belong to this category's anatomical region]

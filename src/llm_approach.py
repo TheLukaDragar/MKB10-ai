@@ -522,32 +522,8 @@ def extract_codes_from_results(results: List[Dict], debug: bool = True, file_nam
     return codes, category_grouped_codes
 
 if __name__ == "__main__":
-    diagnosis = '''Anamneza:
-        Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi
-        dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja.
-        Status ob sprejemu:
-        Vidne številne odrgnine v predelu desne dlani in po vseh prstih te roke. Največja rana v
-        predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma
-        ohranjena. Brez NC izpadov.
-        Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve
-        nadlahti, leve podlahti in leve dlani.
-        Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement
-        negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva.
-        Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni
-        ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno.
-        Diagnostični postopki:
-        RTG
-        desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta
-        desna dlan: brez prepričljivih znakov sveže poškodbe skeleta
-        levo koleno: brez prepričljivih znakov sveže poškodbe skeleta
-        Oskrba:
-        Toaleta in preveza rane v ambulanti.
-        V MOP:
-        Toaleta odrgnin, Inadine na vnete odrgnine, Cuticell na ostale odrgnine.
-        Preveza čez dva dni pri osebnem zdravniku, nato po njegovi presoji do zacelitve.
-        Hlajenje z ledom preko tkanine večkrat dnevno, počitek, analgetiki.
-        Dobi e-recept za Amoksiklav za 5 dni in Lekadol.
-        '''
+    with open("example_diagnosis.txt", "r") as f:
+        diagnosis = f.read()
 
     # diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \nStatus ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
 

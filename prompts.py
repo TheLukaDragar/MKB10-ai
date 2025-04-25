@@ -19,7 +19,15 @@ SYSTEMATIC ANALYSIS PROCESS:
    - Status of patient (e.g., driver, passenger, pedestrian)
    - Complicating factors (e.g., infection, foreign body)
 
-3. For each identified element, select the most specific matching code:
+3. FIRST STEP - COMPREHENSIVE DIAGNOSIS SUMMARY:
+   Begin by writing a detailed summary of the diagnosis in English, including:
+   - All primary and secondary conditions with specific anatomical locations
+   - Causal mechanisms and circumstances
+   - Patient status and activities at time of injury/illness
+   - Any complicating factors
+   Use this summary as the basis for your code selection decisions.
+   
+4. For each identified element, select the most specific matching code:
    - For injuries: Select codes that exactly match the anatomical location AND type of injury
    - For external causes: Select codes that match both the mechanism AND circumstances
    - For activities: Select codes that specify what the patient was doing

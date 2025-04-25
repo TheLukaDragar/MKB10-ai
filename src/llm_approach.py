@@ -2,7 +2,7 @@ import os
 from typing import List, Dict, Tuple
 import openai
 import pandas as pd
-from src.prompts import *
+from prompts import *
 import logging
 from datetime import datetime, timedelta
 from collections import defaultdict
@@ -12,7 +12,7 @@ import dotenv
 import aiohttp
 import asyncio
 import random
-from src.params import SECTIONS_FILE, WORKERS_FILE, ENGLISH_SECTIONS_FILE
+from params import SECTIONS_FILE, WORKERS_FILE, ENGLISH_SECTIONS_FILE
 
 dotenv.load_dotenv()
 

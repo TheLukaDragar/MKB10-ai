@@ -16,8 +16,8 @@ from src.params import SECTIONS_FILE, WORKERS_FILE, ENGLISH_SECTIONS_FILE
 
 import pandas as pd
 from pylate import indexes, models, retrieve
-from src.params import SECTIONS_FILE, ENGLISH_SECTIONS_FILE
-from src.embedding_search import searcher
+from params import SECTIONS_FILE, ENGLISH_SECTIONS_FILE
+from embedding_search import searcher
 
 # # Initialize the ColBERT model
 # model = models.ColBERT(

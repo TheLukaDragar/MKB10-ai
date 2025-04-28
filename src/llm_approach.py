@@ -555,8 +555,9 @@ def get_categories_from_diagnosis(diagnosis: str, num_first_level_recommendation
     second_level_categories, second_level_descriptions_lookup = get_second_level_filtered_codes(all_queries, grouped_slo, grouped_hierarchical, first_level_codes)
 
     second_level_results = process_categories_parallel(second_level_categories, diagnosis, second_level_descriptions_lookup, num_second_level_recommendations)
-    second_level_codes, second_level_category_grouped_codes = extract_codes_from_results(second_level_results, file_name="final_codes.json")
+    _, second_level_category_grouped_codes = extract_codes_from_results(second_level_results, file_name="final_codes.json")
 
+    results = []
     for category, codes in sorted(second_level_category_grouped_codes.items()):
         print(f"\n{Fore.GREEN}Final Category {category}:{Style.RESET_ALL}")
         for code_info in codes:
@@ -565,9 +566,16 @@ def get_categories_from_diagnosis(diagnosis: str, num_first_level_recommendation
             print(f"    {Fore.LIGHTMAGENTA_EX}English:{Style.RESET_ALL} {code_info['eng_description']}")
             print(f"    {Fore.LIGHTMAGENTA_EX}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
             print()
+            results.append({
+                'category': category,
+                'code': code_info['code'],
+                'slo_description': code_info['slo_description'],
+                'eng_description': code_info['eng_description'],
+                'rationale': code_info['rationale']
+            })
         print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
 
-    return second_level_codes
+    return results
 
 
 if __name__ == "__main__":
@@ -575,4 +583,4 @@ if __name__ == "__main__":
         diagnosis = f.read()
 
     categories = get_categories_from_diagnosis(diagnosis)
-    print(categories)
+    # print(categories)

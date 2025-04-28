@@ -541,7 +541,6 @@ def get_categories_from_diagnosis(diagnosis: str, num_first_level_recommendation
 
     first_level_codes, first_level_category_grouped_codes = extract_codes_from_results(first_level_results, file_name="first_level_codes.json")
 
-
     for category, codes in sorted(first_level_category_grouped_codes.items()):
         print(f"\n{Fore.YELLOW}Intermediate Category {category}:{Style.RESET_ALL}")
         for code_info in codes:
@@ -549,7 +548,6 @@ def get_categories_from_diagnosis(diagnosis: str, num_first_level_recommendation
             print(f"    {Fore.CYAN}Slovenski naziv:{Style.RESET_ALL} {code_info['slo_description']}")
             print(f"    {Fore.CYAN}English:{Style.RESET_ALL} {code_info['eng_description']}")
             print(f"    {Fore.CYAN}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
-            print()
         print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
 
     second_level_categories, second_level_descriptions_lookup = get_second_level_filtered_codes(all_queries, grouped_slo, grouped_hierarchical, first_level_codes)

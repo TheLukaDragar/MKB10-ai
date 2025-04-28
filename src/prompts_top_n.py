@@ -98,7 +98,7 @@ Rules for code selection:
 4. Use the most specific code available from the provided options
 5. Consider laterality when available in the codes
 6. If there are multiple codes list them all
-7. Include at least 6 codes, ordered by relevance
+7. Include at least {num_recommendations} codes, ordered by relevance
 
 The output must follow the exact JSON format specified.
 </instructions>
@@ -176,7 +176,7 @@ AVAILABLE CODES ASSESSMENT:
 [Analysis of how the provided codes match these specific injuries]
 
 RECOMMENDED MATCHES:
-[Specific matches between injuries and the available codes, with reasoning, ordered by relevance. List at least 5 codes with the following format for each:]
+[Specific matches between injuries and the available codes, with reasoning, ordered by relevance. List at least {num_recommendations} codes with the following format for each:]
 
 1. CODE: [most relevant code]
    RELEVANCE: [Primary - direct match to main condition]

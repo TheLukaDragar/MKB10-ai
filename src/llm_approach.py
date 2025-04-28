@@ -2,7 +2,7 @@ import os
 from typing import List, Dict, Tuple
 import openai
 import pandas as pd
-from prompts_top6 import *
+from prompts_top_n import *
 import logging
 from datetime import datetime, timedelta
 from collections import defaultdict
@@ -266,7 +266,7 @@ def group_results_by_query(results):
     return dict(grouped)
 
 
-async def process_category_async(category: Dict, diagnosis: str, descriptions_lookup: Dict) -> Dict:
+async def process_category_async(category: Dict, diagnosis: str, descriptions_lookup: Dict, num_recommendations: int = 5) -> Dict:
     """
     Process a single category asynchronously
     """
@@ -279,7 +279,8 @@ async def process_category_async(category: Dict, diagnosis: str, descriptions_lo
         reasoning_result = await _async_llm_call(
             reason_specific_codes_prompt.format(
                 diagnosis=diagnosis,
-                matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2)
+                matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2),
+                num_recommendations=num_recommendations
             )
         )
         
@@ -288,7 +289,8 @@ async def process_category_async(category: Dict, diagnosis: str, descriptions_lo
         specific_codes = await _async_llm_call(
             extract_specific_codes_prompt.format(
                 diagnosis=diagnosis,
-                matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2)
+                matched_codes=json.dumps(category['codes'], ensure_ascii=False, indent=2),
+                num_recommendations=num_recommendations
             ) + f"\n\nPrevious analysis:\n{reasoning_result}",
             extra_body={"guided_json": SpecificCodesResponse.for_category(query).model_json_schema()},
             temperature=0.0
@@ -338,19 +340,19 @@ async def process_category_async(category: Dict, diagnosis: str, descriptions_lo
             'error': str(e)
         }
 
-async def process_all_categories_async(categories: List[Dict], diagnosis: str, descriptions_lookup: Dict) -> List[Dict]:
+async def process_all_categories_async(categories: List[Dict], diagnosis: str, descriptions_lookup: Dict, num_recommendations: int = 5) -> List[Dict]:
     """
     Process all categories in parallel
     """
     logger.info(f"{Fore.CYAN}Starting parallel processing of {len(categories)} categories{Style.RESET_ALL}")
-    tasks = [process_category_async(category, diagnosis, descriptions_lookup) for category in categories]
+    tasks = [process_category_async(category, diagnosis, descriptions_lookup, num_recommendations) for category in categories]
     return await asyncio.gather(*tasks)
 
-def process_categories_parallel(categories: List[Dict], diagnosis: str, descriptions_lookup: Dict) -> List[Dict]:
+def process_categories_parallel(categories: List[Dict], diagnosis: str, descriptions_lookup: Dict, num_recommendations: int = 5) -> List[Dict]:
     """
     Synchronous wrapper for parallel category processing
     """
-    return asyncio.run(process_all_categories_async(categories, diagnosis, descriptions_lookup))
+    return asyncio.run(process_all_categories_async(categories, diagnosis, descriptions_lookup, num_recommendations))
 
 def reasoning_to_categories(diagnosis_text: str, available_categories: str, debug: bool = True) -> List[Dict]:
     """
@@ -379,15 +381,12 @@ def get_categories_from_json(json_text: str, debug: bool = True) -> List[Dict]:
     Extract the range of categories from the json text
     """
     categories = json.loads(json_text)['applicable_categories']
-    letters = set(category[0] for category in categories)
 
     if debug:
         with open("debug/categories.txt", "w") as f:
             f.write(str(categories))
-        with open("debug/letters.txt", "w") as f:
-            f.write(str(letters))
 
-    return categories, letters
+    return categories
 
 def get_matching_codes(categories: List[Dict]) -> List[Dict]:
     """
@@ -521,16 +520,16 @@ def extract_codes_from_results(results: List[Dict], debug: bool = True, file_nam
 
     return codes, category_grouped_codes
 
-if __name__ == "__main__":
-    with open("example_diagnosis.txt", "r") as f:
-        diagnosis = f.read()
-
-    # diagnosis = "Anamneza: Včeraj je padel s kolesa in se udaril po desni dlani, levi rami, levi nadlahti, levi podlahti in levi dlani ter levem kolenu. Vročine in mrzlice ni imel. Antitetanična zaščita obstaja. \nStatus ob sprejemu: Vidne številne odrgnine v prelu desne dlani in po vseh prstih te roke. Največja rana v predelu desnega zapestja, okolica je blago pordela. Gibljvost v zapestju je popolnoma ohranjena. Brez NC izpadov. Na levi rami vidna odrgnina, prav tako tudi odrgnine brez znakov vnetja v področju leve nadlahti, leve podlahti in leve dlani. Dve večji odrgnini v predelu levega kolena. Levo koleno je blago otečeno. Ballottement negativen. Gibljivost v kolenu 0/90. Iztipam sklepno špranjo kolena, ki palpatorno ni občutljiva. Lachman in predalčni fenomen enaka v primerjavi z nepoškodovanim kolenom. Kolateralni ligamenti delujejo čvrsti. MCL nekoliko boleč na nateg in palpatorno. Diagnostični postopki RTG desno zapestje: brez prepričljivih znakov sveže poškodbe skeleta desna dlan: brez prepričljivih znakov sveže poškodbe skeleta levo koleno: brez prepričljivih znakov sveže poškodbe skeleta."
+def get_categories_from_diagnosis(diagnosis: str, num_first_level_recommendations: int = 3, num_second_level_recommendations: int = 6) -> List[Dict]:
+    """
+    Get the categories from the diagnosis
+    """
 
     reasoning = reasoning_to_categories(diagnosis, available_categories)
+    
     extracted_categories = extract_categories_ranges(reasoning)
 
-    categories, letters = get_categories_from_json(extracted_categories)
+    categories = get_categories_from_json(extracted_categories)
     
     matching_results_slo, matching_results_hierarchical = get_matching_codes(categories)
 
@@ -538,7 +537,7 @@ if __name__ == "__main__":
 
     all_categories, descriptions_lookup = get_first_level_codes(all_queries, grouped_slo, grouped_hierarchical)
 
-    first_level_results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup)
+    first_level_results = process_categories_parallel(all_categories, diagnosis, descriptions_lookup, num_first_level_recommendations)
 
     first_level_codes, first_level_category_grouped_codes = extract_codes_from_results(first_level_results, file_name="first_level_codes.json")
 
@@ -555,7 +554,7 @@ if __name__ == "__main__":
 
     second_level_categories, second_level_descriptions_lookup = get_second_level_filtered_codes(all_queries, grouped_slo, grouped_hierarchical, first_level_codes)
 
-    second_level_results = process_categories_parallel(second_level_categories, diagnosis, second_level_descriptions_lookup)
+    second_level_results = process_categories_parallel(second_level_categories, diagnosis, second_level_descriptions_lookup, num_second_level_recommendations)
     second_level_codes, second_level_category_grouped_codes = extract_codes_from_results(second_level_results, file_name="final_codes.json")
 
     for category, codes in sorted(second_level_category_grouped_codes.items()):
@@ -567,3 +566,13 @@ if __name__ == "__main__":
             print(f"    {Fore.LIGHTMAGENTA_EX}Rationale:{Style.RESET_ALL} {code_info['rationale']}")
             print()
         print(f"{Fore.BLUE}{'-' * 80}{Style.RESET_ALL}")
+
+    return second_level_codes
+
+
+if __name__ == "__main__":
+    with open("example_diagnosis.txt", "r") as f:
+        diagnosis = f.read()
+
+    categories = get_categories_from_diagnosis(diagnosis)
+    print(categories)
